@@ -27,7 +27,7 @@
 ## 目录
 
 ```
-foundation/bundlemanager/bundlemanager_cangjie_api
+foundation/bundlemanager/bundlemanager_cangjie_wrapper
 ├── ohos                        # 仓颉包管理接口实现
 ├── figures                     # 存放readme中的架构图
 ```
@@ -173,6 +173,6 @@ bm get -u
 
 **包管理子系统**
 
-bundlemanager_cangjie_api
+bundlemanager_cangjie_wrapper
 
 [bundlemanager_bundle_framework](https://gitee.com/openharmony/bundlemanager_bundle_framework)
