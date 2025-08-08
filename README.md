@@ -27,7 +27,7 @@ Below is the architecture of the Bundle Management subsystem.
 ## Directory Structure
 
 ```
-foundation/bundlemanager/bundlemanager_cangjie_api
+foundation/bundlemanager/bundlemanager_cangjie_wrapper
 ├── ohos                        # Cangjie Bundle Management code
 ├── figures                     # architecture pictures
 ```
@@ -170,6 +170,6 @@ bm get -u
 
 **Bundle Management Subsystem**
 
-bundlemanager_cangjie_api
+bundlemanager_cangjie_wrapper
 
 [bundlemanager_bundle_framework](https://gitee.com/openharmony/bundlemanager_bundle_framework)

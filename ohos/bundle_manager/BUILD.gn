@@ -25,11 +25,11 @@ ohos_cj_library("ohos.bundle_manager") {
   ]
 
   cj_external_deps = [
-    "cangjie_api:ohos.labels",
-    "arkui_cangjie_api:ohos.base",
-    "cangjie_api:ohos.ffi",
-    "hiviewdfx_cangjie_api:ohos.hilog",
-    "global_cangjie_api:ohos.resource_manager",
+    "cangjie_ark_interop:ohos.labels",
+    "arkui_cangjie_wrapper:ohos.base",
+    "cangjie_ark_interop:ohos.ffi",
+    "hiviewdfx_cangjie_wrapper:ohos.hilog",
+    "global_cangjie_wrapper:ohos.resource_manager",
   ]
 
   external_deps = [
@@ -37,6 +37,6 @@ ohos_cj_library("ohos.bundle_manager") {
   ]
 
   subsystem_name = "bundlemanager"
-  part_name = "bundlemanager_cangjie_api"
+  part_name = "bundlemanager_cangjie_wrapper"
   lib_name = "bundle_manager"
 }
