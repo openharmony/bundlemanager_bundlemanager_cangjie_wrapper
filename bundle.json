@@ -1,0 +1,45 @@
+{
+    "name": "@ohos/bundlemanager_cangjie_api",
+    "description": "提供OpenHarmony应用和服务安装包的安装、更新、卸载以及信息查询等能力，包含包管理接口和包管理服务",
+    "version": "6.0",
+    "license": "Apache License 2.0",
+    "segment": {
+        "destPath": "foundation/bundlemanager/bundlemanager_cangjie_api"
+    },
+    "component": {
+        "name": "bundlemanager_cangjie_api",
+        "subsystem": "bundlemanager",
+        "syscap": [
+            "SystemCapability.BundleManager.BundleFramework.Core",
+            "SystemCapability.BundleManager.BundleFramework.DefaultApp"
+        ],
+        "features": [],
+        "hisysevent_config": [],
+        "adapted_system_type": [
+            "standard"
+        ],
+        "rom": "~8000KB",
+        "ram": "~14106KB",
+        "deps": {
+            "components": [
+                "cangjie_api",
+                "global_cangjie_api",
+                "arkui_cangjie_api",
+                "hiviewdfx_cangjie_api",
+                "ability_cangjie_api",
+                "bundle_framework"
+            ]
+        },
+        "build": {
+            "sub_component": [
+                "//foundation/bundlemanager/bundlemanager_cangjie_api/ohos/bundle_manager:ohos.bundle_manager"
+            ],
+            "inner_kits": [
+              {
+                "name": "//foundation/bundlemanager/bundlemanager_cangjie_api/ohos/bundle_manager:ohos.bundle_manager"
+              }
+            ],
+            "test": []
+        }
+    }
+}
