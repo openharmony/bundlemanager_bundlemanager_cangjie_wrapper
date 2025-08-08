@@ -1,0 +1,3 @@
+# bundlemanager_bundlemanager_cangjie_wrapper
+
+仓颉包管理封装
