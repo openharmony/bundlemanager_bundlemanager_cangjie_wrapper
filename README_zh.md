@@ -1,4 +1,4 @@
-# **包管理子系统**
+# 包管理仓颉
 
 ## 简介
 
@@ -6,7 +6,7 @@
 
 包管理子系统架构如下图所示：
 
-![](figures/appexecfwk.png)
+![](figures/bundlemanager_cangjie_wrapper_architecture.png)
 
 
 ## 部件内子模块职责
