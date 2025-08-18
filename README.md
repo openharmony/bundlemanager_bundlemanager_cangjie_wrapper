@@ -1,4 +1,4 @@
-# **Bundle Management**
+# **bundlemanager_cangjie_wrapper**
 
 ## Introduction
 
