@@ -2,11 +2,11 @@
 
 ## Introduction
 
-The Bundle Management subsystem allows you to query, install, update, and uninstall capabilities for application bundles as well as store bundle information.
+The Cangjie API is a Cangjie API encapsulated on OpenHarmony based on the capabilities of the Bundle Management subsystem. The Bundle Management subsystem allows you to query, install, update, and uninstall capabilities for application bundles as well as store bundle information. Specific functions can be seen[Bundle Management](https://gitee.com/openharmony/docs/blob/master/en/readme/bundle-management.md)
 
 Below is the architecture of the Bundle Management subsystem.
 
-![](figures/en_appexecfwk.png)
+![](figures/bundlemanager_cangjie_wrapper_architecture_en.png)
 
 
 ## Responsibilities of Modules
@@ -14,15 +14,6 @@ Below is the architecture of the Bundle Management subsystem.
 | Module      | Description                                                        |
 | ---------------- | ------------------------------------------------------------ |
 | Bundle management interface module  | 1. Provides external interfaces for installation, update, uninstallation, and notification.<br>2. Provides external interfaces for querying bundle, component, and permission information.<br>3. Provides external interfaces for querying application permissions.<br>4. Provides external interfaces for clearing data.|
-| Scanning module        | 1. Scans pre-installed applications.<br>2. Scans installed third-party applications.<br>3. Parses bundle configuration files.|
-| Security management module    | 1. Verifies signatures during installation.<br>2. Grants the permissions requested by the application during installation.<br>3. Verifies permissions during application running.|
-| DBMS module        | Obtains the ability information about a specified device.                                 |
-| Installation management module    | Provides installation, update, and uninstallation logic processing and result notification.                      |
-| Bundle information management module  | Stores and synchronizes bundle and component information.                            |
-| Device status listening module| Listens for the online and offline status changes of devices.                                        |
-| Installed module    | Provides privileged processes for:<br>(1) Creating and deleting directories<br>(2) Creating and deleting files<br>(3) Sandbox UID/GID operations in the device directory|
-| DFX              | Provides bundle maintenance and testing.                                              |
-
 
 ## Directory Structure
 
@@ -167,9 +158,5 @@ bm get -u
 ```
 
 ## Repositories Involved
-
-**Bundle Management Subsystem**
-
-bundlemanager_cangjie_wrapper
 
 [bundlemanager_bundle_framework](https://gitee.com/openharmony/bundlemanager_bundle_framework)
