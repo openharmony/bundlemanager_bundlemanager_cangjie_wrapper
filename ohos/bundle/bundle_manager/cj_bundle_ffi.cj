@@ -13,36 +13,12 @@
  * limitations under the License.
  */
 
-package ohos.bundle_manager
+package ohos.bundle.bundle_manager
 
-import ohos.resource_manager.*
+import ohos.resource.*
 import ohos.ffi.*
-import ohos.base.*
-
-@C
-protected struct RetMetadata {
-    protected RetMetadata(
-        var name: CString,
-        var value: CString,
-        var resource: CString
-    ) {}
-
-    func free(): Unit {
-        unsafe {
-            LibC.free(this.name)
-            LibC.free(this.value)
-            LibC.free(this.resource)
-        }
-    }
-}
-
-@C
-protected struct CArrMetadata {
-    protected CArrMetadata(
-        let head: CPointer<RetMetadata>,
-        let size: Int64
-    ) {}
-}
+import ohos.skill.*
+import ohos.metadata.*
 
 @C
 protected struct RetModuleMetadata {
@@ -206,13 +182,7 @@ protected struct RetWindowSize {
     ) {}
 }
 
-@C
-protected struct CArrSkill {
-    protected CArrSkill(
-        let head: CPointer<RetSkill>,
-        let size: Int64
-    ) {}
-}
+
 
 @C
 protected struct RetAbilityInfoV2 {
@@ -468,17 +438,6 @@ func freeCArrModuleMetadata(cArr: CArrModuleMetadata) {
     }
 }
 
-func freeCArrMetadata(cArr: CArrMetadata) {
-    if (cArr.head.isNotNull()) {
-        unsafe {
-            for (i in 0..cArr.size) {
-                cArr.head.read(i).free()
-            }
-            LibC.free<RetMetadata>(cArr.head)
-        }
-    }
-}
-
 func freeCArrRetHapModuleInfoV2(cArr: CArrRetHapModuleInfoV2) {
     if (cArr.head.isNotNull() && cArr.size != 0) {
         unsafe {
@@ -545,81 +504,7 @@ func freeCArrRetDependency(cArr: CArrRetDependency) {
     }
 }
 
-@C
-protected struct RetSkill {
-    protected RetSkill(
-        let actions: CArrString,
-        let entities: CArrString,
-        let uris: CArrSkillUri,
-        let domainVerify: Bool
-    ) {}
 
-    func free() {
-        this.actions.free()
-        this.entities.free()
-        freeRetArrSkillUri(this.uris)
-    }
-}
-
-@C
-protected struct RetSkillUri {
-    protected RetSkillUri(
-        let scheme: CString,
-        let host: CString,
-        let port: CString,
-        let path: CString,
-        let pathStartWith: CString,
-        let pathRegex: CString,
-        let uriType: CString,
-        let utd: CString,
-        let maxFileSupported: Int32,
-        let linkFeature: CString
-    ) {}
-
-    func free() {
-        unsafe {
-            LibC.free(this.scheme)
-            LibC.free(this.host)
-            LibC.free(this.port)
-            LibC.free(this.path)
-            LibC.free(this.pathStartWith)
-            LibC.free(this.pathRegex)
-            LibC.free(this.uriType)
-            LibC.free(this.utd)
-            LibC.free(this.linkFeature)
-        }
-    }
-}
-
-@C
-protected struct CArrSkillUri {
-    protected CArrSkillUri(
-        let head: CPointer<RetSkillUri>,
-        let size: Int64
-    ) {}
-}
-
-func freeRetArrSkillUri(cArr: CArrSkillUri) {
-    if (cArr.head.isNotNull() && cArr.size != 0) {
-        unsafe {
-            for (i in 0..cArr.size) {
-                cArr.head.read(i).free()
-            }
-            LibC.free<RetSkillUri>(cArr.head)
-        }
-    }
-}
-
-func freeCArrSkill(cArr: CArrSkill) {
-    if (cArr.head.isNotNull() && cArr.size != 0) {
-        unsafe {
-            for (i in 0..cArr.size) {
-                cArr.head.read(i).free()
-            }
-            LibC.free<RetSkill>(cArr.head)
-        }
-    }
-}
 
 @C
 protected struct RetDataItem {

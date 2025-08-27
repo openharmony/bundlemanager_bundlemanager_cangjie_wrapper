@@ -26,17 +26,22 @@
                 "global_cangjie_wrapper",
                 "arkui_cangjie_wrapper",
                 "hiviewdfx_cangjie_wrapper",
-                "ability_cangjie_wrapper",
                 "bundle_framework"
             ]
         },
         "build": {
             "sub_component": [
-                "//foundation/bundlemanager/bundlemanager_cangjie_wrapper/ohos/bundle_manager:ohos.bundle_manager"
+                "//foundation/bundlemanager/bundlemanager_cangjie_wrapper/ohos/bundle/bundle_manager:ohos.bundle.bundle_manager",
+                "//foundation/bundlemanager/bundlemanager_cangjie_wrapper/ohos/element_name:ohos.element_name",
+                "//foundation/bundlemanager/bundlemanager_cangjie_wrapper/ohos/metadata:ohos.metadata",
+                "//foundation/bundlemanager/bundlemanager_cangjie_wrapper/ohos/skill:ohos.skill"
             ],
             "inner_kits": [
               {
-                "name": "//foundation/bundlemanager/bundlemanager_cangjie_wrapper/ohos/bundle_manager:ohos.bundle_manager"
+                "name": "//foundation/bundlemanager/bundlemanager_cangjie_wrapper/ohos/bundle/bundle_manager:ohos.bundle.bundle_manager"
+              },
+              {
+                "name": "//foundation/bundlemanager/bundlemanager_cangjie_wrapper/ohos/element_name:ohos.element_name"
               }
             ],
             "test": []

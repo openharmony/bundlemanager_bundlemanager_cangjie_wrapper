@@ -13,30 +13,18 @@
 
 import("//build/cangjie/cjc.gni")
 
-ohos_cj_library("ohos.bundle_manager") {
+ohos_cangjie_shared_library("ohos.skill") {
   sources = [
-    "bundle_manager.cj",
-    "cj_bundle_enum.cj",
-    "cj_bundle_ffi.cj",
-    "cj_bundle_utils.cj",
-    "default_app_manager.cj",
-    "error_code.cj",
-    "error_message.cj",
+    "skill.cj",
+    "skill_ffi.cj"
   ]
 
   cj_external_deps = [
-    "cangjie_ark_interop:ohos.labels",
-    "arkui_cangjie_wrapper:ohos.base",
+    "cangjie_ark_interop:ohos.business_exception",
     "cangjie_ark_interop:ohos.ffi",
-    "hiviewdfx_cangjie_wrapper:ohos.hilog",
-    "global_cangjie_wrapper:ohos.resource_manager",
-  ]
-
-  external_deps = [
-    "bundle_framework:cj_bundle_manager_ffi"
+    "cangjie_ark_interop:ohos.labels",
   ]
 
   subsystem_name = "bundlemanager"
   part_name = "bundlemanager_cangjie_wrapper"
-  lib_name = "bundle_manager"
 }
