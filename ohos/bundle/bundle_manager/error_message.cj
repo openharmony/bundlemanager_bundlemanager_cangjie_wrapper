@@ -13,10 +13,10 @@
  * limitations under the License.
  */
 
-package ohos.bundle_manager
+package ohos.bundle.bundle_manager
 
 import std.collection.*
-import ohos.base.*
+import ohos.business_exception.{BusinessException, getUniversalErrorMsg, ERR_PARAMETER_ERROR}
 
 const ERR_MSG_BUNDLE_NOT_EXIST: String = "The specified bundle is not found."
 const ERR_MSG_MODULE_NOT_EXIST: String = "The specified module is not found."
