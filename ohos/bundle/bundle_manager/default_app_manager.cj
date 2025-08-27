@@ -13,74 +13,129 @@
  * limitations under the License.
  */
 
-package ohos.bundle_manager
+package ohos.bundle.bundle_manager
 
 import ohos.labels.*
 import ohos.ffi.*
-import ohos.base.*
+import ohos.business_exception.BusinessException
 
+/**
+ * The constant for application type.
+ *
+ * @relation export enum ApplicationType
+ */
 @!APILevel[
     21,
     stagemodelonly: true,
     syscap: "SystemCapability.BundleManager.BundleFramework.DefaultApp"
 ]
 public enum ApplicationType {
+    /**
+     * Default browser identifier.
+     *
+     * @relation BROWSER = 'Web Browser'
+     */
     @!APILevel[
         21,
         stagemodelonly: true,
         syscap: "SystemCapability.BundleManager.BundleFramework.DefaultApp"
     ]
-    BROWSER
+    Browser
+    /**
+     * Default image identifier.
+     *
+     * @relation IMAGE = 'Image Gallery'
+     */
     | @!APILevel[
         21,
         stagemodelonly: true,
         syscap: "SystemCapability.BundleManager.BundleFramework.DefaultApp"
     ]
-    IMAGE
+    Image
     | @!APILevel[
         21,
         stagemodelonly: true,
         syscap: "SystemCapability.BundleManager.BundleFramework.DefaultApp"
     ]
-    AUDIO
+    /**
+     * Default audio identifier.
+     *
+     * @relation AUDIO = 'Audio Player'
+     */
+    Audio
     | @!APILevel[
         21,
         stagemodelonly: true,
         syscap: "SystemCapability.BundleManager.BundleFramework.DefaultApp"
     ]
-    VIDEO
+    /**
+     * Default video identifier.
+     *
+     * @relation VIDEO = 'Video Player'
+     */
+    Video
+    /**
+     * Default PDF identifier.
+     *
+     * @relation PDF = 'PDF Viewer'
+     */
     | @!APILevel[
         21,
         stagemodelonly: true,
         syscap: "SystemCapability.BundleManager.BundleFramework.DefaultApp"
     ]
-    PDF
+    Pdf
+    /**
+     * Default Default word identifier.
+     *
+     * @relation WORD = 'Word Viewer'
+     */
     | @!APILevel[
         21,
         stagemodelonly: true,
         syscap: "SystemCapability.BundleManager.BundleFramework.DefaultApp"
     ]
-    WORD
+    Word
+    /**
+     * Default excel identifier.
+     *
+     * @relation EXCEL = 'Excel Viewer'
+     */
     | @!APILevel[
         21,
         stagemodelonly: true,
         syscap: "SystemCapability.BundleManager.BundleFramework.DefaultApp"
     ]
-    EXCEL
+    Excel
+    /**
+     * Default PPT identifier.
+     *
+     * @relation PPT = 'PPT Viewer'
+     */
     | @!APILevel[
         21,
         stagemodelonly: true,
         syscap: "SystemCapability.BundleManager.BundleFramework.DefaultApp"
     ]
-    PPT
+    Ppt
+    /**
+     * Default email identifier.
+     *
+     * @relation EMAIL = 'Email'
+     */
     | @!APILevel[
         21,
         stagemodelonly: true,
         syscap: "SystemCapability.BundleManager.BundleFramework.DefaultApp"
     ]
-    EMAIL
+    Email
     | ...
 
+    /**
+     * Default email identifier.
+     *
+     * @relation get the corresponding mapping value
+     */
     @!APILevel[
         21,
         stagemodelonly: true,
@@ -88,15 +143,15 @@ public enum ApplicationType {
     ]
     public func getValue(): String {
         match (this) {
-            case BROWSER => "Web Browser"
-            case IMAGE => "Image Gallery"
-            case AUDIO => "Audio Player"
-            case VIDEO => "Video Player"
-            case PDF => "PDF Viewer"
-            case WORD => "Word Viewer"
-            case EXCEL => "Excel Viewer"
-            case PPT => "PPT Viewer"
-            case EMAIL => "Email"
+            case Browser => "Web Browser"
+            case Image => "Image Gallery"
+            case Audio => "Audio Player"
+            case Video => "Video Player"
+            case Pdf => "PDF Viewer"
+            case Word => "Word Viewer"
+            case Excel => "Excel Viewer"
+            case Ppt => "PPT Viewer"
+            case Email => "Email"
             case _ => throw IllegalArgumentException("The type is not supported.")
         }
     }
@@ -104,21 +159,25 @@ public enum ApplicationType {
 
 foreign func FfiBundleManagerIsDefaultApplication(appType: CString): RetDataBool
 
+/**
+ * Default application manager.
+ *
+ * @relation declare namespace defaultAppManager
+ */
 @!APILevel[
     21,
     stagemodelonly: true,
     syscap: "SystemCapability.BundleManager.BundleFramework.DefaultApp"
 ]
 public class DefaultAppManager {
+    protected init() {}
     /**
      * Query whether the caller is default application based on type.
      *
-     * @param { string } type - Application type or a file type that conforms to media type format.
-     * @returns { boolean } Return true if caller is default application; return false otherwise.
-     * @throws { BusinessError } 401 - Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types.
-     * @throws { BusinessError } 801 - Capability not supported.
-     * @syscap SystemCapability.BundleManager.BundleFramework.DefaultApp
-     * @since 10
+     * @throws { BusinessException } 401 - Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types.
+     * @throws { BusinessException } 801 - Capability not supported.
+     *
+     * @relation function isDefaultApplicationSync(type: string): boolean
      */
     @!APILevel[
         21,

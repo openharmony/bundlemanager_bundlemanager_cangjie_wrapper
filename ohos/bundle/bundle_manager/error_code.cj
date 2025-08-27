@@ -13,7 +13,7 @@
  * limitations under the License.
  */
 
-package ohos.bundle_manager
+package ohos.bundle.bundle_manager
 
 const ERROR_BUNDLE_NOT_EXIST: Int32 = 17700001
 const ERROR_MODULE_NOT_EXIST: Int32 = 17700002
