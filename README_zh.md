@@ -4,10 +4,11 @@
 
 包管理仓颉接口是在 OpenHarmony 上基于包管理子系统能力之上封装的仓颉API。包管理子系统负责应用安装包的管理，提供安装包的信息查询能力。
 
-包管理子系统架构如下图所示：
+## 系统架构
+
+**图 1** 包管理仓颉架构图
 
 ![](figures/bundlemanager_cangjie_wrapper_architecture.png)
-
 
 ## 目录
 
@@ -36,6 +37,12 @@ foundation/bundlemanager/bundlemanager_cangjie_wrapper
   - 暂不支持安装包的卸载能力。
   - 暂不支持包信息存储能力。
 
+包管理相关API请参见[ohos.bundle.bundle_manager（bundleManager管理）](https://gitcode.com/openharmony-sig/arkcompiler_cangjie_ark_interop/blob/master/doc/API_Reference/source_zh_cn/apis/AbilityKit/cj-apis-bundle_manager.md)，相关指导请参见[程序框架服务开发指南](https://gitcode.com/openharmony-sig/arkcompiler_cangjie_ark_interop/tree/master/doc/Dev_Guide/source_zh_cn/application-models)。
+
+## 参与贡献
+
+欢迎广大开发者代码，文档等，具体的贡献流程和方式请参见[参与贡献](https://gitcode.com/openharmony/docs/blob/master/zh-cn/contribute/%E5%8F%82%E4%B8%8E%E8%B4%A1%E7%8C%AE.md)。
+
 ## 相关仓
 
-[bundlemanager_bundle_framework](https://gitee.com/openharmony/bundlemanager_bundle_framework/blob/master/README_zh.md)
+[bundlemanager_bundle_framework](https://gitee.com/openharmony/bundlemanager_bundle_framework)
