@@ -17,6 +17,7 @@ ohos_cangjie_shared_library("ohos.bundle.bundle_manager") {
   sources = [
     "ability_info.cj",
     "application_info.cj",
+    "bundle_flag.cj",
     "bundle_info.cj",
     "bundle_manager.cj",
     "cj_bundle_enum.cj",
