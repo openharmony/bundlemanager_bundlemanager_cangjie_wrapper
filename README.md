@@ -23,11 +23,12 @@ As shown in the architecture:
 ```
 foundation/bundlemanager/bundlemanager_cangjie_wrapper
 ├── figures           # architecture pictures
-└── ohos              # Cangjie Bundle Management code
-    ├── bundle        # Cangjie bundle code
-    ├── element_name  # Cangjie ElementName code
-    ├── metadata      # Cangjie Metadata code
-    └── skill         # Cangjie Skill code
+├── ohos              # Cangjie Bundle Management code
+│   ├── bundle        # Cangjie bundle code
+│   ├── element_name  # Cangjie ElementName code
+│   ├── metadata      # Cangjie Metadata code
+│   └── skill         # Cangjie Skill code
+└── test              # Cangjie test code
 ```
 
 
