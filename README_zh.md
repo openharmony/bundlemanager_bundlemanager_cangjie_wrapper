@@ -23,11 +23,12 @@
 ```
 foundation/bundlemanager/bundlemanager_cangjie_wrapper
 ├── figures               # 存放README中的架构图
-└── ohos                  # 仓颉包管理接口实现
-    ├── bundle            # 仓颉bundle接口实现
-    ├── element_name      # 仓颉ElementName接口实现
-    ├── metadata          # 仓颉Metadata接口实现
-    └── skill             # 仓颉Skill接口实现
+├── ohos                  # 仓颉包管理接口实现
+│   ├── bundle            # 仓颉bundle接口实现
+│   ├── element_name      # 仓颉ElementName接口实现
+│   ├── metadata          # 仓颉Metadata接口实现
+│   └── skill             # 仓颉Skill接口实现
+└── test                  # 仓颉测试代码
 ```
 
 ## 使用说明
