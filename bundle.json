@@ -24,7 +24,6 @@
             "components": [
                 "cangjie_ark_interop",
                 "global_cangjie_wrapper",
-                "arkui_cangjie_wrapper",
                 "hiviewdfx_cangjie_wrapper",
                 "bundle_framework"
             ]
