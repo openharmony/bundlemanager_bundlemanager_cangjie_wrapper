@@ -23,8 +23,7 @@ import ohos.labels.*
 * @relation export interface BundleInfo
 */
 @!APILevel[
-    21,
-    stagemodelonly: true,
+    22,
     syscap: "SystemCapability.BundleManager.BundleFramework.Core"
 ]
 public class BundleInfo {
@@ -35,8 +34,7 @@ public class BundleInfo {
     * @relation readonly name: string
     */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let name: String
@@ -46,8 +44,7 @@ public class BundleInfo {
     * @relation readonly vendor: string
     */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let vendor: String
@@ -57,8 +54,7 @@ public class BundleInfo {
     * @relation readonly versionCode: number
     */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let versionCode: UInt32
@@ -68,8 +64,7 @@ public class BundleInfo {
     * @relation readonly versionName: string
     */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let versionName: String
@@ -79,8 +74,7 @@ public class BundleInfo {
     * @relation readonly minCompatibleVersionCode: number
     */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let minCompatibleVersionCode: UInt32
@@ -90,8 +84,7 @@ public class BundleInfo {
     * @relation readonly targetVersion: number
     */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let targetVersion: UInt32
@@ -101,8 +94,7 @@ public class BundleInfo {
     * @relation readonly appInfo: ApplicationInfo
     */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let appInfo: ApplicationInfo
@@ -112,8 +104,7 @@ public class BundleInfo {
     * @relation readonly hapModulesInfo: Array<HapModuleInfo>
     */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let hapModulesInfo: Array<HapModuleInfo>
@@ -123,8 +114,7 @@ public class BundleInfo {
     * @relation readonly reqPermissionDetails: Array<ReqPermissionDetail>
     */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let reqPermissionDetails: Array<ReqPermissionDetail>
@@ -134,8 +124,7 @@ public class BundleInfo {
     * @relation readonly permissionGrantStates: Array<bundleManager.PermissionGrantState>
     */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let permissionGrantStates: Array<PermissionGrantState>
@@ -145,8 +134,7 @@ public class BundleInfo {
     * @relation readonly signatureInfo: SignatureInfo
     */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let signatureInfo: SignatureInfo
@@ -156,8 +144,7 @@ public class BundleInfo {
     * @relation readonly installTime: number
     */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let installTime: Int64
@@ -167,8 +154,7 @@ public class BundleInfo {
     * @relation readonly updateTime: number
     */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let updateTime: Int64
@@ -179,8 +165,7 @@ public class BundleInfo {
     * @relation readonly routerMap: Array<RouterItem>
     */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let routerMap: Array<RouterItem>
@@ -190,8 +175,7 @@ public class BundleInfo {
     * @relation readonly appIndex: number
     */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let appIndex: Int32
@@ -222,8 +206,7 @@ public class BundleInfo {
 * @relation export interface ReqPermissionDetail
 */
 @!APILevel[
-    21,
-    stagemodelonly: true,
+    22,
     syscap: "SystemCapability.BundleManager.BundleFramework.Core"
 ]
 public class ReqPermissionDetail {
@@ -233,8 +216,7 @@ public class ReqPermissionDetail {
      * @relation name: string
      */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public var name: String
@@ -244,8 +226,7 @@ public class ReqPermissionDetail {
      * @relation moduleName: string
      */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public var moduleName: String
@@ -255,8 +236,7 @@ public class ReqPermissionDetail {
      * @relation reason: string
      */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public var reason: String
@@ -266,8 +246,7 @@ public class ReqPermissionDetail {
      * @relation reasonId: number
      */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public var reasonId: Int32
@@ -277,8 +256,7 @@ public class ReqPermissionDetail {
      * @relation usedScene: UsedScene
      */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public var usedScene: UsedScene
@@ -306,8 +284,7 @@ public class ReqPermissionDetail {
 * @relation export interface UsedScene
 */
 @!APILevel[
-    21,
-    stagemodelonly: true,
+    22,
     syscap: "SystemCapability.BundleManager.BundleFramework.Core"
 ]
 public class UsedScene {
@@ -317,8 +294,7 @@ public class UsedScene {
     * @relation abilities: Array<string>
     */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public var abilities: Array<String>
@@ -328,8 +304,7 @@ public class UsedScene {
     * @relation when: string
     */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public var when: String
@@ -351,8 +326,7 @@ public class UsedScene {
 * @relation export interface SignatureInfo
 */
 @!APILevel[
-    21,
-    stagemodelonly: true,
+    22,
     syscap: "SystemCapability.BundleManager.BundleFramework.Core"
 ]
 public class SignatureInfo {
@@ -363,8 +337,7 @@ public class SignatureInfo {
      * @relation readonly appId: string
      */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let appId: String
@@ -373,8 +346,7 @@ public class SignatureInfo {
      * @relation readonly fingerprint: string
      */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let fingerprint: String
@@ -386,8 +358,7 @@ public class SignatureInfo {
      * @relation readonly appIdentifier: string
      */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let appIdentifier: String

@@ -25,8 +25,7 @@ import ohos.metadata.*
 * @relation export interface ApplicationInfo
 */
 @!APILevel[
-    21,
-    stagemodelonly: true,
+    22,
     syscap: "SystemCapability.BundleManager.BundleFramework.Core"
 ]
 public class ApplicationInfo {
@@ -36,8 +35,7 @@ public class ApplicationInfo {
     * @relation readonly name: string
     */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let name: String
@@ -47,8 +45,7 @@ public class ApplicationInfo {
     * @relation readonly description: string
     */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let description: String
@@ -58,8 +55,7 @@ public class ApplicationInfo {
     * @relation readonly descriptionId: number
     */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let descriptionId: Int32
@@ -69,8 +65,7 @@ public class ApplicationInfo {
     * @relation readonly enabled: boolean
     */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let enabled: Bool
@@ -80,8 +75,7 @@ public class ApplicationInfo {
     * @relation readonly label: string
     */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let label: String
@@ -91,8 +85,7 @@ public class ApplicationInfo {
     * @relation readonly labelId: number
     */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let labelId: Int32
@@ -102,8 +95,7 @@ public class ApplicationInfo {
     * @relation readonly icon: string
     */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let icon: String
@@ -113,8 +105,7 @@ public class ApplicationInfo {
     * @relation readonly iconId: number
     */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let iconId: Int32
@@ -124,8 +115,7 @@ public class ApplicationInfo {
     * @relation readonly process: string
     */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let process: String
@@ -135,8 +125,7 @@ public class ApplicationInfo {
     * @relation readonly permissions: Array<string>
     */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let permissions: Array<String>
@@ -146,8 +135,7 @@ public class ApplicationInfo {
     * @relation readonly codePath: string
     */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let codePath: String
@@ -157,8 +145,7 @@ public class ApplicationInfo {
     * @relation readonly metadataArray: Array<ModuleMetadata>
     */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let metadataArray: Array<ModuleMetadata>
@@ -168,8 +155,7 @@ public class ApplicationInfo {
     * @relation readonly removable: boolean
     */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let removable: Bool
@@ -179,8 +165,7 @@ public class ApplicationInfo {
     * @relation readonly accessTokenId: number
     */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let accessTokenId: UInt32
@@ -190,8 +175,7 @@ public class ApplicationInfo {
     * @relation readonly uid: number
     */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let uid: Int32
@@ -201,8 +185,7 @@ public class ApplicationInfo {
     * @relation readonly iconResource: Resource
     */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let iconResource: AppResource
@@ -212,8 +195,7 @@ public class ApplicationInfo {
     * @relation readonly labelResource: Resource
     */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let labelResource: AppResource
@@ -223,8 +205,7 @@ public class ApplicationInfo {
     * @relation readonly descriptionResource: Resource
     */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let descriptionResource: AppResource
@@ -234,8 +215,7 @@ public class ApplicationInfo {
     * @relation readonly appDistributionType: string
     */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let appDistributionType: String
@@ -245,8 +225,7 @@ public class ApplicationInfo {
     * @relation readonly appProvisionType: string
     */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let appProvisionType: String
@@ -256,8 +235,7 @@ public class ApplicationInfo {
     * @relation readonly systemApp: boolean
     */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let systemApp: Bool
@@ -267,8 +245,7 @@ public class ApplicationInfo {
     * @relation readonly bundleType: bundleManager.BundleType
     */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let bundleType: BundleType
@@ -278,8 +255,7 @@ public class ApplicationInfo {
     * @relation readonly debug: boolean
     */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let debug: Bool
@@ -289,8 +265,7 @@ public class ApplicationInfo {
     * @relation readonly dataUnclearable: boolean
     */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let dataUnclearable: Bool
@@ -300,8 +275,7 @@ public class ApplicationInfo {
     * @relation readonly cloudFileSyncEnabled: boolean
     */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let cloudFileSyncEnabled: Bool
@@ -311,8 +285,7 @@ public class ApplicationInfo {
     * @relation readonly nativeLibraryPath: string
     */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let nativeLibraryPath: String
@@ -322,8 +295,7 @@ public class ApplicationInfo {
     * @relation readonly multiAppMode: MultiAppMode
     */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let multiAppMode: MultiAppMode
@@ -333,8 +305,7 @@ public class ApplicationInfo {
     * @relation readonly appIndex: number
     */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let appIndex: Int32
@@ -344,8 +315,7 @@ public class ApplicationInfo {
     * @relation readonly installSource: string
     */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let installSource: String
@@ -355,8 +325,7 @@ public class ApplicationInfo {
     * @relation readonly releaseType: string
     */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let releaseType: String
@@ -401,8 +370,7 @@ public class ApplicationInfo {
 * @relation export interface ModuleMetadata
 */
 @!APILevel[
-    21,
-    stagemodelonly: true,
+    22,
     syscap: "SystemCapability.BundleManager.BundleFramework.Core"
 ]
 public class ModuleMetadata {
@@ -412,8 +380,7 @@ public class ModuleMetadata {
      * @relation readonly moduleName: string
      */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let moduleName: String
@@ -423,8 +390,7 @@ public class ModuleMetadata {
      * @relation readonly metadata: Array<Metadata>
      */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let metadata: Array<Metadata>
@@ -447,8 +413,7 @@ public class ModuleMetadata {
 * @relation export interface MultiAppMode
 */
 @!APILevel[
-    21,
-    stagemodelonly: true,
+    22,
     syscap: "SystemCapability.BundleManager.BundleFramework.Core"
 ]
 public class MultiAppMode {
@@ -458,8 +423,7 @@ public class MultiAppMode {
      * @relation readonly multiAppModeType: bundleManager.MultiAppModeType
      */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let multiAppModeType: MultiAppModeType
@@ -469,8 +433,7 @@ public class MultiAppMode {
      * @relation readonly maxCount: number
      */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let maxCount: Int32

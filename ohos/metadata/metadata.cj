@@ -25,8 +25,7 @@ import std.collection.ArrayList
 * @relation export interface Metadata
 */
 @!APILevel[
-    21,
-    stagemodelonly: true,
+    22,
     syscap: "SystemCapability.BundleManager.BundleFramework.Core"
 ]
 public class Metadata {
@@ -36,8 +35,7 @@ public class Metadata {
      * @relation name: string
      */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public var name: String
@@ -47,8 +45,7 @@ public class Metadata {
      * @relation value: string
      */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public var value: String
@@ -58,8 +55,7 @@ public class Metadata {
      * @relation resource: string
      */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public var resource: String
