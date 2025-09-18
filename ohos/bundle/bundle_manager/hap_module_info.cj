@@ -24,8 +24,7 @@ import ohos.metadata.*
 * @relation export interface HapModuleInfo
 */
 @!APILevel[
-    21,
-    stagemodelonly: true,
+    22,
     syscap: "SystemCapability.BundleManager.BundleFramework.Core"
 ]
 public class HapModuleInfo {
@@ -35,8 +34,7 @@ public class HapModuleInfo {
     * @relation readonly name: string
     */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let name: String
@@ -46,8 +44,7 @@ public class HapModuleInfo {
     * @relation readonly icon: string
     */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let icon: String
@@ -57,8 +54,7 @@ public class HapModuleInfo {
     * @relation readonly iconId: number
     */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let iconId: Int32
@@ -68,8 +64,7 @@ public class HapModuleInfo {
     * @relation readonly label: string
     */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let label: String
@@ -79,8 +74,7 @@ public class HapModuleInfo {
     * @relation readonly labelId: number
     */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let labelId: Int32
@@ -90,8 +84,7 @@ public class HapModuleInfo {
     * @relation readonly description: string
     */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let description: String
@@ -101,8 +94,7 @@ public class HapModuleInfo {
     * @relation readonly descriptionId: number
     */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let descriptionId: Int32
@@ -112,8 +104,7 @@ public class HapModuleInfo {
     * @relation readonly mainElementName: string
     */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let mainElementName: String
@@ -123,8 +114,7 @@ public class HapModuleInfo {
     * @relation readonly abilitiesInfo: Array<AbilityInfo>
     */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let abilitiesInfo: Array<AbilityInfo>
@@ -134,8 +124,7 @@ public class HapModuleInfo {
     * @relation readonly extensionAbilitiesInfo: Array<ExtensionAbilityInfo>
     */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let extensionAbilitiesInfo: Array<ExtensionAbilityInfo>
@@ -145,8 +134,7 @@ public class HapModuleInfo {
     * @relation readonly metadata: Array<Metadata>
     */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let metadata: Array<Metadata>
@@ -156,8 +144,7 @@ public class HapModuleInfo {
     * @relation readonly deviceTypes: Array<string>
     */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let deviceTypes: Array<String>
@@ -167,8 +154,7 @@ public class HapModuleInfo {
     * @relation readonly installationFree: boolean
     */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let installationFree: Bool
@@ -178,8 +164,7 @@ public class HapModuleInfo {
     * @relation readonly hashValue: string
     */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let hashValue: String
@@ -189,8 +174,7 @@ public class HapModuleInfo {
     * @relation readonly type: bundleManager.ModuleType
     */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let moduleType: ModuleType
@@ -200,8 +184,7 @@ public class HapModuleInfo {
     * @relation readonly preloads: Array<PreloadItem>
     */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let preloads: Array<PreloadItem>
@@ -211,8 +194,7 @@ public class HapModuleInfo {
     * @relation readonly dependencies: Array<Dependency>
     */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let dependencies: Array<Dependency>
@@ -222,8 +204,7 @@ public class HapModuleInfo {
     * @relation readonly fileContextMenuConfig: string
     */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let fileContextMenuConfig: String
@@ -233,8 +214,7 @@ public class HapModuleInfo {
     * @relation readonly routerMap: Array<RouterItem>
     */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let routerMap: Array<RouterItem>
@@ -244,8 +224,7 @@ public class HapModuleInfo {
     * @relation readonly codePath: string
     */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let codePath: String
@@ -255,8 +234,7 @@ public class HapModuleInfo {
     * @relation readonly nativeLibraryPath: string
     */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let nativeLibraryPath: String
@@ -292,8 +270,7 @@ public class HapModuleInfo {
 * @relation export interface DataItem
 */
 @!APILevel[
-    21,
-    stagemodelonly: true,
+    22,
     syscap: "SystemCapability.BundleManager.BundleFramework.Core"
 ]
 public class DataItem {
@@ -303,8 +280,7 @@ public class DataItem {
     * @relation readonly key: string
     */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let key: String
@@ -314,8 +290,7 @@ public class DataItem {
     * @relation readonly value: string
     */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let value: String
@@ -332,8 +307,7 @@ public class DataItem {
 * @relation export interface Dependency
 */
 @!APILevel[
-    21,
-    stagemodelonly: true,
+    22,
     syscap: "SystemCapability.BundleManager.BundleFramework.Core"
 ]
 public class Dependency {
@@ -343,8 +317,7 @@ public class Dependency {
     * @relation readonly bundleName: string
     */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let bundleName: String
@@ -354,8 +327,7 @@ public class Dependency {
     * @relation readonly moduleName: string
     */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let moduleName: String
@@ -365,8 +337,7 @@ public class Dependency {
     * @relation readonly versionCode: number
     */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let versionCode: UInt32
@@ -384,8 +355,7 @@ public class Dependency {
 * @relation export interface PreloadItem
 */
 @!APILevel[
-    21,
-    stagemodelonly: true,
+    22,
     syscap: "SystemCapability.BundleManager.BundleFramework.Core"
 ]
 public class PreloadItem {
@@ -395,8 +365,7 @@ public class PreloadItem {
     * @relation readonly moduleName: string
     */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let moduleName: String
@@ -412,8 +381,7 @@ public class PreloadItem {
 * @relation export interface RouterItem
 */
 @!APILevel[
-    21,
-    stagemodelonly: true,
+    22,
     syscap: "SystemCapability.BundleManager.BundleFramework.Core"
 ]
 public class RouterItem {
@@ -423,8 +391,7 @@ public class RouterItem {
     * @relation readonly name: string
     */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let name: String
@@ -434,8 +401,7 @@ public class RouterItem {
     * @relation readonly pageSourceFile: string
     */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let pageSourceFile: String
@@ -445,8 +411,7 @@ public class RouterItem {
     * @relation readonly buildFunction: string
     */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let buildFunction: String
@@ -456,8 +421,7 @@ public class RouterItem {
     * @relation readonly data: Array<DataItem>
     */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let data: Array<DataItem>
@@ -467,8 +431,7 @@ public class RouterItem {
     * @relation readonly customData: string
     */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let customData: String

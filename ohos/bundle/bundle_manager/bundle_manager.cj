@@ -61,8 +61,7 @@ func checkToCache(uid: Int32, callingUid: Int32, query: BMQuery, bundleInfo: Bun
  * @relation declare namespace bundleManager
  */
 @!APILevel[
-    21,
-    stagemodelonly: true,
+    22,
     syscap: "SystemCapability.BundleManager.BundleFramework.Core"
 ]
 public class BundleManager {
@@ -76,8 +75,7 @@ public class BundleManager {
      * @relation function getBundleInfoForSelfSync(bundleFlags: number): BundleInfo
      */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public static func getBundleInfoForSelf(bundleFlags: Int32): BundleInfo {
@@ -115,8 +113,7 @@ public class BundleManager {
      * @relation function getProfileByExtensionAbilitySync(moduleName: string, extensionAbilityName: string, metadataName?: string): Array<string>
      */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public static func getProfileByExtensionAbility(moduleName: String, extensionAbilityName: String,
@@ -156,8 +153,7 @@ public class BundleManager {
      * @relation function getProfileByAbilitySync(moduleName: string, abilityName: string, metadataName?: string): Array<string>
      */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public static func getProfileByAbility(moduleName: String, abilityName: String, metadataName!: String = ""): Array<String> {
@@ -191,8 +187,7 @@ public class BundleManager {
      * @relation function canOpenLink(link: string): boolean
      */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public static func canOpenLink(link: String): Bool {
