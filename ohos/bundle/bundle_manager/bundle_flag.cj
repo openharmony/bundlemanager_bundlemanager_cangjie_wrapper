@@ -24,8 +24,7 @@ import ohos.labels.*
 * @relation enum BundleFlag
 */
 @!APILevel[
-    21,
-    stagemodelonly: true,
+    22,
     syscap: "SystemCapability.BundleManager.BundleFramework.Core"
 ]
 public class BundleFlag {
@@ -36,8 +35,7 @@ public class BundleFlag {
      * @relation GET_BUNDLE_INFO_DEFAULT = 0x00000000
      */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public static const GET_BUNDLE_INFO_DEFAULT: Int32 = 0x00000000
@@ -48,8 +46,7 @@ public class BundleFlag {
      * @relation GET_BUNDLE_INFO_WITH_APPLICATION = 0x00000001
      */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public static const GET_BUNDLE_INFO_WITH_APPLICATION: Int32 = 0x00000001
@@ -60,8 +57,7 @@ public class BundleFlag {
      * @relation GET_BUNDLE_INFO_WITH_HAP_MODULE = 0x00000002
      */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public static const GET_BUNDLE_INFO_WITH_HAP_MODULE: Int32 = 0x00000002
@@ -74,8 +70,7 @@ public class BundleFlag {
      * @relation GET_BUNDLE_INFO_WITH_ABILITY = 0x00000004
      */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public static const GET_BUNDLE_INFO_WITH_ABILITY: Int32 = 0x00000004
@@ -88,8 +83,7 @@ public class BundleFlag {
      * @relation GET_BUNDLE_INFO_WITH_EXTENSION_ABILITY = 0x00000008
      */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public static const GET_BUNDLE_INFO_WITH_EXTENSION_ABILITY: Int32 = 0x00000008
@@ -100,8 +94,7 @@ public class BundleFlag {
      * @relation GET_BUNDLE_INFO_WITH_REQUESTED_PERMISSION = 0x00000010
      */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public static const GET_BUNDLE_INFO_WITH_REQUESTED_PERMISSION: Int32 = 0x00000010
@@ -116,8 +109,7 @@ public class BundleFlag {
      * @relation GET_BUNDLE_INFO_WITH_METADATA = 0x00000020
      */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public static const GET_BUNDLE_INFO_WITH_METADATA: Int32 = 0x00000020
@@ -129,8 +121,7 @@ public class BundleFlag {
      * @relation GET_BUNDLE_INFO_WITH_DISABLE = 0x00000040
      */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public static const GET_BUNDLE_INFO_WITH_DISABLE: Int32 = 0x00000040
@@ -141,8 +132,7 @@ public class BundleFlag {
      * @relation GET_BUNDLE_INFO_WITH_SIGNATURE_INFO = 0x00000080
      */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public static const GET_BUNDLE_INFO_WITH_SIGNATURE_INFO: Int32 = 0x00000080
@@ -155,8 +145,7 @@ public class BundleFlag {
      * @relation GET_BUNDLE_INFO_WITH_MENU = 0x00000100
      */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public static const GET_BUNDLE_INFO_WITH_MENU: Int32 = 0x00000100
@@ -169,8 +158,7 @@ public class BundleFlag {
      * @relation GET_BUNDLE_INFO_WITH_ROUTER_MAP = 0x00000200
      */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public static const GET_BUNDLE_INFO_WITH_ROUTER_MAP: Int32 = 0x00000200
@@ -184,8 +172,7 @@ public class BundleFlag {
      * @relation GET_BUNDLE_INFO_WITH_SKILL = 0x00000800
      */
     @!APILevel[
-        21,
-        stagemodelonly: true,
+        22,
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public static const GET_BUNDLE_INFO_WITH_SKILL: Int32 = 0x00000800
