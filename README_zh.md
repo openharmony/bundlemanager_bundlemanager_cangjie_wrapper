@@ -12,23 +12,30 @@
 
 如架构图所示：
 
-- 获取当前应用包信息：提供当前应用包信息的查询能力。
-- 获取自身配置文件字符串：提供UIAbility组件信息、ExtensionAbility组件信息的查询能力，返回json格式字符串。
-- 查询链接是否可以打开：提供查询给定的链接是否可以打开的能力。
-- 仓颉包管理FFI接口定义：负责定义C互操作仓颉接口，用于实现仓颉包管理能力。
-- 包管理基础框架模块：负责提供包管理基础功能，封装C接口提供给仓颉进行互操作。
+- 应用信息查询能力：提供当前应用包信息的查询能力。提供UIAbility组件信息、ExtensionAbility组件信息的查询能力，返回json格式字符串。提供查询给定的链接是否可以打开的能力。
+- ElementName信息: ElementName信息的定义。包含设备ID，应用Bundle名称等信息。
+- 元数据对象: 元数据对象的定义。包含元数据名称、元数据值和元数据资源。
+- Skill标签对象：Skill标签对象。包含Skill接收的actions、entities、uris、domainVerify集合。
+- 仓颉包管理FFI接口定义：负责定义C语言互操作仓颉接口，用于实现仓颉包管理能力。
+- 包管理基础框架模块：负责提供包管理基础功能，封装C语言接口提供给仓颉进行互操作。
+- 仓颉互操作API公共仓：提供仓颉标签与异常类的定义。
+- DFX仓颉接口：提供日志系统，使应用/服务可以按照指定级别、标识和格式字符串输出日志内容。
+- 全球化仓颉接口：提供应用资源获取的能力。
 
 ## 目录
 
 ```
 foundation/bundlemanager/bundlemanager_cangjie_wrapper
-├── figures               # 存放README中的架构图
-├── ohos                  # 仓颉包管理接口实现
-│   ├── bundle            # 仓颉bundle接口实现
-│   ├── element_name      # 仓颉ElementName接口实现
-│   ├── metadata          # 仓颉Metadata接口实现
-│   └── skill             # 仓颉Skill接口实现
-└── test                  # 仓颉测试代码
+├── figures                 # 存放README中的架构图
+├── ohos                    # 仓颉包管理接口实现
+│   ├── bundle              # 仓颉bundle接口实现
+│   │   ├── BUILD.gn
+│   │   ├── bundle.cj
+│   │   └── bundle_manager  # 仓颉bundle基础功能实现
+│   ├── element_name        # 包管理依赖元素ElementName类的实现
+│   ├── metadata            # 包管理依赖元素Metadata类的实现
+│   └── skill               # 包管理依赖元素Skill类的实现
+└── test                    # 仓颉测试代码
 ```
 
 ## 使用说明
@@ -57,8 +64,10 @@ foundation/bundlemanager/bundlemanager_cangjie_wrapper
 
 ## 相关仓
 
-[bundlemanager_bundle_framework](https://gitee.com/openharmony/bundlemanager_bundle_framework)
+[bundlemanager_bundle_framework](https://gitcode.com/openharmony/bundlemanager_bundle_framework)
 
 [arkcompiler_cangjie_ark_interop](https://gitcode.com/openharmony-sig/arkcompiler_cangjie_ark_interop)
+
+[hiviewdfx_hiviewdfx_cangjie_wrapper](https://gitcode.com/openharmony-sig/hiviewdfx_hiviewdfx_cangjie_wrapper)
 
 [global_global_cangjie_wrapper](https://gitcode.com/openharmony-sig/global_global_cangjie_wrapper)
