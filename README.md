@@ -12,23 +12,30 @@ The Cangjie API is a Cangjie API encapsulated on OpenHarmony based on the capabi
 
 As shown in the architecture:
 
-- getBundleInfoForSelf: Obtains the bundle information.
-- getProfileByAbility  getProfileByExtensionAbility: Obtains the JSON string array of the current application's configuration.
-- canOpenLink: Checks whether a link can be opened.
+- BundleManager: Obtains the bundle information. Obtains the JSON string array of the current application's configuration. Checks whether a link can be opened.
+- ElementName: Definition of ElementName. Includes device ID, application Bundle name, and other information.
+- Metadata: Definition of Metadata. Includes metadata name, metadata value, and metadata resources.
+- Skill: Skill object. Includes the collection of actions, entities, uris, and domainVerify that Skill receives.
 - Cangjie Bundlemanager FFI interface: Based on cross-language interoperability via C interfaces to implement bundlemanager Cangjie API.
 - bundle_framework: It is responsible for providing basic functions of bundlemanager, and encapsulates C interfaces to provide interoperability for Cangjie.
+- Cangjie Interop API Public Repository: Provides definitions for APILevel and BusinessException classes.
+- hiviewdfx_cangjie_wrapper: Provides a logging system that allows applications/services to output log content according to specified levels, identifiers, and format strings.
+- global_cangjie_wrapper: Provides the capability to access application resources.
 
 ## Directory Structure
 
 ```
 foundation/bundlemanager/bundlemanager_cangjie_wrapper
-├── figures           # architecture pictures
-├── ohos              # Cangjie Bundle Management code
-│   ├── bundle        # Cangjie bundle code
-│   ├── element_name  # Cangjie ElementName code
-│   ├── metadata      # Cangjie Metadata code
-│   └── skill         # Cangjie Skill code
-└── test              # Cangjie test code
+├── figures                   # architecture pictures
+├── ohos                      # Cangjie Bundle Management code
+│   ├── bundle                # Cangjie bundle code
+│   │   ├── BUILD.gn
+│   │   ├── bundle.cj
+│   │   └── bundle_manager    # Cangjie bundle basic function implementation
+│   ├── element_name          # Cangjie ElementName code
+│   ├── metadata              # Cangjie Metadata code
+│   └── skill                 # Cangjie Skill code
+└── test                      # Cangjie test code
 ```
 
 
@@ -58,8 +65,10 @@ Developers are welcome to contribute code, documentation, etc. For specific cont
 
 ## Repositories Involved
 
-[bundlemanager_bundle_framework](https://gitee.com/openharmony/bundlemanager_bundle_framework)
+[bundlemanager_bundle_framework](https://gitcode.com/openharmony/bundlemanager_bundle_framework)
 
 [arkcompiler_cangjie_ark_interop](https://gitcode.com/openharmony-sig/arkcompiler_cangjie_ark_interop)
+
+[hiviewdfx_hiviewdfx_cangjie_wrapper](https://gitcode.com/openharmony-sig/hiviewdfx_hiviewdfx_cangjie_wrapper)
 
 [global_global_cangjie_wrapper](https://gitcode.com/openharmony-sig/global_global_cangjie_wrapper)
