@@ -18,9 +18,7 @@ As shown in the architecture:
 - Skill: Skill object. Includes the collection of actions, entities, uris, and domainVerify that Skill receives.
 - Cangjie Bundlemanager FFI interface: Based on cross-language interoperability via C interfaces to implement bundlemanager Cangjie API.
 - bundle_framework: It is responsible for providing basic functions of bundlemanager, and encapsulates C interfaces to provide interoperability for Cangjie.
-- Cangjie Interop API Public Repository: Provides definitions for APILevel and BusinessException classes.
-- hiviewdfx_cangjie_wrapper: Provides a logging system that allows applications/services to output log content according to specified levels, identifiers, and format strings.
-- global_cangjie_wrapper: Provides the capability to access application resources.
+- ability_runtime: It is responsible for providing basic functions of ability.
 
 ## Directory Structure
 
@@ -36,6 +34,8 @@ foundation/bundlemanager/bundlemanager_cangjie_wrapper
 │   ├── metadata              # Cangjie Metadata code
 │   └── skill                 # Cangjie Skill code
 └── test                      # Cangjie test code
+    └── APILevel22
+        └── bundle_manager    # Cangjie bundle test code
 ```
 
 
@@ -66,6 +66,8 @@ Developers are welcome to contribute code, documentation, etc. For specific cont
 ## Repositories Involved
 
 [bundlemanager_bundle_framework](https://gitcode.com/openharmony/bundlemanager_bundle_framework)
+
+[ability_ability_runtime](https://gitcode.com/openharmony/ability_ability_runtime)
 
 [arkcompiler_cangjie_ark_interop](https://gitcode.com/openharmony-sig/arkcompiler_cangjie_ark_interop)
 
