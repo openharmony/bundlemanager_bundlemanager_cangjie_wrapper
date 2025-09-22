@@ -18,9 +18,7 @@
 - Skill标签对象：Skill标签对象。包含Skill接收的actions、entities、uris、domainVerify集合。
 - 仓颉包管理FFI接口定义：负责定义C语言互操作仓颉接口，用于实现仓颉包管理能力。
 - 包管理基础框架模块：负责提供包管理基础功能，封装C语言接口提供给仓颉进行互操作。
-- 仓颉互操作API公共仓：提供仓颉标签与异常类的定义。
-- DFX仓颉接口：提供日志系统，使应用/服务可以按照指定级别、标识和格式字符串输出日志内容。
-- 全球化仓颉接口：提供应用资源获取的能力。
+- 元能力基础框架模块：负责提供元能力基础功能。
 
 ## 目录
 
@@ -36,6 +34,8 @@ foundation/bundlemanager/bundlemanager_cangjie_wrapper
 │   ├── metadata            # 包管理依赖元素Metadata类的实现
 │   └── skill               # 包管理依赖元素Skill类的实现
 └── test                    # 仓颉测试代码
+    └── APILevel22
+        └── bundle_manager  # 仓颉包管理测试用例
 ```
 
 ## 使用说明
@@ -47,7 +47,7 @@ foundation/bundlemanager/bundlemanager_cangjie_wrapper
   - 提供给定的链接是否可以打开的查询能力。
 
 
-与ArkTS相比，暂不支持以下功能：
+与ArkTS提供的API能力相比，暂不支持以下功能：
 
   - 暂不支持获取其他应用包的信息。
   - 暂不支持安装包的安装能力。
@@ -56,7 +56,7 @@ foundation/bundlemanager/bundlemanager_cangjie_wrapper
   - 暂不支持包信息存储能力。
 
 
-包管理相关API请参见[ohos.bundle.bundle_manager（bundleManager管理）](https://gitcode.com/openharmony-sig/arkcompiler_cangjie_ark_interop/blob/master/doc/API_Reference/source_zh_cn/apis/AbilityKit/cj-apis-bundle_manager.md)，相关指导请参见[程序框架服务开发指南](https://gitcode.com/openharmony-sig/arkcompiler_cangjie_ark_interop/blob/master/doc/Dev_Guide/source_zh_cn/application-models/cj-abilitykit-overview.md)。
+包管理相关API请参见[仓颉包管理API文档](https://gitcode.com/openharmony-sig/arkcompiler_cangjie_ark_interop/blob/master/doc/API_Reference/source_zh_cn/apis/AbilityKit/cj-apis-bundle_manager.md)，相关指导请参见[程序框架服务开发指南](https://gitcode.com/openharmony-sig/arkcompiler_cangjie_ark_interop/blob/master/doc/Dev_Guide/source_zh_cn/application-models/cj-abilitykit-overview.md)。
 
 ## 参与贡献
 
@@ -65,6 +65,8 @@ foundation/bundlemanager/bundlemanager_cangjie_wrapper
 ## 相关仓
 
 [bundlemanager_bundle_framework](https://gitcode.com/openharmony/bundlemanager_bundle_framework)
+
+[ability_ability_runtime](https://gitcode.com/openharmony/ability_ability_runtime)
 
 [arkcompiler_cangjie_ark_interop](https://gitcode.com/openharmony-sig/arkcompiler_cangjie_ark_interop)
 
