@@ -27,8 +27,6 @@ foundation/bundlemanager/bundlemanager_cangjie_wrapper
 ├── figures                   # architecture pictures
 ├── ohos                      # Cangjie Bundle Management code
 │   ├── bundle                # Cangjie bundle code
-│   │   ├── BUILD.gn
-│   │   ├── bundle.cj
 │   │   └── bundle_manager    # Cangjie bundle basic function implementation
 │   ├── element_name          # Cangjie ElementName code
 │   ├── metadata              # Cangjie Metadata code

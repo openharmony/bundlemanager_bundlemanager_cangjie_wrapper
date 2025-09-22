@@ -26,10 +26,8 @@
 foundation/bundlemanager/bundlemanager_cangjie_wrapper
 ├── figures                 # 存放README中的架构图
 ├── ohos                    # 仓颉包管理接口实现
-│   ├── bundle              # 仓颉bundle接口实现
-│   │   ├── BUILD.gn
-│   │   ├── bundle.cj
-│   │   └── bundle_manager  # 仓颉bundle基础功能实现
+│   ├── bundle              # 仓颉包管理基础功能实现
+│   │   └── bundle_manager  # 仓颉应用信息查询能力实现
 │   ├── element_name        # 包管理依赖元素ElementName类的实现
 │   ├── metadata            # 包管理依赖元素Metadata类的实现
 │   └── skill               # 包管理依赖元素Skill类的实现
