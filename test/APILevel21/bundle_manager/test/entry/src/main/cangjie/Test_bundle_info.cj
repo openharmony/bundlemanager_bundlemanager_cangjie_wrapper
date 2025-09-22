@@ -15,10 +15,10 @@
 
 package ohos_app_cangjie_entry
 
-import kit.CoreFileKit.*
-import kit.AbilityKit.{BundleManager, BundleInfo, Metadata, UsedScene, DefaultAppManager, ApplicationType,
+import CoreFileKit.*
+import AbilityKit.{BundleManager, BundleInfo, Metadata, UsedScene, DefaultAppManager, ApplicationType,
     ReqPermissionDetail, BundleFlag}
-import kit.AbilityKit.{BundleType,
+import AbilityKit.{BundleType,
     PermissionGrantState, DisplayOrientation, LaunchType, ExtensionAbilityType, ModuleType,
     MultiAppModeType}
 import std.unittest.testmacro.*
@@ -26,7 +26,7 @@ import std.unittest.*
 import std.unittest.common.*
 import std.unittest.testmacro.*
 import ohos.base.*
-import kit.PerformanceAnalysisKit.Hilog
+import PerformanceAnalysisKit.Hilog
 
 @Test
 class Test_bundle_info {
