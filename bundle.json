@@ -25,7 +25,8 @@
                 "cangjie_ark_interop",
                 "global_cangjie_wrapper",
                 "hiviewdfx_cangjie_wrapper",
-                "bundle_framework"
+                "bundle_framework",
+                "ability_runtime"
             ]
         },
         "build": {
