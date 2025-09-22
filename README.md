@@ -18,7 +18,7 @@ As shown in the architecture:
 - Skill: Skill object. Includes the collection of actions, entities, uris, and domainVerify that Skill receives.
 - Cangjie Bundlemanager FFI interface: Based on cross-language interoperability via C interfaces to implement bundlemanager Cangjie API.
 - bundle_framework: It is responsible for providing basic functions of bundlemanager, and encapsulates C interfaces to provide interoperability for Cangjie.
-- ability_runtime: It is responsible for providing basic functions of ability.
+- ability_runtime: Encapsulates the C language definition of ElementName to provide interoperability with Cangjie.
 
 ## Directory Structure
 
@@ -57,7 +57,7 @@ The following features are not provided yet:
   - Store bundle information.
 
 
-For Bundlemanager-related APIs, please refer to [ohos.bundle.bundle_manager (BundleManager Management)](https://gitcode.com/openharmony-sig/arkcompiler_cangjie_ark_interop/blob/master/doc/API_Reference/source_en/apis/AbilityKit/cj-apis-bundle_manager.md). For relevant guidance, please refer to [Ability Kit Guide](https://gitcode.com/openharmony-sig/arkcompiler_cangjie_ark_interop/blob/master/doc/Dev_Guide/source_en/application-models/cj-abilitykit-overview.md).
+For Bundlemanager-related APIs, please refer to [ohos.bundle.bundle_manager (BundleManager Management)](https://gitcode.com/openharmony-sig/arkcompiler_cangjie_ark_interop/blob/master/doc/API_Reference/source_en/apis/AbilityKit/cj-apis-bundle_manager.md).
 
 ## Code Contribution
 
