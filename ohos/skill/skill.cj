@@ -24,7 +24,7 @@ import ohos.labels.*
 * @relation export interface Skill
 */
 @!APILevel[
-    22,
+    since: "22",
     syscap: "SystemCapability.BundleManager.BundleFramework.Core"
 ]
 public class Skill {
@@ -34,7 +34,7 @@ public class Skill {
     * @relation readonly actions: Array<string>
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let actions: Array<String>
@@ -44,7 +44,7 @@ public class Skill {
     * @relation readonly entities: Array<string>
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let entities: Array<String>
@@ -54,7 +54,7 @@ public class Skill {
     * @relation readonly uris: Array<SkillUri>
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let uris: Array<SkillUri>
@@ -64,7 +64,7 @@ public class Skill {
     * @relation readonly domainVerify: boolean
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let domainVerify: Bool
@@ -83,7 +83,7 @@ public class Skill {
 * @relation export interface SkillUri
 */
 @!APILevel[
-    22,
+    since: "22",
     syscap: "SystemCapability.BundleManager.BundleFramework.Core"
 ]
 public class SkillUri {
@@ -93,7 +93,7 @@ public class SkillUri {
     * @relation readonly scheme: string
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let scheme: String
@@ -103,7 +103,7 @@ public class SkillUri {
     * @relation readonly host: string
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let host: String
@@ -113,7 +113,7 @@ public class SkillUri {
     * @relation readonly port: number
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let port: Int32
@@ -123,7 +123,7 @@ public class SkillUri {
     * @relation readonly path: string
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let path: String
@@ -133,7 +133,7 @@ public class SkillUri {
     * @relation readonly pathStartWith: string
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let pathStartWith: String
@@ -143,7 +143,7 @@ public class SkillUri {
     * @relation readonly pathRegex: string
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let pathRegex: String
@@ -153,7 +153,7 @@ public class SkillUri {
     * @relation readonly type: string
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let uriType: String
@@ -163,7 +163,7 @@ public class SkillUri {
     * @relation readonly utd: string
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let utd: String
@@ -173,7 +173,7 @@ public class SkillUri {
     * @relation readonly maxFileSupported: number
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let maxFileSupported: Int32
@@ -183,7 +183,7 @@ public class SkillUri {
     * @relation readonly linkFeature: string
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let linkFeature: String
