@@ -31,7 +31,7 @@ import PerformanceAnalysisKit.Hilog
 @Test
 class Test_bundle_info {
     @TestCase
-    @Tag[APILevel21, TestLevel0]
+    @Tag[APILevel22, TestLevel0]
     func test_bundleInfo_00(): Unit {
         let bundleInfo = getFullBundleInfo()
         @Expect(true)
@@ -44,7 +44,7 @@ class Test_bundle_info {
     }
 
     @TestCase
-    @Tag[APILevel21, TestLevel0]
+    @Tag[APILevel22, TestLevel0]
     func test_bundle_ApplicationType(): Unit {
         @Expect(ApplicationType.Browser.getValue(), "Web Browser")
         @Expect(ApplicationType.Image.getValue(), "Image Gallery")
@@ -58,7 +58,7 @@ class Test_bundle_info {
     }
 
     @TestCase
-    @Tag[APILevel21, TestLevel0]
+    @Tag[APILevel22, TestLevel0]
     func test_isDefaultApplication(): Unit {
         try {
             DefaultAppManager.isDefaultApplication("Web Browser")
@@ -69,7 +69,7 @@ class Test_bundle_info {
     }
 
     @TestCase
-    @Tag[APILevel21, TestLevel0]
+    @Tag[APILevel22, TestLevel0]
     func test_getProfileByExtensionAbility() {
         try {
             let moduleName = "entry"
@@ -86,7 +86,7 @@ class Test_bundle_info {
     }
 
     @TestCase
-    @Tag[APILevel21, TestLevel0]
+    @Tag[APILevel22, TestLevel0]
     func test_getProfileByAbility() {
         try {
             let moduleName = "entry"
@@ -102,14 +102,14 @@ class Test_bundle_info {
     }
 
     @TestCase
-    @Tag[APILevel21, TestLevel0]
+    @Tag[APILevel22, TestLevel0]
     func testGetBundleInfoForSelfTwice() {
         getFullBundleInfo()
         getFullBundleInfo()
     }
 
     @TestCase
-    @Tag[APILevel21, TestLevel0]
+    @Tag[APILevel22, TestLevel0]
     func test_isDefaultApplication_BROWSER(): Unit {
         try {
             let tag = DefaultAppManager.isDefaultApplication(ApplicationType
@@ -123,7 +123,7 @@ class Test_bundle_info {
     }
 
     @TestCase
-    @Tag[APILevel21, TestLevel0]
+    @Tag[APILevel22, TestLevel0]
     func test_isDefaultApplication_IMAGE(): Unit {
         try {
             let tag = DefaultAppManager.isDefaultApplication(ApplicationType
@@ -137,7 +137,7 @@ class Test_bundle_info {
     }
 
     @TestCase
-    @Tag[APILevel21, TestLevel0]
+    @Tag[APILevel22, TestLevel0]
     func test_isDefaultApplication_AUDIO(): Unit {
         try {
             let tag = DefaultAppManager.isDefaultApplication(ApplicationType
@@ -151,7 +151,7 @@ class Test_bundle_info {
     }
 
     @TestCase
-    @Tag[APILevel21, TestLevel0]
+    @Tag[APILevel22, TestLevel0]
     func test_isDefaultApplication_VIDEO(): Unit {
         try {
             let tag = DefaultAppManager.isDefaultApplication(ApplicationType
@@ -165,7 +165,7 @@ class Test_bundle_info {
     }
 
     @TestCase
-    @Tag[APILevel21, TestLevel0]
+    @Tag[APILevel22, TestLevel0]
     func test_isDefaultApplication_PDF(): Unit {
         try {
             let tag = DefaultAppManager.isDefaultApplication(ApplicationType
@@ -179,7 +179,7 @@ class Test_bundle_info {
     }
 
     @TestCase
-    @Tag[APILevel21, TestLevel0]
+    @Tag[APILevel22, TestLevel0]
     func test_isDefaultApplication_WORD(): Unit {
         try {
             let tag = DefaultAppManager.isDefaultApplication(ApplicationType
@@ -193,7 +193,7 @@ class Test_bundle_info {
     }
 
     @TestCase
-    @Tag[APILevel21, TestLevel0]
+    @Tag[APILevel22, TestLevel0]
     func test_isDefaultApplication_EXCEL(): Unit {
         try {
             let tag = DefaultAppManager.isDefaultApplication(ApplicationType
@@ -207,7 +207,7 @@ class Test_bundle_info {
     }
 
     @TestCase
-    @Tag[APILevel21, TestLevel0]
+    @Tag[APILevel22, TestLevel0]
     func test_isDefaultApplication_PPT(): Unit {
         try {
             let tag = DefaultAppManager.isDefaultApplication(ApplicationType
@@ -221,7 +221,7 @@ class Test_bundle_info {
     }
 
     @TestCase
-    @Tag[APILevel21, TestLevel0]
+    @Tag[APILevel22, TestLevel0]
     func test_isDefaultApplication_EMAIL(): Unit {
         try {
             let tag = DefaultAppManager.isDefaultApplication(ApplicationType
@@ -235,7 +235,7 @@ class Test_bundle_info {
     }
 
     @TestCase
-    @Tag[APILevel21, TestLevel0]
+    @Tag[APILevel22, TestLevel0]
     func test_bundle_skill(): Unit {
         BundleFlag()
         let bundleFlags = BundleFlag.GET_BUNDLE_INFO_DEFAULT | BundleFlag.GET_BUNDLE_INFO_WITH_APPLICATION |
@@ -262,7 +262,7 @@ class Test_bundle_info {
     }
 
     @TestCase
-    @Tag[APILevel21, TestLevel0]
+    @Tag[APILevel22, TestLevel0]
     func test_canOpenLink(): Unit {
         try {
             let link = "app1Scheme://test.example.com/home"
@@ -275,7 +275,7 @@ class Test_bundle_info {
     }
 
     @TestCase
-    @Tag[APILevel21, TestLevel0]
+    @Tag[APILevel22, TestLevel0]
     func test_canOpenLink_invalid(): Unit {
         try {
             let link = "app1Scheme:/test.example.com/home"
@@ -288,7 +288,7 @@ class Test_bundle_info {
     }
 
     @TestCase
-    @Tag[APILevel21, TestLevel0]
+    @Tag[APILevel22, TestLevel0]
     func test_canOpenLink_notExist(): Unit {
         try {
             let link = "app2Scheme://test.example.com/home"
@@ -303,7 +303,7 @@ class Test_bundle_info {
 
 
     @TestCase
-    @Tag[APILevel21, TestLevel0]
+    @Tag[APILevel22, TestLevel0]
     func test_enums(): Unit {
 
         let enum_BundleType: Array<BundleType> = [
