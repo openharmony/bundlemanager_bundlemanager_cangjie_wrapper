@@ -25,7 +25,7 @@ import ohos.business_exception.BusinessException
  * @relation export enum ApplicationType
  */
 @!APILevel[
-    22,
+    since: "22",
     syscap: "SystemCapability.BundleManager.BundleFramework.DefaultApp"
 ]
 public enum ApplicationType {
@@ -35,7 +35,7 @@ public enum ApplicationType {
      * @relation BROWSER = 'Web Browser'
      */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.DefaultApp"
     ]
     Browser
@@ -45,12 +45,12 @@ public enum ApplicationType {
      * @relation IMAGE = 'Image Gallery'
      */
     | @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.DefaultApp"
     ]
     Image
     | @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.DefaultApp"
     ]
     /**
@@ -60,7 +60,7 @@ public enum ApplicationType {
      */
     Audio
     | @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.DefaultApp"
     ]
     /**
@@ -75,7 +75,7 @@ public enum ApplicationType {
      * @relation PDF = 'PDF Viewer'
      */
     | @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.DefaultApp"
     ]
     Pdf
@@ -85,7 +85,7 @@ public enum ApplicationType {
      * @relation WORD = 'Word Viewer'
      */
     | @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.DefaultApp"
     ]
     Word
@@ -95,7 +95,7 @@ public enum ApplicationType {
      * @relation EXCEL = 'Excel Viewer'
      */
     | @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.DefaultApp"
     ]
     Excel
@@ -105,7 +105,7 @@ public enum ApplicationType {
      * @relation PPT = 'PPT Viewer'
      */
     | @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.DefaultApp"
     ]
     Ppt
@@ -115,7 +115,7 @@ public enum ApplicationType {
      * @relation EMAIL = 'Email'
      */
     | @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.DefaultApp"
     ]
     Email
@@ -126,7 +126,7 @@ public enum ApplicationType {
      *
      */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.DefaultApp"
     ]
     public func getValue(): String {
@@ -153,7 +153,7 @@ foreign func FfiBundleManagerIsDefaultApplication(appType: CString): RetDataBool
  * @relation declare namespace defaultAppManager
  */
 @!APILevel[
-    22,
+    since: "22",
     syscap: "SystemCapability.BundleManager.BundleFramework.DefaultApp"
 ]
 public class DefaultAppManager {
@@ -167,7 +167,7 @@ public class DefaultAppManager {
      * @relation function isDefaultApplicationSync(type: string): boolean
      */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.DefaultApp"
     ]
     public static func isDefaultApplication(appType: String): Bool {
