@@ -19,6 +19,9 @@
 - 仓颉包管理FFI接口定义：负责定义C语言互操作仓颉接口，用于实现仓颉包管理能力。
 - 包管理基础框架模块：负责提供包管理基础功能，封装C语言接口提供给仓颉进行互操作。
 - 元能力基础框架模块：封装ElementName的C语言定义提供给仓颉进行互操作。
+- cangjie_ark_interop：负责提供仓颉注解类定义，用于对API进行标注。以及提供抛向用户的BusinessException异常类定义。
+- hiviewdfx_cangjie_wrapper：负责提供日志接口，用于在关键路径处打印日志。
+- global_cangjie_wrapper：提供应用资源获取的能力。应用信息的定义依赖其中的AppResource的定义。
 
 ## 目录
 
@@ -32,8 +35,7 @@ foundation/bundlemanager/bundlemanager_cangjie_wrapper
 │   ├── metadata            # 包管理依赖元素Metadata类的实现
 │   └── skill               # 包管理依赖元素Skill类的实现
 └── test                    # 仓颉测试代码
-    └── APILevel22
-        └── bundle_manager  # 仓颉包管理测试用例
+    └── bundle_manager      # 仓颉包管理测试用例
 ```
 
 ## 使用说明
