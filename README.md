@@ -19,6 +19,9 @@ As shown in the architecture:
 - Cangjie Bundlemanager FFI interface: Based on cross-language interoperability via C interfaces to implement bundlemanager Cangjie API.
 - bundle_framework: It is responsible for providing basic functions of bundlemanager, and encapsulates C interfaces to provide interoperability for Cangjie.
 - ability_runtime: Encapsulates the C language definition of ElementName to provide interoperability with Cangjie.
+- cangjie_ark_interop: Responsible for providing APILevel definitions, used for annotating APIs. Also provides the BusinessException exception class definition that is thrown to users.
+- hiviewdfx_cangjie_wrapper: Responsible for providing HiLog APIs, used for printing logs at critical paths.
+- global_cangjie_wrapper: Provides the capability to access application resources. The ApplicationInfo depends on AppResource from this module.
 
 ## Directory Structure
 
@@ -32,8 +35,7 @@ foundation/bundlemanager/bundlemanager_cangjie_wrapper
 │   ├── metadata              # Cangjie Metadata code
 │   └── skill                 # Cangjie Skill code
 └── test                      # Cangjie test code
-    └── APILevel22
-        └── bundle_manager    # Cangjie bundle test code
+    └── bundle_manager        # Cangjie bundle test code
 ```
 
 
