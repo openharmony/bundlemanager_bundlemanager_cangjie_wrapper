@@ -1,8 +1,8 @@
-# 包管理仓颉接口
+# 包管理仓颉封装
 
 ## 简介
 
-包管理仓颉接口是在OpenHarmony上基于包管理子系统能力之上封装的仓颉API。包管理子系统负责应用安装包的管理，提供安装包的信息查询能力。当前开放的包管理仓颉接口仅支持standard设备。
+包管理仓颉封装负责应用安装包的管理，提供安装包的信息查询能力以及ElementName信息、元数据对象和Skill标签对象的定义。当前开放的包管理仓颉接口仅支持standard设备。
 
 ## 系统架构
 
@@ -12,16 +12,27 @@
 
 如架构图所示：
 
-- 应用信息查询能力：提供当前应用包信息的查询能力。提供UIAbility组件信息、ExtensionAbility组件信息的查询能力，返回json格式字符串。提供查询给定的链接是否可以打开的能力。
-- ElementName信息: ElementName信息的定义。包含设备ID，应用Bundle名称等信息。
-- 元数据对象: 元数据对象的定义。包含元数据名称、元数据值和元数据资源。
-- Skill标签对象：Skill标签对象。包含Skill接收的actions、entities、uris、domainVerify集合。
-- 仓颉包管理FFI接口定义：负责定义C语言互操作仓颉接口，用于实现仓颉包管理能力。
-- 包管理基础框架模块：负责提供包管理基础功能，封装C语言接口提供给仓颉进行互操作。
-- 元能力基础框架模块：封装ElementName的C语言定义提供给仓颉进行互操作。
-- cangjie_ark_interop：负责提供仓颉注解类定义，用于对API进行标注。以及提供抛向用户的BusinessException异常类定义。
-- hiviewdfx_cangjie_wrapper：负责提供日志接口，用于在关键路径处打印日志。
-- global_cangjie_wrapper：提供应用资源获取的能力。应用信息的定义依赖其中的AppResource的定义。
+接口层：
+
+- 应用信息查询能力：面向开发者提供的用于应用信息查询的API能力。提供UIAbility组件信息、ExtensionAbility组件信息的查询能力，返回json格式字符串。提供查询给定的链接是否可以打开的能力。
+- ElementName信息: 面向开发者提供的ElementName类的定义。包含设备ID，应用Bundle名称等信息。
+- 元数据对象: 面向开发者提供的元数据对象的定义。包含元数据名称、元数据值和元数据资源。
+- Skill标签对象：面向开发者提供的Skill标签对象的定义。包含Skill接收的actions、entities、uris、domainVerify集合。
+
+框架层：
+
+- 应用信息查询能力封装：仓颉应用信息查询能力封装。通过BundleManager类实现仓颉的应用信息查询能力。
+- ElementName信息封装：提供仓颉ElementName类的定义。
+- 元数据对象封装：提供仓颉Metadata类的定义。
+- Skill对象封装：提供仓颉Skill类的定义。
+
+架构图中的依赖部件引入说明：
+
+- 包管理子系统：负责提供包管理基础功能，封装C语言接口提供给仓颉进行互操作。
+- 元能力运行时部件：ElementName信息依赖其封装的ElementName的C语言定义。
+- cangjie_ark_interop：负责提供仓颉注解类定义和BusinessException异常类定义。包管理仓颉封装依赖此部件用于对API进行标注，及在错误分支向用户抛出异常。
+- hiviewdfx_cangjie_wrapper：负责提供日志接口。包管理仓颉封装依赖此部件用于在关键路径处打印日志。
+- global_cangjie_wrapper：提供应用资源获取的能力。应用信息查询能力依赖其中的AppResource的定义。
 
 ## 目录
 
@@ -45,18 +56,23 @@ foundation/bundlemanager/bundlemanager_cangjie_wrapper
   - 提供当前应用包信息的查询能力。
   - 提供自身相应配置文件的json格式字符串的获取能力。
   - 提供给定的链接是否可以打开的查询能力。
+  - 提供ElementName信息、元数据对象和Skill标签对象的定义。
 
 
 与ArkTS提供的API能力相比，暂不支持以下功能：
 
   - 暂不支持获取其他应用包的信息。
-  - 暂不支持安装包的安装能力。
-  - 暂不支持安装包的更新能力。
-  - 暂不支持安装包的卸载能力。
-  - 暂不支持包信息存储能力。
+  - 暂不支持根据给定的uid获取对应应用的包名字能力
 
 
 包管理相关API请参见[仓颉包管理API文档](https://gitcode.com/openharmony-sig/arkcompiler_cangjie_ark_interop/blob/master/doc/API_Reference/source_zh_cn/apis/AbilityKit/cj-apis-bundle_manager.md)。
+
+## 约束
+
+与ArkTS提供的API能力相比，暂不支持以下功能：
+
+  - 暂不支持获取其他应用包的信息。
+  - 暂不支持根据给定的uid获取对应应用的包名字能力
 
 ## 参与贡献
 
