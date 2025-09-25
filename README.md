@@ -12,11 +12,22 @@ The Cangjie API is a Cangjie API encapsulated on OpenHarmony based on the capabi
 
 As shown in the architecture:
 
+interface: Provides APIs for developers.
+
 - BundleManager: Obtains the bundle information. Obtains the JSON string array of the current application's configuration. Checks whether a link can be opened.
 - ElementName: Definition of ElementName. Includes device ID, application Bundle name, and other information.
 - Metadata: Definition of Metadata. Includes metadata name, metadata value, and metadata resources.
 - Skill: Skill object. Includes the collection of actions, entities, uris, and domainVerify that Skill receives.
-- Cangjie Bundlemanager FFI interface: Based on cross-language interoperability via C interfaces to implement bundlemanager Cangjie API.
+
+frameworks:
+
+- BundleManager wrapper: Encapsulates the Cangjie application information query capability. The Cangjie application information query capability is implemented through the BundleManager class.
+- ElementName wrapper: Provides the definition of the Cangjie ElementName class.
+- Metadata wrapper: Provides the definition of the Cangjie Metadata class.
+- Skill wrapper: Provides the definition of the Cangjie Skill class.
+
+Dependency Component Introduction in Architecture:
+
 - bundle_framework: It is responsible for providing basic functions of bundlemanager, and encapsulates C interfaces to provide interoperability for Cangjie.
 - ability_runtime: Encapsulates the C language definition of ElementName to provide interoperability with Cangjie.
 - cangjie_ark_interop: Responsible for providing APILevel definitions, used for annotating APIs. Also provides the BusinessException exception class definition that is thrown to users.
@@ -46,18 +57,23 @@ The following features are provided:
   - The module provides APIs for obtaining this application information.
   - Obtains the json string array of the current application's configuration file.
   - Checks whether a link can be opened.
+  - Provides the definition of ElementName, Metadata, and Skill.
 
 
 The following features are not provided yet:
 
   - Obtain other application information.
-  - Install capabilities for application bundles.
-  - Update capabilities for application bundles.
-  - Uninstall capabilities for application bundles.
-  - Store bundle information.
+  - Obtaining the package name of a corresponding application based on a given uid.
 
 
 For Bundlemanager-related APIs, please refer to [ohos.bundle.bundle_manager (BundleManager Management)](https://gitcode.com/openharmony-sig/arkcompiler_cangjie_ark_interop/blob/master/doc/API_Reference/source_en/apis/AbilityKit/cj-apis-bundle_manager.md).
+
+## Constraints
+
+The following features are not provided yet:
+
+  - Obtain other application information.
+  - Obtaining the package name of a corresponding application based on a given uid.
 
 ## Code Contribution
 
