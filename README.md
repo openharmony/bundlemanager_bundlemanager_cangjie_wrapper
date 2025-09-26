@@ -14,17 +14,19 @@ As shown in the architecture:
 
 interface: Provides APIs for developers.
 
-- BundleManager: Obtains the bundle information. Obtains the JSON string array of the current application's configuration. Checks whether a link can be opened.
-- ElementName: Definition of ElementName. Includes device ID, application Bundle name, and other information.
-- Metadata: Definition of Metadata. Includes metadata name, metadata value, and metadata resources.
-- Skill: Skill object. Includes the collection of actions, entities, uris, and domainVerify that Skill receives.
+- bundleManager:
+  - BundleManager: Obtains the bundle information. Obtains the JSON string array of the current application's configuration. Checks whether a link can be opened.
+  - ElementName: Definition of ElementName. Includes device ID, application Bundle name, and other information.
+  - Metadata: Definition of Metadata. Includes metadata name, metadata value, and metadata resources.
+  - Skill: Skill object. Includes the collection of actions, entities, uris, and domainVerify that Skill receives.
 
 frameworks:
 
-- BundleManager wrapper: Encapsulates the Cangjie application information query capability. The Cangjie application information query capability is implemented through the BundleManager class.
-- ElementName wrapper: Provides the definition of the Cangjie ElementName class.
-- Metadata wrapper: Provides the definition of the Cangjie Metadata class.
-- Skill wrapper: Provides the definition of the Cangjie Skill class.
+- bundleManager wrapper:
+  - BundleManager wrapper: Encapsulates the Cangjie application information query capability. The Cangjie application information query capability is implemented through the BundleManager class.
+  - ElementName wrapper: Provides the definition of the Cangjie ElementName class.
+  - Metadata wrapper: Provides the definition of the Cangjie Metadata class.
+  - Skill wrapper: Provides the definition of the Cangjie Skill class.
 
 Dependency Component Introduction in Architecture:
 
@@ -54,16 +56,10 @@ foundation/bundlemanager/bundlemanager_cangjie_wrapper
 
 The following features are provided:
 
-  - The module provides APIs for obtaining this application information.
-  - Obtains the json string array of the current application's configuration file.
-  - Checks whether a link can be opened.
+  - The module provides APIs for obtaining this application information. Please refer to [getBundleInfoForSelf](https://gitcode.com/openharmony-sig/arkcompiler_cangjie_ark_interop/blob/master/doc/Dev_Guide/source_en/cj-start/basic-knowledge/common_problem_of_application.md).
+  - Obtains the json string array of the current application's configuration file. Please refer to [getProfileByAbility](https://gitcode.com/openharmony-sig/arkcompiler_cangjie_ark_interop/blob/master/doc/API_Reference/source_en/apis/AbilityKit/cj-apis-bundle_manager.md#static-func-getprofilebyabilitystring-string-string).
+  - Checks whether a link can be opened. Please refer to [canOpenLink](https://gitcode.com/openharmony-sig/arkcompiler_cangjie_ark_interop/blob/master/doc/API_Reference/source_en/apis/AbilityKit/cj-apis-bundle_manager.md#static-func-canopenlinkstring).
   - Provides the definition of ElementName, Metadata, and Skill.
-
-
-The following features are not provided yet:
-
-  - Obtain other application information.
-  - Obtaining the package name of a corresponding application based on a given uid.
 
 
 For Bundlemanager-related APIs, please refer to [ohos.bundle.bundle_manager (BundleManager Management)](https://gitcode.com/openharmony-sig/arkcompiler_cangjie_ark_interop/blob/master/doc/API_Reference/source_en/apis/AbilityKit/cj-apis-bundle_manager.md).
