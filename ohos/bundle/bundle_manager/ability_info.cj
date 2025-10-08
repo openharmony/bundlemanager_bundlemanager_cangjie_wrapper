@@ -23,8 +23,6 @@ import ohos.metadata.*
 
 /**
 * Obtains configuration information about an ability
-*
-* @relation export interface AbilityInfo
 */
 @!APILevel[
     22,
@@ -33,8 +31,6 @@ import ohos.metadata.*
 public class AbilityInfo {
     /**
     * Indicates the name of the bundle containing the ability
-    *
-    * @relation readonly bundleName: string
     */
     @!APILevel[
         22,
@@ -43,8 +39,6 @@ public class AbilityInfo {
     public let bundleName: String
     /**
     * Indicates the module name of the package to which the capability belongs
-    *
-    * @relation readonly moduleName: string
     */
     @!APILevel[
         22,
@@ -53,8 +47,6 @@ public class AbilityInfo {
     public let moduleName: String
     /**
     * Ability simplified class name
-    *
-    * @relation readonly name: string
     */
     @!APILevel[
         22,
@@ -63,8 +55,6 @@ public class AbilityInfo {
     public let name: String
     /**
     * Indicates the label of the ability
-    *
-    * @relation readonly label: string
     */
     @!APILevel[
         22,
@@ -73,8 +63,6 @@ public class AbilityInfo {
     public let label: String
     /**
     * Indicates the label id of the ability
-    *
-    * @relation readonly labelId: number
     */
     @!APILevel[
         22,
@@ -83,8 +71,6 @@ public class AbilityInfo {
     public let labelId: Int32
     /**
     * Indicates the ability
-    *
-    * @relation readonly description: string
     */
     @!APILevel[
         22,
@@ -93,8 +79,6 @@ public class AbilityInfo {
     public let description: String
     /**
     * Indicates the description id of the ability
-    *
-    * @relation readonly descriptionId: number
     */
     @!APILevel[
         22,
@@ -103,8 +87,6 @@ public class AbilityInfo {
     public let descriptionId: Int32
     /**
     * Indicates the icon of the ability
-    *
-    * @relation readonly icon: string
     */
     @!APILevel[
         22,
@@ -113,8 +95,6 @@ public class AbilityInfo {
     public let icon: String
     /**
     * Indicates the icon id of the ability
-    *
-    * @relation readonly iconId: number
     */
     @!APILevel[
         22,
@@ -123,8 +103,6 @@ public class AbilityInfo {
     public let iconId: Int32
     /**
     * Process of ability, if user do not set it, the value equal application process
-    *
-    * @relation readonly process: string
     */
     @!APILevel[
         22,
@@ -133,8 +111,6 @@ public class AbilityInfo {
     public let process: String
     /**
     * Indicates whether this ability can be called by other abilities
-    *
-    * @relation readonly exported: boolean
     */
     @!APILevel[
         22,
@@ -143,8 +119,6 @@ public class AbilityInfo {
     public let exported: Bool
     /**
     * Enumerates ability display orientations
-    *
-    * @relation readonly orientation: bundleManager.DisplayOrientation
     */
     @!APILevel[
         22,
@@ -153,8 +127,6 @@ public class AbilityInfo {
     public let orientation: DisplayOrientation
     /**
     * Enumerates ability launch type
-    *
-    * @relation readonly launchType: bundleManager.LaunchType
     */
     @!APILevel[
         22,
@@ -163,8 +135,6 @@ public class AbilityInfo {
     public let launchType: LaunchType
     /**
     * The permissions that others need to launch this ability
-    *
-    * @relation readonly permissions: Array<string>
     */
     @!APILevel[
         22,
@@ -173,8 +143,6 @@ public class AbilityInfo {
     public let permissions: Array<String>
     /**
     * The device types that this ability can run on
-    *
-    * @relation readonly deviceTypes: Array<string>
     */
     @!APILevel[
         22,
@@ -183,8 +151,6 @@ public class AbilityInfo {
     public let deviceTypes: Array<String>
     /**
     * Obtains configuration information about an application
-    *
-    * @relation readonly applicationInfo: ApplicationInfo
     */
     @!APILevel[
         22,
@@ -193,8 +159,6 @@ public class AbilityInfo {
     public let applicationInfo: ApplicationInfo
     /**
     * Indicates the metadata of ability
-    *
-    * @relation readonly metadata: Array<Metadata>
     */
     @!APILevel[
         22,
@@ -203,8 +167,6 @@ public class AbilityInfo {
     public let metadata: Array<Metadata>
     /**
     * Indicates whether the ability is enabled
-    *
-    * @relation readonly enabled: boolean
     */
     @!APILevel[
         22,
@@ -213,8 +175,6 @@ public class AbilityInfo {
     public let enabled: Bool
     /**
     * Indicates which window mode is supported
-    *
-    * @relation readonly supportWindowModes: Array<bundleManager.SupportWindowMode>
     */
     @!APILevel[
         22,
@@ -223,8 +183,6 @@ public class AbilityInfo {
     public let supportWindowModes: Array<SupportWindowMode>
     /**
     * Indicates window size
-    *
-    * @relation readonly windowSize: WindowSize
     */
     @!APILevel[
         22,
@@ -233,8 +191,6 @@ public class AbilityInfo {
     public let windowSize: WindowSize
     /**
     * Indicates whether to hide the application icon from the dock area
-    *
-    * @relation readonly excludeFromDock: boolean
     */
     @!APILevel[
         22,
@@ -243,8 +199,6 @@ public class AbilityInfo {
     public let excludeFromDock: Bool
     /**
     * Indicates skills of the ability
-    *
-    * @relation readonly skills: Array<Skill>
     */
     @!APILevel[
         22,
@@ -253,8 +207,6 @@ public class AbilityInfo {
     public let skills: Array<Skill>
     /**
     * Indicates the appIndex of application, only work in clone app mode
-    *
-    * @relation readonly appIndex: number
     */
     @!APILevel[
         22,
@@ -291,8 +243,6 @@ public class AbilityInfo {
 
 /**
 * Indicates the window size.
-*
-* @relation export interface WindowSize
 */
 @!APILevel[
     22,
@@ -301,8 +251,6 @@ public class AbilityInfo {
 public class WindowSize {
     /**
     * Indicates maximum ratio of width over height of window under free window status.
-    *
-    * @relation readonly maxWindowRatio: number
     */
     @!APILevel[
         22,
@@ -311,8 +259,6 @@ public class WindowSize {
     public let maxWindowRatio: Float64
     /**
     * Indicates minimum ratio of width over height of window under free window status.
-    *
-    * @relation readonly minWindowRatio: number
     */
     @!APILevel[
         22,
@@ -321,8 +267,6 @@ public class WindowSize {
     public let minWindowRatio: Float64
     /**
     * Indicates maximum width of window under free window status.
-    *
-    * @relation readonly maxWindowWidth: number
     */
     @!APILevel[
         22,
@@ -331,8 +275,6 @@ public class WindowSize {
     public let maxWindowWidth: UInt32
     /**
     * Indicates minimum width of window under free window status.
-    *
-    * @relation readonly minWindowWidth: number
     */
     @!APILevel[
         22,
@@ -341,8 +283,6 @@ public class WindowSize {
     public let minWindowWidth: UInt32
     /**
     * Indicates maximum height of window under free window status.
-    *
-    * @relation readonly maxWindowHeight: number
     */
     @!APILevel[
         22,
@@ -351,8 +291,6 @@ public class WindowSize {
     public let maxWindowHeight: UInt32
     /**
     * Indicates minimum height of window under free window status.
-    *
-    * @relation readonly minWindowHeight: number
     */
     @!APILevel[
         22,
