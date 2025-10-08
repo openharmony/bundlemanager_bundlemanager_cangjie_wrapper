@@ -23,8 +23,6 @@ import std.collection.ArrayList
 
 /**
 * Indicates the Metadata
-*
-* @relation export interface Metadata
 */
 @!APILevel[
     22,
@@ -33,8 +31,6 @@ import std.collection.ArrayList
 public class Metadata {
     /**
      * Indicates the metadata name
-     *
-     * @relation name: string
      */
     @!APILevel[
         22,
@@ -43,8 +39,6 @@ public class Metadata {
     public var name: String
     /**
      * Indicates the metadata value
-     *
-     * @relation value: string
      */
     @!APILevel[
         22,
@@ -53,8 +47,6 @@ public class Metadata {
     public var value: String
     /**
      * Indicates the metadata resource
-     *
-     * @relation resource: string
      */
     @!APILevel[
         22,

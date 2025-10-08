@@ -23,8 +23,6 @@ import ohos.business_exception.BusinessException
 
 /**
  * The constant for application type.
- *
- * @relation export enum ApplicationType
  */
 @!APILevel[
     22,
@@ -33,8 +31,6 @@ import ohos.business_exception.BusinessException
 public enum ApplicationType {
     /**
      * Default browser identifier.
-     *
-     * @relation BROWSER = 'Web Browser'
      */
     @!APILevel[
         22,
@@ -43,8 +39,6 @@ public enum ApplicationType {
     Browser
     /**
      * Default image identifier.
-     *
-     * @relation IMAGE = 'Image Gallery'
      */
     | @!APILevel[
         22,
@@ -57,8 +51,6 @@ public enum ApplicationType {
     ]
     /**
      * Default audio identifier.
-     *
-     * @relation AUDIO = 'Audio Player'
      */
     Audio
     | @!APILevel[
@@ -67,14 +59,10 @@ public enum ApplicationType {
     ]
     /**
      * Default video identifier.
-     *
-     * @relation VIDEO = 'Video Player'
      */
     Video
     /**
      * Default PDF identifier.
-     *
-     * @relation PDF = 'PDF Viewer'
      */
     | @!APILevel[
         22,
@@ -83,8 +71,6 @@ public enum ApplicationType {
     Pdf
     /**
      * Default Default word identifier.
-     *
-     * @relation WORD = 'Word Viewer'
      */
     | @!APILevel[
         22,
@@ -93,8 +79,6 @@ public enum ApplicationType {
     Word
     /**
      * Default excel identifier.
-     *
-     * @relation EXCEL = 'Excel Viewer'
      */
     | @!APILevel[
         22,
@@ -103,8 +87,6 @@ public enum ApplicationType {
     Excel
     /**
      * Default PPT identifier.
-     *
-     * @relation PPT = 'PPT Viewer'
      */
     | @!APILevel[
         22,
@@ -113,8 +95,6 @@ public enum ApplicationType {
     Ppt
     /**
      * Default email identifier.
-     *
-     * @relation EMAIL = 'Email'
      */
     | @!APILevel[
         22,
@@ -151,8 +131,6 @@ foreign func FfiBundleManagerIsDefaultApplication(appType: CString): RetDataBool
 
 /**
  * Default application manager.
- *
- * @relation declare namespace defaultAppManager
  */
 @!APILevel[
     22,
@@ -165,8 +143,6 @@ public class DefaultAppManager {
      *
      * @throws { BusinessException } 401 - Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types.
      * @throws { BusinessException } 801 - Capability not supported.
-     *
-     * @relation function isDefaultApplicationSync(type: string): boolean
      */
     @!APILevel[
         22,
