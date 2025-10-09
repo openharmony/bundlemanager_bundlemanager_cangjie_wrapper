@@ -69,7 +69,8 @@ public class BundleManager {
     /**
      * Obtains own bundleInfo.
      *
-     * @param { Int32 } bundleFlags - Indicates the flag used to specify information contained in the BundleInfo objects that will be returned.
+     * @param { Int32 } bundleFlags - Indicates the flag used to specify information contained in the BundleInfo
+     * objects that will be returned.
      * @returns { BundleInfo } The result of getting the bundle info.
      */
     @!APILevel[
@@ -177,7 +178,8 @@ public class BundleManager {
      *
      * @param { String } link - Indicates the link to be opened.
      * @returns { Bool } Returns true if the link can be opened; returns false otherwise.
-     * @throws { BusinessException } 401 - Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types.
+     * @throws { BusinessException } 401 - Parameter error. Possible causes: 1. Mandatory parameters are left
+     * unspecified; 2. Incorrect parameter types.
      * @throws { BusinessException } 17700055 - The specified link is invalid.
      * @throws { BusinessException } 17700056 - The scheme of the specified link is not in the querySchemes.
      */
