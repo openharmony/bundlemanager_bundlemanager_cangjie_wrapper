@@ -13,6 +13,8 @@
  * limitations under the License.
  */
 
+// The Cangjie API is in Beta. For details on its capabilities and limitations, please refer to the README file.
+
 package ohos.bundle.bundle_manager
 
 import ohos.labels.*
@@ -20,8 +22,6 @@ import ohos.labels.*
 /**
 * Used to query the enumeration value of bundleInfo. Multiple values can be passed in the form.
 * Multiple value input, such as GET_BUNDLE_INFO_DEFAULT | GET_BUNDLE_INFO_WITH_APPLICATION.
-*
-* @relation enum BundleFlag
 */
 @!APILevel[
     since: "22",
@@ -31,8 +31,6 @@ public class BundleFlag {
     /**
      * Used to obtain the default bundleInfo. The obtained bundleInfo does not contain information of
      * signatureInfo, applicationInfo, hapModuleInfo, ability, extensionAbility and permission.
-     *
-     * @relation GET_BUNDLE_INFO_DEFAULT = 0x00000000
      */
     @!APILevel[
         since: "22",
@@ -42,8 +40,6 @@ public class BundleFlag {
     /**
      * Used to obtain the bundleInfo containing applicationInfo. The obtained bundleInfo does not
      * contain the information of signatureInfo, hapModuleInfo, ability, extensionAbility and permission.
-     *
-     * @relation GET_BUNDLE_INFO_WITH_APPLICATION = 0x00000001
      */
     @!APILevel[
         since: "22",
@@ -53,8 +49,6 @@ public class BundleFlag {
     /**
      * Used to obtain the bundleInfo containing hapModuleInfo. The obtained bundleInfo does not
      * contain the information of signatureInfo, applicationInfo, ability, extensionAbility and permission.
-     *
-     * @relation GET_BUNDLE_INFO_WITH_HAP_MODULE = 0x00000002
      */
     @!APILevel[
         since: "22",
@@ -66,8 +60,6 @@ public class BundleFlag {
      * contain the information of signatureInfo, applicationInfo, extensionAbility and permission.
      * It can't be used alone, it needs to be used with GET_BUNDLE_INFO_WITH_HAP_MODULE.
      * such as GET_BUNDLE_INFO_WITH_ABILITY | GET_BUNDLE_INFO_WITH_HAP_MODULE.
-     *
-     * @relation GET_BUNDLE_INFO_WITH_ABILITY = 0x00000004
      */
     @!APILevel[
         since: "22",
@@ -79,8 +71,6 @@ public class BundleFlag {
      * contain the information of signatureInfo, applicationInfo, ability and permission.
      * It can't be used alone, it needs to be used with GET_BUNDLE_INFO_WITH_HAP_MODULE,
      * such as GET_BUNDLE_INFO_WITH_EXTENSION_ABILITY | GET_BUNDLE_INFO_WITH_HAP_MODULE.
-     *
-     * @relation GET_BUNDLE_INFO_WITH_EXTENSION_ABILITY = 0x00000008
      */
     @!APILevel[
         since: "22",
@@ -90,8 +80,6 @@ public class BundleFlag {
     /**
      * Used to obtain the bundleInfo containing permission. The obtained bundleInfo does not
      * contain the information of signatureInfo, applicationInfo, hapModuleInfo, extensionAbility and ability.
-     *
-     * @relation GET_BUNDLE_INFO_WITH_REQUESTED_PERMISSION = 0x00000010
      */
     @!APILevel[
         since: "22",
@@ -105,8 +93,6 @@ public class BundleFlag {
      * such as GET_BUNDLE_INFO_WITH_APPLICATION | GET_BUNDLE_INFO_WITH_METADATA
      * or GET_BUNDLE_INFO_WITH_HAP_MODULE | GET_BUNDLE_INFO_WITH_ABILITY | GET_BUNDLE_INFO_WITH_METADATA
      * or GET_BUNDLE_INFO_WITH_HAP_MODULE | GET_BUNDLE_INFO_WITH_EXTENSION_ABILITY | GET_BUNDLE_INFO_WITH_METADATA.
-     *
-     * @relation GET_BUNDLE_INFO_WITH_METADATA = 0x00000020
      */
     @!APILevel[
         since: "22",
@@ -117,8 +103,6 @@ public class BundleFlag {
      * Used to obtain the default bundleInfo containing disabled application and ability.
      * The obtained bundleInfo does not contain information of signatureInfo, applicationInfo,
      * hapModuleInfo, ability, extensionAbility and permission.
-     *
-     * @relation GET_BUNDLE_INFO_WITH_DISABLE = 0x00000040
      */
     @!APILevel[
         since: "22",
@@ -128,8 +112,6 @@ public class BundleFlag {
     /**
      * Used to obtain the bundleInfo containing signatureInfo. The obtained bundleInfo does not
      * contain the information of applicationInfo, hapModuleInfo, extensionAbility, ability and permission.
-     *
-     * @relation GET_BUNDLE_INFO_WITH_SIGNATURE_INFO = 0x00000080
      */
     @!APILevel[
         since: "22",
@@ -141,8 +123,6 @@ public class BundleFlag {
      * The obtained bundleInfo does not contain the information of applicationInfo, extensionAbility, ability and permission.
      * It can't be used alone, it needs to be used with GET_BUNDLE_INFO_WITH_HAP_MODULE,
      * such as GET_BUNDLE_INFO_WITH_MENU | GET_BUNDLE_INFO_WITH_HAP_MODULE
-     *
-     * @relation GET_BUNDLE_INFO_WITH_MENU = 0x00000100
      */
     @!APILevel[
         since: "22",
@@ -154,8 +134,6 @@ public class BundleFlag {
      * The obtained bundleInfo does not contain the information of applicationInfo, extensionAbility, ability and permission.
      * It can't be used alone, it needs to be used with GET_BUNDLE_INFO_WITH_HAP_MODULE,
      * such as GET_BUNDLE_INFO_WITH_ROUTER_MAP | GET_BUNDLE_INFO_WITH_HAP_MODULE
-     *
-     * @relation GET_BUNDLE_INFO_WITH_ROUTER_MAP = 0x00000200
      */
     @!APILevel[
         since: "22",
@@ -168,8 +146,6 @@ public class BundleFlag {
      * GET_BUNDLE_INFO_WITH_ABILITY, GET_BUNDLE_INFO_WITH_EXTENSION_ABILITY,
      * such as GET_BUNDLE_INFO_WITH_SKILL | GET_BUNDLE_INFO_WITH_HAP_MODULE | GET_BUNDLE_INFO_WITH_ABILITY
      * or GET_BUNDLE_INFO_WITH_SKILL | GET_BUNDLE_INFO_WITH_HAP_MODULE | GET_BUNDLE_INFO_WITH_EXTENSION_ABILITY
-     *
-     * @relation GET_BUNDLE_INFO_WITH_SKILL = 0x00000800
      */
     @!APILevel[
         since: "22",

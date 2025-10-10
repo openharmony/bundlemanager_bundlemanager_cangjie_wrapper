@@ -13,14 +13,14 @@
  * limitations under the License.
  */
 
+// The Cangjie API is in Beta. For details on its capabilities and limitations, please refer to the README file.
+
 package ohos.bundle.bundle_manager
 
 import ohos.labels.*
 
 /**
 * Obtains configuration information about a bundle
-*
-* @relation export interface BundleInfo
 */
 @!APILevel[
     since: "22",
@@ -30,8 +30,6 @@ public class BundleInfo {
     let uid: Int32
     /**
     * Indicates the name of this bundle
-    *
-    * @relation readonly name: string
     */
     @!APILevel[
         since: "22",
@@ -40,8 +38,6 @@ public class BundleInfo {
     public let name: String
     /**
     * Indicates the bundle vendor
-    *
-    * @relation readonly vendor: string
     */
     @!APILevel[
         since: "22",
@@ -50,8 +46,6 @@ public class BundleInfo {
     public let vendor: String
     /**
     * Indicates the version code of the bundle
-    *
-    * @relation readonly versionCode: number
     */
     @!APILevel[
         since: "22",
@@ -60,8 +54,6 @@ public class BundleInfo {
     public let versionCode: UInt32
     /**
     * Indicates the version name of the bundle
-    *
-    * @relation readonly versionName: string
     */
     @!APILevel[
         since: "22",
@@ -70,8 +62,6 @@ public class BundleInfo {
     public let versionName: String
     /**
     * Indicates the **minimum ** version compatible with the bundle
-    *
-    * @relation readonly minCompatibleVersionCode: number
     */
     @!APILevel[
         since: "22",
@@ -80,8 +70,6 @@ public class BundleInfo {
     public let minCompatibleVersionCode: UInt32
     /**
     * Indicates the target version number of the bundle
-    *
-    * @relation readonly targetVersion: number
     */
     @!APILevel[
         since: "22",
@@ -90,8 +78,6 @@ public class BundleInfo {
     public let targetVersion: UInt32
     /**
     * Obtains configuration information about an application
-    *
-    * @relation readonly appInfo: ApplicationInfo
     */
     @!APILevel[
         since: "22",
@@ -100,8 +86,6 @@ public class BundleInfo {
     public let appInfo: ApplicationInfo
     /**
     * Obtains configuration information about a module
-    *
-    * @relation readonly hapModulesInfo: Array<HapModuleInfo>
     */
     @!APILevel[
         since: "22",
@@ -110,8 +94,6 @@ public class BundleInfo {
     public let hapModulesInfo: Array<HapModuleInfo>
     /**
     * Indicates the required permissions details defined in the bundle
-    *
-    * @relation readonly reqPermissionDetails: Array<ReqPermissionDetail>
     */
     @!APILevel[
         since: "22",
@@ -120,8 +102,6 @@ public class BundleInfo {
     public let reqPermissionDetails: Array<ReqPermissionDetail>
     /**
     * Indicates the grant state of required permissions
-    *
-    * @relation readonly permissionGrantStates: Array<bundleManager.PermissionGrantState>
     */
     @!APILevel[
         since: "22",
@@ -130,8 +110,6 @@ public class BundleInfo {
     public let permissionGrantStates: Array<PermissionGrantState>
     /**
     * Indicates the SignatureInfo of the bundle
-    *
-    * @relation readonly signatureInfo: SignatureInfo
     */
     @!APILevel[
         since: "22",
@@ -140,8 +118,6 @@ public class BundleInfo {
     public let signatureInfo: SignatureInfo
     /**
     * Indicates the hap install time
-    *
-    * @relation readonly installTime: number
     */
     @!APILevel[
         since: "22",
@@ -150,8 +126,6 @@ public class BundleInfo {
     public let installTime: Int64
     /**
     * Indicates the hap update time
-    *
-    * @relation readonly updateTime: number
     */
     @!APILevel[
         since: "22",
@@ -161,8 +135,6 @@ public class BundleInfo {
 
     /**
     * Indicates the router information of the application
-    *
-    * @relation readonly routerMap: Array<RouterItem>
     */
     @!APILevel[
         since: "22",
@@ -171,8 +143,6 @@ public class BundleInfo {
     public let routerMap: Array<RouterItem>
     /**
     * Indicates the appIndex of application, only work in appClone mode
-    *
-    * @relation readonly appIndex: number
     */
     @!APILevel[
         since: "22",
@@ -202,8 +172,6 @@ public class BundleInfo {
 
 /**
 * Indicates the required permissions details defined in configuration file
-*
-* @relation export interface ReqPermissionDetail
 */
 @!APILevel[
     since: "22",
@@ -212,8 +180,6 @@ public class BundleInfo {
 public class ReqPermissionDetail {
     /**
      * Indicates the name of this required permissions
-     *
-     * @relation name: string
      */
     @!APILevel[
         since: "22",
@@ -222,8 +188,6 @@ public class ReqPermissionDetail {
     public var name: String
     /**
      * Indicates the module name which the request permission belongs
-     *
-     * @relation moduleName: string
      */
     @!APILevel[
         since: "22",
@@ -232,8 +196,6 @@ public class ReqPermissionDetail {
     public var moduleName: String
     /**
      * Indicates the reason of this required permissions
-     *
-     * @relation reason: string
      */
     @!APILevel[
         since: "22",
@@ -242,8 +204,6 @@ public class ReqPermissionDetail {
     public var reason: String
     /**
      * Indicates the reason id of this required permissions
-     *
-     * @relation reasonId: number
      */
     @!APILevel[
         since: "22",
@@ -252,8 +212,6 @@ public class ReqPermissionDetail {
     public var reasonId: Int32
     /**
      * Indicates the used scene of this required permissions
-     *
-     * @relation usedScene: UsedScene
      */
     @!APILevel[
         since: "22",
@@ -280,8 +238,6 @@ public class ReqPermissionDetail {
 
 /**
 * The scene which is used
-*
-* @relation export interface UsedScene
 */
 @!APILevel[
     since: "22",
@@ -290,8 +246,6 @@ public class ReqPermissionDetail {
 public class UsedScene {
     /**
     * Indicates the abilities that need the permission
-    *
-    * @relation abilities: Array<string>
     */
     @!APILevel[
         since: "22",
@@ -300,8 +254,6 @@ public class UsedScene {
     public var abilities: Array<String>
     /**
     * Indicates the time when the permission is used
-    *
-    * @relation when: string
     */
     @!APILevel[
         since: "22",
@@ -322,8 +274,6 @@ public class UsedScene {
 
 /**
 * Indicates SignatureInfo
-*
-* @relation export interface SignatureInfo
 */
 @!APILevel[
     since: "22",
@@ -333,8 +283,6 @@ public class SignatureInfo {
     /**
      * Indicates the ID of the application to which this bundle belongs
      * The application ID uniquely identifies an application. It is determined by the bundle name and signature
-     *
-     * @relation readonly appId: string
      */
     @!APILevel[
         since: "22",
@@ -343,7 +291,6 @@ public class SignatureInfo {
     public let appId: String
     /**
      * Indicates the fingerprint of the certificate
-     * @relation readonly fingerprint: string
      */
     @!APILevel[
         since: "22",
@@ -354,8 +301,6 @@ public class SignatureInfo {
      * Globally unique identifier of an application, which is allocated by the cloud.
      * AppIdentifier does not change along the application lifecycle, including version updates, certificate changes,
      * public and private key changes, and application transfer.
-     *
-     * @relation readonly appIdentifier: string
      */
     @!APILevel[
         since: "22",

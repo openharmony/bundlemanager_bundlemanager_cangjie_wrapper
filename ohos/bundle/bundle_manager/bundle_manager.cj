@@ -13,6 +13,8 @@
  * limitations under the License.
  */
 
+// The Cangjie API is in Beta. For details on its capabilities and limitations, please refer to the README file.
+
 package ohos.bundle.bundle_manager
 
 import ohos.ffi.*
@@ -57,8 +59,6 @@ func checkToCache(uid: Int32, callingUid: Int32, query: BMQuery, bundleInfo: Bun
 
 /**
  * This module is used to obtain package information of various applications installed on the current device.
- *
- * @relation declare namespace bundleManager
  */
 @!APILevel[
     since: "22",
@@ -71,8 +71,6 @@ public class BundleManager {
      *
      * @param { Int32 } bundleFlags - Indicates the flag used to specify information contained in the BundleInfo objects that will be returned.
      * @returns { BundleInfo } The result of getting the bundle info.
-     *
-     * @relation function getBundleInfoForSelfSync(bundleFlags: number): BundleInfo
      */
     @!APILevel[
         since: "22",
@@ -110,7 +108,6 @@ public class BundleManager {
      * @throws { BusinessException } 17700003 - The specified extensionAbilityName not existed.
      * @throws { BusinessException } 17700024 - Failed to get the profile because there is no profile in the HAP.
      * @throws { BusinessException } 17700026 - The specified bundle is disabled.
-     * @relation function getProfileByExtensionAbilitySync(moduleName: string, extensionAbilityName: string, metadataName?: string): Array<string>
      */
     @!APILevel[
         since: "22",
@@ -150,7 +147,6 @@ public class BundleManager {
      * @throws { BusinessException } 17700024 - Failed to get the profile because there is no profile in the HAP.
      * @throws { BusinessException } 17700026 - The specified bundle is disabled.
      * @throws { BusinessException } 17700029 - The specified ability is disabled.
-     * @relation function getProfileByAbilitySync(moduleName: string, abilityName: string, metadataName?: string): Array<string>
      */
     @!APILevel[
         since: "22",
@@ -184,7 +180,6 @@ public class BundleManager {
      * @throws { BusinessException } 401 - Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types.
      * @throws { BusinessException } 17700055 - The specified link is invalid.
      * @throws { BusinessException } 17700056 - The scheme of the specified link is not in the querySchemes.
-     * @relation function canOpenLink(link: string): boolean
      */
     @!APILevel[
         since: "22",

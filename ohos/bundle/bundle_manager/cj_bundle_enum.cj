@@ -13,14 +13,14 @@
  * limitations under the License.
  */
 
+// The Cangjie API is in Beta. For details on its capabilities and limitations, please refer to the README file.
+
 package ohos.bundle.bundle_manager
 
 import ohos.labels.*
 
 /**
 * Indicates bundle type
-*
-* @relation export enum BundleType
 */
 @!APILevel[
     since: "22",
@@ -29,8 +29,6 @@ import ohos.labels.*
 public enum BundleType {
     /**
      * Indicates app
-     *
-     * @relation APP = 0
      */
     @!APILevel[
         since: "22",
@@ -39,8 +37,6 @@ public enum BundleType {
     App
     /**
      * Indicates atomic service
-     *
-     * @relation ATOMIC_SERVICE = 1
      */
     | @!APILevel[
         since: "22",
@@ -60,8 +56,6 @@ public enum BundleType {
 
 /**
 * PermissionGrantState
-*
-* @relation export enum PermissionGrantState
 */
 @!APILevel[
     since: "22",
@@ -70,8 +64,6 @@ public enum BundleType {
 public enum PermissionGrantState {
     /**
      * PERMISSION_DENIED
-     *
-     * @relation PERMISSION_DENIED = -1
      */
     @!APILevel[
         since: "22",
@@ -80,8 +72,6 @@ public enum PermissionGrantState {
     PermissionDenied
     /**
      * PERMISSION_GRANTED
-     *
-     * @relation PERMISSION_GRANTED = 0
      */
     | @!APILevel[
         since: "22",
@@ -101,8 +91,6 @@ public enum PermissionGrantState {
 
 /**
 * Display orientation
-*
-* @relation export enum DisplayOrientation
 */
 @!APILevel[
     since: "22",
@@ -111,8 +99,6 @@ public enum PermissionGrantState {
 public enum DisplayOrientation {
     /**
      * Indicates that the system automatically determines the display orientation
-     *
-     * @relation UNSPECIFIED = 0
      */
     @!APILevel[
         since: "22",
@@ -121,8 +107,6 @@ public enum DisplayOrientation {
     Unspecified
     /**
      * Indicates the landscape orientation
-     *
-     * @relation LANDSCAPE = 1
      */
     | @!APILevel[
         since: "22",
@@ -131,8 +115,6 @@ public enum DisplayOrientation {
     Landscape
     /**
      * Indicates the portrait orientation
-     *
-     * @relation PORTRAIT = 2
      */
     | @!APILevel[
         since: "22",
@@ -141,8 +123,6 @@ public enum DisplayOrientation {
     Portrait
     /**
      * Indicates the page ability orientation is the same as that of the nearest ability in the stack
-     *
-     * @relation FOLLOW_RECENT = 3
      */
     | @!APILevel[
         since: "22",
@@ -151,8 +131,6 @@ public enum DisplayOrientation {
     FollowRecent
     /**
      * Indicates the inverted landscape orientation
-     *
-     * @relation LANDSCAPE_INVERTED = 4
      */
     | @!APILevel[
         since: "22",
@@ -161,8 +139,6 @@ public enum DisplayOrientation {
     LandscapeInverted
     /**
      * Indicates the inverted portrait orientation
-     *
-     * @relation PORTRAIT_INVERTED = 5
      */
     | @!APILevel[
         since: "22",
@@ -171,8 +147,6 @@ public enum DisplayOrientation {
     PortraitInverted
     /**
      * Indicates the orientation can be auto-rotated
-     *
-     * @relation AUTO_ROTATION = 6
      */
     | @!APILevel[
         since: "22",
@@ -181,8 +155,6 @@ public enum DisplayOrientation {
     AutoRotation
     /**
      * Indicates the landscape orientation rotated with sensor
-     *
-     * @relation AUTO_ROTATION_LANDSCAPE = 7
      */
     | @!APILevel[
         since: "22",
@@ -191,8 +163,6 @@ public enum DisplayOrientation {
     AutoRotationLandscape
     /**
      * Indicates the portrait orientation rotated with sensor
-     *
-     * @relation AUTO_ROTATION_PORTRAIT = 8
      */
     | @!APILevel[
         since: "22",
@@ -201,8 +171,6 @@ public enum DisplayOrientation {
     AutoRotationPortrait
     /**
      * Indicates the sensor restricted mode
-     *
-     * @relation AUTO_ROTATION_RESTRICTED = 9
      */
     | @!APILevel[
         since: "22",
@@ -211,8 +179,6 @@ public enum DisplayOrientation {
     AutoRotationRestricted
     /**
      * Indicates the sensor landscape restricted mode
-     *
-     * @relation AUTO_ROTATION_LANDSCAPE_RESTRICTED = 10
      */
     | @!APILevel[
         since: "22",
@@ -221,8 +187,6 @@ public enum DisplayOrientation {
     AutoRotationLandscapeRestricted
     /**
      * Indicates the sensor portrait restricted mode
-     *
-     * @relation AUTO_ROTATION_PORTRAIT_RESTRICTED = 11
      */
     | @!APILevel[
         since: "22",
@@ -231,8 +195,6 @@ public enum DisplayOrientation {
     AutoRotationPortraitRestricted
     /**
      * Indicates the locked orientation mode
-     *
-     * @relation LOCKED = 12
      */
     | @!APILevel[
         since: "22",
@@ -241,8 +203,6 @@ public enum DisplayOrientation {
     Locked
     /**
      * Indicates the system automatically determines the sensor restricted mode
-     *
-     * @relation AUTO_ROTATION_UNSPECIFIED = 13
      */
     | @!APILevel[
         since: "22",
@@ -251,8 +211,6 @@ public enum DisplayOrientation {
     AutoRotationUnspecified
     /**
      * Indicates the orientation follow the desktop rotate mode
-     *
-     * @relation FOLLOW_DESKTOP = 14
      */
     | @!APILevel[
         since: "22",
@@ -285,8 +243,6 @@ public enum DisplayOrientation {
 
 /**
 * Support window mode
-*
-* @relation export enum SupportWindowMode
 */
 @!APILevel[
     since: "22",
@@ -295,8 +251,6 @@ public enum DisplayOrientation {
 public enum SupportWindowMode {
     /**
      * Indicates supported window mode of full screen mode
-     *
-     * @relation FULL_SCREEN = 0
      */
     @!APILevel[
         since: "22",
@@ -305,8 +259,6 @@ public enum SupportWindowMode {
     FullScreen
     /**
      * Indicates supported window mode of split mode
-     *
-     * @relation SPLIT = 1
      */
     | @!APILevel[
         since: "22",
@@ -315,8 +267,6 @@ public enum SupportWindowMode {
     Split
     /**
      * Indicates supported window mode of floating mode
-     *
-     * @relation FLOATING = 2
      */
     | @!APILevel[
         since: "22",
@@ -337,8 +287,6 @@ public enum SupportWindowMode {
 
 /**
 * Launch type
-*
-* @relation export enum LaunchType
 */
 @!APILevel[
     since: "22",
@@ -347,8 +295,6 @@ public enum SupportWindowMode {
 public enum LaunchType {
     /**
      * Indicates that the ability has only one instance
-     *
-     * @relation SINGLETON = 0
      */
     @!APILevel[
         since: "22",
@@ -357,8 +303,6 @@ public enum LaunchType {
     Singleton
     /**
      * Indicates that the ability can have multiple instances
-     *
-     * @relation MULTITON = 1
      */
     | @!APILevel[
         since: "22",
@@ -367,8 +311,6 @@ public enum LaunchType {
     Multiton
     /**
      * Indicates that the ability can have specified instances
-     *
-     * @relation SPECIFIED = 2
      */
     | @!APILevel[
         since: "22",
@@ -389,8 +331,6 @@ public enum LaunchType {
 
 /**
 * This enumeration value is used to identify various types of extension ability
-*
-* @relation export enum ExtensionAbilityType
 */
 @!APILevel[
     since: "22",
@@ -399,8 +339,6 @@ public enum LaunchType {
 public enum ExtensionAbilityType {
     /**
      * Indicates extension info with type of form
-     *
-     * @relation FORM = 0
      */
     @!APILevel[
         since: "22",
@@ -409,8 +347,6 @@ public enum ExtensionAbilityType {
     Form
     /**
      * Indicates extension info with type of work schedule
-     *
-     * @relation WORK_SCHEDULER = 1
      */
     | @!APILevel[
         since: "22",
@@ -419,8 +355,6 @@ public enum ExtensionAbilityType {
     WorkScheduler
     /**
      * Indicates extension info with type of input method
-     *
-     * @relation INPUT_METHOD = 2
      */
     | @!APILevel[
         since: "22",
@@ -429,8 +363,6 @@ public enum ExtensionAbilityType {
     InputMethod
     /**
      * Indicates extension info with type of service
-     *
-     * @relation SERVICE = 3
      */
     | @!APILevel[
         since: "22",
@@ -439,8 +371,6 @@ public enum ExtensionAbilityType {
     Service
     /**
      * Indicates extension info with type of accessibility
-     *
-     * @relation ACCESSIBILITY = 4
      */
     | @!APILevel[
         since: "22",
@@ -449,8 +379,6 @@ public enum ExtensionAbilityType {
     Accessibility
     /**
      * Indicates extension info with type of dataShare
-     *
-     * @relation DATA_SHARE = 5
      */
     | @!APILevel[
         since: "22",
@@ -459,8 +387,6 @@ public enum ExtensionAbilityType {
     DataShare
     /**
      * Indicates extension info with type of filesShare
-     *
-     * @relation FILE_SHARE = 6
      */
     | @!APILevel[
         since: "22",
@@ -469,8 +395,6 @@ public enum ExtensionAbilityType {
     FileShare
     /**
      * Indicates extension info with type of staticSubscriber
-     *
-     * @relation STATIC_SUBSCRIBER = 7
      */
     | @!APILevel[
         since: "22",
@@ -479,8 +403,6 @@ public enum ExtensionAbilityType {
     StaticSubscriber
     /**
      * Indicates extension info with type of wallpaper
-     *
-     * @relation WALLPAPER = 8
      */
     | @!APILevel[
         since: "22",
@@ -489,8 +411,6 @@ public enum ExtensionAbilityType {
     Wallpaper
     /**
      * Indicates extension info with type of backup
-     *
-     * @relation BACKUP = 9
      */
     | @!APILevel[
         since: "22",
@@ -499,8 +419,6 @@ public enum ExtensionAbilityType {
     Backup
     /**
      * Indicates extension info with type of window
-     *
-     * @relation WINDOW = 10
      */
     | @!APILevel[
         since: "22",
@@ -509,8 +427,6 @@ public enum ExtensionAbilityType {
     Window
     /**
      * Indicates extension info with type of enterprise admin
-     *
-     * @relation ENTERPRISE_ADMIN = 11
      */
     | @!APILevel[
         since: "22",
@@ -519,8 +435,6 @@ public enum ExtensionAbilityType {
     EnterpriseAdmin
     /**
      * Indicates extension info with type of thumbnail
-     *
-     * @relation THUMBNAIL = 13
      */
     | @!APILevel[
         since: "22",
@@ -529,8 +443,6 @@ public enum ExtensionAbilityType {
     Thumbnail
     /**
      * Indicates extension info with type of preview
-     *
-     * @relation PREVIEW = 14
      */
     | @!APILevel[
         since: "22",
@@ -539,8 +451,6 @@ public enum ExtensionAbilityType {
     Preview
     /**
      * Indicates extension info with type of print
-     *
-     * @relation PRINT = 15
      */
     | @!APILevel[
         since: "22",
@@ -549,8 +459,6 @@ public enum ExtensionAbilityType {
     Print
     /**
      * Indicates extension info with type of share
-     *
-     * @relation SHARE = 16
      */
     | @!APILevel[
         since: "22",
@@ -559,8 +467,6 @@ public enum ExtensionAbilityType {
     Share
     /**
      * Indicates extension info with type of push
-     *
-     * @relation PUSH = 17
      */
     | @!APILevel[
         since: "22",
@@ -569,8 +475,6 @@ public enum ExtensionAbilityType {
     Push
     /**
      * Indicates extension info with type of driver
-     *
-     * @relation DRIVER = 18
      */
     | @!APILevel[
         since: "22",
@@ -579,8 +483,6 @@ public enum ExtensionAbilityType {
     Driver
     /**
      * Indicates extension info with type of action
-     *
-     * @relation ACTION = 19
      */
     | @!APILevel[
         since: "22",
@@ -589,8 +491,6 @@ public enum ExtensionAbilityType {
     Action
     /**
      * Indicates extension info with type of ads service
-     *
-     * @relation ADS_SERVICE = 20
      */
     | @!APILevel[
         since: "22",
@@ -599,8 +499,6 @@ public enum ExtensionAbilityType {
     AdsService
     /**
      * Indicates extension info with type of embedded UI
-     *
-     * @relation EMBEDDED_UI = 21
      */
     | @!APILevel[
         since: "22",
@@ -609,8 +507,6 @@ public enum ExtensionAbilityType {
     EmbeddedUi
     /**
      * Indicates extension info with type of insight intent UI
-     *
-     * @relation INSIGHT_INTENT_UI = 22
      */
     | @!APILevel[
         since: "22",
@@ -619,8 +515,6 @@ public enum ExtensionAbilityType {
     InsightIntentUi
     /**
      * Indicates extension info with type of unspecified
-     *
-     * @relation UNSPECIFIED = 255
      */
     | @!APILevel[
         since: "22",
@@ -661,8 +555,6 @@ public enum ExtensionAbilityType {
 
 /**
 * Indicates module type
-*
-* @relation export enum ModuleType
 */
 @!APILevel[
     since: "22",
@@ -671,8 +563,6 @@ public enum ExtensionAbilityType {
 public enum ModuleType {
     /**
      * Indicates entry type
-     *
-     * @relation ENTRY = 1
      */
     @!APILevel[
         since: "22",
@@ -681,8 +571,6 @@ public enum ModuleType {
     Entry
     /**
      * Indicates feature type
-     *
-     * @relation FEATURE = 2
      */
     | @!APILevel[
         since: "22",
@@ -691,8 +579,6 @@ public enum ModuleType {
     Feature
     /**
      * Indicates shared type
-     *
-     * @relation SHARED = 3
      */
     | @!APILevel[
         since: "22",
@@ -713,8 +599,6 @@ public enum ModuleType {
 
 /**
 * This enumeration value is used to identify various types of extension ability
-*
-* @relation export enum MultiAppModeType
 */
 @!APILevel[
     since: "22",
@@ -723,8 +607,6 @@ public enum ModuleType {
 public enum MultiAppModeType {
     /**
      * Indicates multi app mode with type of unspecified
-     *
-     * @relation UNSPECIFIED = 0
      */
     @!APILevel[
         since: "22",
@@ -733,8 +615,6 @@ public enum MultiAppModeType {
     Unspecified
     /**
      * Indicates multi app mode with type of multiInstance
-     *
-     * @relation MULTI_INSTANCE = 1
      */
     | @!APILevel[
         since: "22",
@@ -743,8 +623,6 @@ public enum MultiAppModeType {
     MultiInstance
     /**
      * Indicates multi app mode with type of appClone
-     *
-     * @relation APP_CLONE = 2
      */
     | @!APILevel[
         since: "22",

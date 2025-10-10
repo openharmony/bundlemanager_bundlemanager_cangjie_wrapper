@@ -13,6 +13,8 @@
  * limitations under the License.
  */
 
+// The Cangjie API is in Beta. For details on its capabilities and limitations, please refer to the README file.
+
 package ohos.bundle.bundle_manager
 
 import ohos.labels.*
@@ -21,8 +23,6 @@ import ohos.metadata.*
 
 /**
 * Extension information about a bundle
-*
-* @relation export interface ExtensionAbilityInfo
 */
 @!APILevel[
     since: "22",
@@ -31,8 +31,6 @@ import ohos.metadata.*
 public class ExtensionAbilityInfo {
     /**
     * Indicates the name of the bundle
-    *
-    * @relation readonly bundleName: string
     */
     @!APILevel[
         since: "22",
@@ -41,8 +39,6 @@ public class ExtensionAbilityInfo {
     public let bundleName: String
     /**
     * Indicates the name of the module
-    *
-    * @relation readonly moduleName: string
     */
     @!APILevel[
         since: "22",
@@ -51,8 +47,6 @@ public class ExtensionAbilityInfo {
     public let moduleName: String
     /**
     * Indicates the name of the extension ability info
-    *
-    * @relation readonly name: string
     */
     @!APILevel[
         since: "22",
@@ -61,8 +55,6 @@ public class ExtensionAbilityInfo {
     public let name: String
     /**
     * Indicates the label id of the extension ability info
-    *
-    * @relation readonly labelId: number
     */
     @!APILevel[
         since: "22",
@@ -71,8 +63,6 @@ public class ExtensionAbilityInfo {
     public let labelId: Int32
     /**
     * Indicates the description id of the extension ability info
-    *
-    * @relation readonly descriptionId: number
     */
     @!APILevel[
         since: "22",
@@ -81,8 +71,6 @@ public class ExtensionAbilityInfo {
     public let descriptionId: Int32
     /**
     * Indicates the icon id of the extension ability info
-    *
-    * @relation readonly iconId: number
     */
     @!APILevel[
         since: "22",
@@ -91,8 +79,6 @@ public class ExtensionAbilityInfo {
     public let iconId: Int32
     /**
     * Indicates whether this ability can be called by other abilities
-    *
-    * @relation readonly exported: boolean
     */
     @!APILevel[
         since: "22",
@@ -101,8 +87,6 @@ public class ExtensionAbilityInfo {
     public let exported: Bool
     /**
     * Enumerates types of the extension ability info
-    *
-    * @relation readonly extensionAbilityType: bundleManager.ExtensionAbilityType
     */
     @!APILevel[
         since: "22",
@@ -111,8 +95,6 @@ public class ExtensionAbilityInfo {
     public let extensionAbilityType: ExtensionAbilityType
     /**
     * The permissions that others need to use this extension ability info
-    *
-    * @relation readonly permissions: Array<string>
     */
     @!APILevel[
         since: "22",
@@ -121,8 +103,6 @@ public class ExtensionAbilityInfo {
     public let permissions: Array<String>
     /**
     * Obtains configuration information about an application
-    *
-    * @relation readonly applicationInfo: ApplicationInfo
     */
     @!APILevel[
         since: "22",
@@ -131,8 +111,6 @@ public class ExtensionAbilityInfo {
     public let applicationInfo: ApplicationInfo
     /**
     * Indicates the metadata of bundle
-    *
-    * @relation readonly metadata: Array<Metadata>
     */
     @!APILevel[
         since: "22",
@@ -141,8 +119,6 @@ public class ExtensionAbilityInfo {
     public let metadata: Array<Metadata>
     /**
     * Indicates the src language to express extension ability info
-    *
-    * @relation readonly enabled: boolean
     */
     @!APILevel[
         since: "22",
@@ -151,8 +127,6 @@ public class ExtensionAbilityInfo {
     public let enabled: Bool
     /**
     * Indicates the read permission extension ability info
-    *
-    * @relation readonly readPermission: string
     */
     @!APILevel[
         since: "22",
@@ -161,8 +135,6 @@ public class ExtensionAbilityInfo {
     public let readPermission: String
     /**
     * Indicates the write permission of extension ability info
-    *
-    * @relation readonly writePermission: string
     */
     @!APILevel[
         since: "22",
@@ -171,8 +143,6 @@ public class ExtensionAbilityInfo {
     public let writePermission: String
     /**
     * Indicates type name of the extension ability.
-    *
-    * @relation readonly extensionAbilityTypeName: string
     */
     @!APILevel[
         since: "22",
@@ -181,8 +151,6 @@ public class ExtensionAbilityInfo {
     public let extensionAbilityTypeName: String
     /**
     * Indicates skills of the extension ability
-    *
-    * @relation readonly skills: Array<Skill>
     */
     @!APILevel[
         since: "22",
@@ -191,8 +159,6 @@ public class ExtensionAbilityInfo {
     public let skills: Array<Skill>
     /**
     * Indicates the appIndex of extension ability, only work in clone app mode
-    *
-    * @relation readonly appIndex: number
     */
     @!APILevel[
         since: "22",
