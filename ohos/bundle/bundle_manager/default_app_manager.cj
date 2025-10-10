@@ -13,6 +13,8 @@
  * limitations under the License.
  */
 
+// The Cangjie API is in Beta. For details on its capabilities and limitations, please refer to the README file.
+
 package ohos.bundle.bundle_manager
 
 import ohos.labels.*
@@ -21,8 +23,6 @@ import ohos.business_exception.BusinessException
 
 /**
  * The constant for application type.
- *
- * @relation export enum ApplicationType
  */
 @!APILevel[
     since: "22",
@@ -31,8 +31,6 @@ import ohos.business_exception.BusinessException
 public enum ApplicationType {
     /**
      * Default browser identifier.
-     *
-     * @relation BROWSER = 'Web Browser'
      */
     @!APILevel[
         since: "22",
@@ -41,8 +39,6 @@ public enum ApplicationType {
     Browser
     /**
      * Default image identifier.
-     *
-     * @relation IMAGE = 'Image Gallery'
      */
     | @!APILevel[
         since: "22",
@@ -55,8 +51,6 @@ public enum ApplicationType {
     ]
     /**
      * Default audio identifier.
-     *
-     * @relation AUDIO = 'Audio Player'
      */
     Audio
     | @!APILevel[
@@ -65,14 +59,10 @@ public enum ApplicationType {
     ]
     /**
      * Default video identifier.
-     *
-     * @relation VIDEO = 'Video Player'
      */
     Video
     /**
      * Default PDF identifier.
-     *
-     * @relation PDF = 'PDF Viewer'
      */
     | @!APILevel[
         since: "22",
@@ -81,8 +71,6 @@ public enum ApplicationType {
     Pdf
     /**
      * Default Default word identifier.
-     *
-     * @relation WORD = 'Word Viewer'
      */
     | @!APILevel[
         since: "22",
@@ -91,8 +79,6 @@ public enum ApplicationType {
     Word
     /**
      * Default excel identifier.
-     *
-     * @relation EXCEL = 'Excel Viewer'
      */
     | @!APILevel[
         since: "22",
@@ -101,8 +87,6 @@ public enum ApplicationType {
     Excel
     /**
      * Default PPT identifier.
-     *
-     * @relation PPT = 'PPT Viewer'
      */
     | @!APILevel[
         since: "22",
@@ -111,8 +95,6 @@ public enum ApplicationType {
     Ppt
     /**
      * Default email identifier.
-     *
-     * @relation EMAIL = 'Email'
      */
     | @!APILevel[
         since: "22",
@@ -149,8 +131,6 @@ foreign func FfiBundleManagerIsDefaultApplication(appType: CString): RetDataBool
 
 /**
  * Default application manager.
- *
- * @relation declare namespace defaultAppManager
  */
 @!APILevel[
     since: "22",
@@ -163,8 +143,6 @@ public class DefaultAppManager {
      *
      * @throws { BusinessException } 401 - Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types.
      * @throws { BusinessException } 801 - Capability not supported.
-     *
-     * @relation function isDefaultApplicationSync(type: string): boolean
      */
     @!APILevel[
         since: "22",

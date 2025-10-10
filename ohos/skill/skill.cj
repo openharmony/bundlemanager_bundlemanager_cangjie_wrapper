@@ -13,6 +13,8 @@
  * limitations under the License.
  */
 
+// The Cangjie API is in Beta. For details on its capabilities and limitations, please refer to the README file.
+
 package ohos.skill
 
 import std.convert.Parsable
@@ -20,8 +22,6 @@ import ohos.labels.*
 
 /**
 * Obtains configuration information about an skill
-*
-* @relation export interface Skill
 */
 @!APILevel[
     since: "22",
@@ -30,8 +30,6 @@ import ohos.labels.*
 public class Skill {
     /**
     * Indicates the actions of the skill
-    *
-    * @relation readonly actions: Array<string>
     */
     @!APILevel[
         since: "22",
@@ -40,8 +38,6 @@ public class Skill {
     public let actions: Array<String>
     /**
     * Indicates the entities of the skill
-    *
-    * @relation readonly entities: Array<string>
     */
     @!APILevel[
         since: "22",
@@ -50,8 +46,6 @@ public class Skill {
     public let entities: Array<String>
     /**
     * Indicates the uris of the skill
-    *
-    * @relation readonly uris: Array<SkillUri>
     */
     @!APILevel[
         since: "22",
@@ -60,8 +54,6 @@ public class Skill {
     public let uris: Array<SkillUri>
     /**
     * Indicates the domainVerify of the skill
-    *
-    * @relation readonly domainVerify: boolean
     */
     @!APILevel[
         since: "22",
@@ -79,8 +71,6 @@ public class Skill {
 
 /**
 * Obtains configuration information about an skillUri
-*
-* @relation export interface SkillUri
 */
 @!APILevel[
     since: "22",
@@ -89,8 +79,6 @@ public class Skill {
 public class SkillUri {
     /**
     * Indicates the scheme of the skillUri
-    *
-    * @relation readonly scheme: string
     */
     @!APILevel[
         since: "22",
@@ -99,8 +87,6 @@ public class SkillUri {
     public let scheme: String
     /**
     * Indicates the host of the skillUri
-    *
-    * @relation readonly host: string
     */
     @!APILevel[
         since: "22",
@@ -109,8 +95,6 @@ public class SkillUri {
     public let host: String
     /**
     * Indicates the port of the skillUri
-    *
-    * @relation readonly port: number
     */
     @!APILevel[
         since: "22",
@@ -119,8 +103,6 @@ public class SkillUri {
     public let port: Int32
     /**
     * Indicates the path of the skillUri
-    *
-    * @relation readonly path: string
     */
     @!APILevel[
         since: "22",
@@ -129,8 +111,6 @@ public class SkillUri {
     public let path: String
     /**
     * Indicates the pathStartWith of the skillUri
-    *
-    * @relation readonly pathStartWith: string
     */
     @!APILevel[
         since: "22",
@@ -139,8 +119,6 @@ public class SkillUri {
     public let pathStartWith: String
     /**
     * Indicates the pathRegex of the skillUri
-    *
-    * @relation readonly pathRegex: string
     */
     @!APILevel[
         since: "22",
@@ -149,8 +127,6 @@ public class SkillUri {
     public let pathRegex: String
     /**
     * Indicates the type of the skillUri
-    *
-    * @relation readonly type: string
     */
     @!APILevel[
         since: "22",
@@ -159,8 +135,6 @@ public class SkillUri {
     public let uriType: String
     /**
     * Indicates the utd of the skillUri
-    *
-    * @relation readonly utd: string
     */
     @!APILevel[
         since: "22",
@@ -169,8 +143,6 @@ public class SkillUri {
     public let utd: String
     /**
     * Indicates the maxFileSupported of the skillUri
-    *
-    * @relation readonly maxFileSupported: number
     */
     @!APILevel[
         since: "22",
@@ -179,8 +151,6 @@ public class SkillUri {
     public let maxFileSupported: Int32
     /**
     * Indicates the linkFeature of the skillUri
-    *
-    * @relation readonly linkFeature: string
     */
     @!APILevel[
         since: "22",

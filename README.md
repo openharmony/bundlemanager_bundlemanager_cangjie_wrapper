@@ -1,4 +1,4 @@
-# **bundlemanager_cangjie_wrapper**
+# **bundlemanager_cangjie_wrapper(beta feature)**
 
 ## Introduction
 
