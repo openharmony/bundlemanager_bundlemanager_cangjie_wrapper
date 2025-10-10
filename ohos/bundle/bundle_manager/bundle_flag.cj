@@ -120,7 +120,8 @@ public class BundleFlag {
     public static const GET_BUNDLE_INFO_WITH_SIGNATURE_INFO: Int32 = 0x00000080
     /**
      * Used to obtain the bundleInfo containing menu configuration in hapModuleInfo.
-     * The obtained bundleInfo does not contain the information of applicationInfo, extensionAbility, ability and permission.
+     * The obtained bundleInfo does not contain the information of applicationInfo, extensionAbility, ability
+     * and permission.
      * It can't be used alone, it needs to be used with GET_BUNDLE_INFO_WITH_HAP_MODULE,
      * such as GET_BUNDLE_INFO_WITH_MENU | GET_BUNDLE_INFO_WITH_HAP_MODULE
      */
@@ -131,7 +132,8 @@ public class BundleFlag {
     public static const GET_BUNDLE_INFO_WITH_MENU: Int32 = 0x00000100
     /**
      * Used to obtain the bundleInfo containing router map configuration in hapModuleInfo.
-     * The obtained bundleInfo does not contain the information of applicationInfo, extensionAbility, ability and permission.
+     * The obtained bundleInfo does not contain the information of applicationInfo, extensionAbility, ability
+     * and permission.
      * It can't be used alone, it needs to be used with GET_BUNDLE_INFO_WITH_HAP_MODULE,
      * such as GET_BUNDLE_INFO_WITH_ROUTER_MAP | GET_BUNDLE_INFO_WITH_HAP_MODULE
      */
