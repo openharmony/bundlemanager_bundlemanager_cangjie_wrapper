@@ -23,6 +23,7 @@ import ohos.metadata.*
 
 /**
 * Extension information about a bundle
+*
 */
 @!APILevel[
     22,
@@ -31,6 +32,7 @@ import ohos.metadata.*
 public class ExtensionAbilityInfo {
     /**
     * Indicates the name of the bundle
+    *
     */
     @!APILevel[
         22,
@@ -39,6 +41,7 @@ public class ExtensionAbilityInfo {
     public let bundleName: String
     /**
     * Indicates the name of the module
+    *
     */
     @!APILevel[
         22,
@@ -47,6 +50,7 @@ public class ExtensionAbilityInfo {
     public let moduleName: String
     /**
     * Indicates the name of the extension ability info
+    *
     */
     @!APILevel[
         22,
@@ -55,6 +59,7 @@ public class ExtensionAbilityInfo {
     public let name: String
     /**
     * Indicates the label id of the extension ability info
+    *
     */
     @!APILevel[
         22,
@@ -63,6 +68,7 @@ public class ExtensionAbilityInfo {
     public let labelId: Int32
     /**
     * Indicates the description id of the extension ability info
+    *
     */
     @!APILevel[
         22,
@@ -71,6 +77,7 @@ public class ExtensionAbilityInfo {
     public let descriptionId: Int32
     /**
     * Indicates the icon id of the extension ability info
+    *
     */
     @!APILevel[
         22,
@@ -79,6 +86,7 @@ public class ExtensionAbilityInfo {
     public let iconId: Int32
     /**
     * Indicates whether this ability can be called by other abilities
+    *
     */
     @!APILevel[
         22,
@@ -87,6 +95,7 @@ public class ExtensionAbilityInfo {
     public let exported: Bool
     /**
     * Enumerates types of the extension ability info
+    *
     */
     @!APILevel[
         22,
@@ -95,6 +104,7 @@ public class ExtensionAbilityInfo {
     public let extensionAbilityType: ExtensionAbilityType
     /**
     * The permissions that others need to use this extension ability info
+    *
     */
     @!APILevel[
         22,
@@ -103,6 +113,7 @@ public class ExtensionAbilityInfo {
     public let permissions: Array<String>
     /**
     * Obtains configuration information about an application
+    *
     */
     @!APILevel[
         22,
@@ -111,6 +122,7 @@ public class ExtensionAbilityInfo {
     public let applicationInfo: ApplicationInfo
     /**
     * Indicates the metadata of bundle
+    *
     */
     @!APILevel[
         22,
@@ -119,6 +131,7 @@ public class ExtensionAbilityInfo {
     public let metadata: Array<Metadata>
     /**
     * Indicates the src language to express extension ability info
+    *
     */
     @!APILevel[
         22,
@@ -127,6 +140,7 @@ public class ExtensionAbilityInfo {
     public let enabled: Bool
     /**
     * Indicates the read permission extension ability info
+    *
     */
     @!APILevel[
         22,
@@ -135,6 +149,7 @@ public class ExtensionAbilityInfo {
     public let readPermission: String
     /**
     * Indicates the write permission of extension ability info
+    *
     */
     @!APILevel[
         22,
@@ -143,6 +158,7 @@ public class ExtensionAbilityInfo {
     public let writePermission: String
     /**
     * Indicates type name of the extension ability.
+    *
     */
     @!APILevel[
         22,
@@ -151,6 +167,7 @@ public class ExtensionAbilityInfo {
     public let extensionAbilityTypeName: String
     /**
     * Indicates skills of the extension ability
+    *
     */
     @!APILevel[
         22,
@@ -159,6 +176,7 @@ public class ExtensionAbilityInfo {
     public let skills: Array<Skill>
     /**
     * Indicates the appIndex of extension ability, only work in clone app mode
+    *
     */
     @!APILevel[
         22,

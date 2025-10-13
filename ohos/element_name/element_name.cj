@@ -49,6 +49,7 @@ foreign func FFICJElementNameParamsDelete(elementNameParams: CPointer<ElementNam
  * Contains basic Ability information, which uniquely identifies an ability.
  * You can use this class to obtain values of the fields set in an element,
  * such as the device ID, bundle name, and ability name.
+ *
  */
 @!APILevel[
     22,
@@ -57,6 +58,7 @@ foreign func FFICJElementNameParamsDelete(elementNameParams: CPointer<ElementNam
 public class ElementName {
     /**
     * Indicates device id
+    *
     */
     @!APILevel[
         22,
@@ -66,6 +68,7 @@ public class ElementName {
 
     /**
     * Indicates bundle name
+    * 
     */
     @!APILevel[
         22,
@@ -75,6 +78,7 @@ public class ElementName {
 
     /**
     * Indicates ability name
+    *
     */
     @!APILevel[
         22,
@@ -84,6 +88,7 @@ public class ElementName {
 
     /**
     * Indicates module name
+    *
     */
     @!APILevel[
         22,

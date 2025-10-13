@@ -23,6 +23,7 @@ import ohos.metadata.*
 
 /**
 * Obtains configuration information about an application
+*
 */
 @!APILevel[
     22,
@@ -31,6 +32,7 @@ import ohos.metadata.*
 public class ApplicationInfo {
     /**
     * Indicates the application name, which is the same as bundleName
+    *
     */
     @!APILevel[
         22,
@@ -39,6 +41,7 @@ public class ApplicationInfo {
     public let name: String
     /**
     * Description of application
+    *
     */
     @!APILevel[
         22,
@@ -47,6 +50,7 @@ public class ApplicationInfo {
     public let description: String
     /**
     * Indicates the description id of the application
+    *
     */
     @!APILevel[
         22,
@@ -55,6 +59,7 @@ public class ApplicationInfo {
     public let descriptionId: Int32
     /**
     * Indicates whether or not this application may be instantiated
+    *
     */
     @!APILevel[
         22,
@@ -63,6 +68,7 @@ public class ApplicationInfo {
     public let enabled: Bool
     /**
     * Indicates the label of the application
+    *
     */
     @!APILevel[
         22,
@@ -71,6 +77,7 @@ public class ApplicationInfo {
     public let label: String
     /**
     * Indicates the label id of the application
+    *
     */
     @!APILevel[
         22,
@@ -79,6 +86,7 @@ public class ApplicationInfo {
     public let labelId: Int32
     /**
     * Indicates the icon of the application
+    *
     */
     @!APILevel[
         22,
@@ -87,6 +95,7 @@ public class ApplicationInfo {
     public let icon: String
     /**
     * Indicates the icon id of the application
+    *
     */
     @!APILevel[
         22,
@@ -95,6 +104,7 @@ public class ApplicationInfo {
     public let iconId: Int32
     /**
     * Process of application, if user do not set it ,the value equal bundleName
+   *
     */
     @!APILevel[
         22,
@@ -103,6 +113,7 @@ public class ApplicationInfo {
     public let process: String
     /**
     * Indicates the permissions required for accessing the application.
+    *
     */
     @!APILevel[
         22,
@@ -111,6 +122,7 @@ public class ApplicationInfo {
     public let permissions: Array<String>
     /**
     * Indicates the application source code path
+    *
     */
     @!APILevel[
         22,
@@ -119,6 +131,7 @@ public class ApplicationInfo {
     public let codePath: String
     /**
     * Indicates the metadata of the application
+    *
     */
     @!APILevel[
         22,
@@ -127,6 +140,7 @@ public class ApplicationInfo {
     public let metadataArray: Array<ModuleMetadata>
     /**
     * Indicates whether or not this application may be removable
+    *
     */
     @!APILevel[
         22,
@@ -135,6 +149,7 @@ public class ApplicationInfo {
     public let removable: Bool
     /**
     * Indicates the access token of the application
+    *
     */
     @!APILevel[
         22,
@@ -143,6 +158,7 @@ public class ApplicationInfo {
     public let accessTokenId: UInt32
     /**
     * Indicates the uid of the application
+    *
     */
     @!APILevel[
         22,
@@ -151,6 +167,7 @@ public class ApplicationInfo {
     public let uid: Int32
     /**
     * Indicates icon resource of the application
+    *
     */
     @!APILevel[
         22,
@@ -159,6 +176,7 @@ public class ApplicationInfo {
     public let iconResource: AppResource
     /**
     * Indicates label resource of the application
+    *
     */
     @!APILevel[
         22,
@@ -167,6 +185,7 @@ public class ApplicationInfo {
     public let labelResource: AppResource
     /**
     * Indicates description resource of the application
+    *
     */
     @!APILevel[
         22,
@@ -175,6 +194,7 @@ public class ApplicationInfo {
     public let descriptionResource: AppResource
     /**
     * Indicates the appDistributionType of the application
+    *
     */
     @!APILevel[
         22,
@@ -183,6 +203,7 @@ public class ApplicationInfo {
     public let appDistributionType: String
     /**
     * Indicates the appProvisionType of the application
+    *
     */
     @!APILevel[
         22,
@@ -191,6 +212,7 @@ public class ApplicationInfo {
     public let appProvisionType: String
     /**
     * Indicates whether the application is a system application
+    *
     */
     @!APILevel[
         22,
@@ -199,6 +221,7 @@ public class ApplicationInfo {
     public let systemApp: Bool
     /**
     * Indicates the type of application is APP or atomicService.
+    *
     */
     @!APILevel[
         22,
@@ -207,6 +230,7 @@ public class ApplicationInfo {
     public let bundleType: BundleType
     /**
     * Indicates whether the application is in debug mode.
+    *
     */
     @!APILevel[
         22,
@@ -215,6 +239,7 @@ public class ApplicationInfo {
     public let debug: Bool
     /**
     * Indicates whether the application data is unclearable, that is, whether the application data cannot be cleared.
+    *
     */
     @!APILevel[
         22,
@@ -223,6 +248,7 @@ public class ApplicationInfo {
     public let dataUnclearable: Bool
     /**
     * Indicates whether the application enables cloud file sync.
+    *
     */
     @!APILevel[
         22,
@@ -231,6 +257,7 @@ public class ApplicationInfo {
     public let cloudFileSyncEnabled: Bool
     /**
     * Indicates native library path.
+    *
     */
     @!APILevel[
         22,
@@ -239,6 +266,7 @@ public class ApplicationInfo {
     public let nativeLibraryPath: String
     /**
     * Indicates the MultiAppMode object of the bundle
+    *
     */
     @!APILevel[
         22,
@@ -247,6 +275,7 @@ public class ApplicationInfo {
     public let multiAppMode: MultiAppMode
     /**
     * Indicates the index of the bundle
+    *
     */
     @!APILevel[
         22,
@@ -255,6 +284,7 @@ public class ApplicationInfo {
     public let appIndex: Int32
     /**
     * Indicates sources to install the app
+    *
     */
     @!APILevel[
         22,
@@ -263,6 +293,7 @@ public class ApplicationInfo {
     public let installSource: String
     /**
     * Indicates the release type of the app
+    *
     */
     @!APILevel[
         22,
@@ -306,6 +337,7 @@ public class ApplicationInfo {
 
 /**
 * Indicates the ModuleMetadata
+*
 */
 @!APILevel[
     22,
@@ -314,6 +346,7 @@ public class ApplicationInfo {
 public class ModuleMetadata {
     /**
      * Indicates the name of this hap module
+     *
      */
     @!APILevel[
         22,
@@ -322,6 +355,7 @@ public class ModuleMetadata {
     public let moduleName: String
     /**
      * Indicates the metadata of this hap module
+     *
      */
     @!APILevel[
         22,
@@ -343,6 +377,7 @@ public class ModuleMetadata {
 
 /**
 * Indicates MultiAppMode
+*
 */
 @!APILevel[
     22,
@@ -351,6 +386,7 @@ public class ModuleMetadata {
 public class MultiAppMode {
     /**
      * Indicates the multiAppModeType of the bundle
+     *
      */
     @!APILevel[
         22,
@@ -359,6 +395,7 @@ public class MultiAppMode {
     public let multiAppModeType: MultiAppModeType
     /**
      * Indicates the max count of the bundle
+     *
      */
     @!APILevel[
         22,

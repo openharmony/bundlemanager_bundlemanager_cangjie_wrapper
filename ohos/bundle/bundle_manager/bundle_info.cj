@@ -21,6 +21,7 @@ import ohos.labels.*
 
 /**
 * Obtains configuration information about a bundle
+*
 */
 @!APILevel[
     22,
@@ -30,6 +31,7 @@ public class BundleInfo {
     let uid: Int32
     /**
     * Indicates the name of this bundle
+    *
     */
     @!APILevel[
         22,
@@ -38,6 +40,7 @@ public class BundleInfo {
     public let name: String
     /**
     * Indicates the bundle vendor
+    *
     */
     @!APILevel[
         22,
@@ -46,6 +49,7 @@ public class BundleInfo {
     public let vendor: String
     /**
     * Indicates the version code of the bundle
+    *
     */
     @!APILevel[
         22,
@@ -54,6 +58,7 @@ public class BundleInfo {
     public let versionCode: UInt32
     /**
     * Indicates the version name of the bundle
+    *
     */
     @!APILevel[
         22,
@@ -62,6 +67,7 @@ public class BundleInfo {
     public let versionName: String
     /**
     * Indicates the **minimum ** version compatible with the bundle
+    *
     */
     @!APILevel[
         22,
@@ -70,6 +76,7 @@ public class BundleInfo {
     public let minCompatibleVersionCode: UInt32
     /**
     * Indicates the target version number of the bundle
+    *
     */
     @!APILevel[
         22,
@@ -78,6 +85,7 @@ public class BundleInfo {
     public let targetVersion: UInt32
     /**
     * Obtains configuration information about an application
+    *
     */
     @!APILevel[
         22,
@@ -86,6 +94,7 @@ public class BundleInfo {
     public let appInfo: ApplicationInfo
     /**
     * Obtains configuration information about a module
+    *
     */
     @!APILevel[
         22,
@@ -94,6 +103,7 @@ public class BundleInfo {
     public let hapModulesInfo: Array<HapModuleInfo>
     /**
     * Indicates the required permissions details defined in the bundle
+    *
     */
     @!APILevel[
         22,
@@ -102,6 +112,7 @@ public class BundleInfo {
     public let reqPermissionDetails: Array<ReqPermissionDetail>
     /**
     * Indicates the grant state of required permissions
+    *
     */
     @!APILevel[
         22,
@@ -110,6 +121,7 @@ public class BundleInfo {
     public let permissionGrantStates: Array<PermissionGrantState>
     /**
     * Indicates the SignatureInfo of the bundle
+    *
     */
     @!APILevel[
         22,
@@ -118,6 +130,7 @@ public class BundleInfo {
     public let signatureInfo: SignatureInfo
     /**
     * Indicates the hap install time
+    *
     */
     @!APILevel[
         22,
@@ -126,6 +139,7 @@ public class BundleInfo {
     public let installTime: Int64
     /**
     * Indicates the hap update time
+    *
     */
     @!APILevel[
         22,
@@ -135,6 +149,7 @@ public class BundleInfo {
 
     /**
     * Indicates the router information of the application
+    *
     */
     @!APILevel[
         22,
@@ -143,6 +158,7 @@ public class BundleInfo {
     public let routerMap: Array<RouterItem>
     /**
     * Indicates the appIndex of application, only work in appClone mode
+    *
     */
     @!APILevel[
         22,
@@ -172,6 +188,7 @@ public class BundleInfo {
 
 /**
 * Indicates the required permissions details defined in configuration file
+*
 */
 @!APILevel[
     22,
@@ -180,6 +197,7 @@ public class BundleInfo {
 public class ReqPermissionDetail {
     /**
      * Indicates the name of this required permissions
+     *
      */
     @!APILevel[
         22,
@@ -188,6 +206,7 @@ public class ReqPermissionDetail {
     public var name: String
     /**
      * Indicates the module name which the request permission belongs
+     *
      */
     @!APILevel[
         22,
@@ -196,6 +215,7 @@ public class ReqPermissionDetail {
     public var moduleName: String
     /**
      * Indicates the reason of this required permissions
+     *
      */
     @!APILevel[
         22,
@@ -204,6 +224,7 @@ public class ReqPermissionDetail {
     public var reason: String
     /**
      * Indicates the reason id of this required permissions
+     *
      */
     @!APILevel[
         22,
@@ -212,6 +233,7 @@ public class ReqPermissionDetail {
     public var reasonId: Int32
     /**
      * Indicates the used scene of this required permissions
+     *
      */
     @!APILevel[
         22,
@@ -238,6 +260,7 @@ public class ReqPermissionDetail {
 
 /**
 * The scene which is used
+*
 */
 @!APILevel[
     22,
@@ -246,6 +269,7 @@ public class ReqPermissionDetail {
 public class UsedScene {
     /**
     * Indicates the abilities that need the permission
+    *
     */
     @!APILevel[
         22,
@@ -254,6 +278,7 @@ public class UsedScene {
     public var abilities: Array<String>
     /**
     * Indicates the time when the permission is used
+    *
     */
     @!APILevel[
         22,
@@ -274,6 +299,7 @@ public class UsedScene {
 
 /**
 * Indicates SignatureInfo
+*
 */
 @!APILevel[
     22,
@@ -283,6 +309,7 @@ public class SignatureInfo {
     /**
      * Indicates the ID of the application to which this bundle belongs
      * The application ID uniquely identifies an application. It is determined by the bundle name and signature
+     *
      */
     @!APILevel[
         22,
@@ -301,6 +328,7 @@ public class SignatureInfo {
      * Globally unique identifier of an application, which is allocated by the cloud.
      * AppIdentifier does not change along the application lifecycle, including version updates, certificate changes,
      * public and private key changes, and application transfer.
+     *
      */
     @!APILevel[
         22,

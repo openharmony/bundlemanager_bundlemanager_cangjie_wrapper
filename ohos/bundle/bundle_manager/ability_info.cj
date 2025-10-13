@@ -23,6 +23,7 @@ import ohos.metadata.*
 
 /**
 * Obtains configuration information about an ability
+*
 */
 @!APILevel[
     22,
@@ -31,6 +32,7 @@ import ohos.metadata.*
 public class AbilityInfo {
     /**
     * Indicates the name of the bundle containing the ability
+    *
     */
     @!APILevel[
         22,
@@ -39,6 +41,7 @@ public class AbilityInfo {
     public let bundleName: String
     /**
     * Indicates the module name of the package to which the capability belongs
+    *
     */
     @!APILevel[
         22,
@@ -47,6 +50,7 @@ public class AbilityInfo {
     public let moduleName: String
     /**
     * Ability simplified class name
+    *
     */
     @!APILevel[
         22,
@@ -55,6 +59,7 @@ public class AbilityInfo {
     public let name: String
     /**
     * Indicates the label of the ability
+    *
     */
     @!APILevel[
         22,
@@ -63,6 +68,7 @@ public class AbilityInfo {
     public let label: String
     /**
     * Indicates the label id of the ability
+    *
     */
     @!APILevel[
         22,
@@ -71,6 +77,7 @@ public class AbilityInfo {
     public let labelId: Int32
     /**
     * Indicates the ability
+    *
     */
     @!APILevel[
         22,
@@ -79,6 +86,7 @@ public class AbilityInfo {
     public let description: String
     /**
     * Indicates the description id of the ability
+    *
     */
     @!APILevel[
         22,
@@ -87,6 +95,7 @@ public class AbilityInfo {
     public let descriptionId: Int32
     /**
     * Indicates the icon of the ability
+    *
     */
     @!APILevel[
         22,
@@ -95,6 +104,7 @@ public class AbilityInfo {
     public let icon: String
     /**
     * Indicates the icon id of the ability
+    *
     */
     @!APILevel[
         22,
@@ -103,6 +113,7 @@ public class AbilityInfo {
     public let iconId: Int32
     /**
     * Process of ability, if user do not set it, the value equal application process
+    *
     */
     @!APILevel[
         22,
@@ -111,6 +122,7 @@ public class AbilityInfo {
     public let process: String
     /**
     * Indicates whether this ability can be called by other abilities
+    *
     */
     @!APILevel[
         22,
@@ -119,6 +131,7 @@ public class AbilityInfo {
     public let exported: Bool
     /**
     * Enumerates ability display orientations
+    *
     */
     @!APILevel[
         22,
@@ -127,6 +140,7 @@ public class AbilityInfo {
     public let orientation: DisplayOrientation
     /**
     * Enumerates ability launch type
+    *
     */
     @!APILevel[
         22,
@@ -135,6 +149,7 @@ public class AbilityInfo {
     public let launchType: LaunchType
     /**
     * The permissions that others need to launch this ability
+    *
     */
     @!APILevel[
         22,
@@ -143,6 +158,7 @@ public class AbilityInfo {
     public let permissions: Array<String>
     /**
     * The device types that this ability can run on
+    *
     */
     @!APILevel[
         22,
@@ -151,6 +167,7 @@ public class AbilityInfo {
     public let deviceTypes: Array<String>
     /**
     * Obtains configuration information about an application
+    *
     */
     @!APILevel[
         22,
@@ -159,6 +176,7 @@ public class AbilityInfo {
     public let applicationInfo: ApplicationInfo
     /**
     * Indicates the metadata of ability
+    *
     */
     @!APILevel[
         22,
@@ -167,6 +185,7 @@ public class AbilityInfo {
     public let metadata: Array<Metadata>
     /**
     * Indicates whether the ability is enabled
+    *
     */
     @!APILevel[
         22,
@@ -175,6 +194,7 @@ public class AbilityInfo {
     public let enabled: Bool
     /**
     * Indicates which window mode is supported
+    *
     */
     @!APILevel[
         22,
@@ -183,6 +203,7 @@ public class AbilityInfo {
     public let supportWindowModes: Array<SupportWindowMode>
     /**
     * Indicates window size
+    *
     */
     @!APILevel[
         22,
@@ -191,6 +212,7 @@ public class AbilityInfo {
     public let windowSize: WindowSize
     /**
     * Indicates whether to hide the application icon from the dock area
+    *
     */
     @!APILevel[
         22,
@@ -199,6 +221,7 @@ public class AbilityInfo {
     public let excludeFromDock: Bool
     /**
     * Indicates skills of the ability
+    *
     */
     @!APILevel[
         22,
@@ -207,6 +230,7 @@ public class AbilityInfo {
     public let skills: Array<Skill>
     /**
     * Indicates the appIndex of application, only work in clone app mode
+    *
     */
     @!APILevel[
         22,
@@ -243,6 +267,7 @@ public class AbilityInfo {
 
 /**
 * Indicates the window size.
+*
 */
 @!APILevel[
     22,
@@ -251,6 +276,7 @@ public class AbilityInfo {
 public class WindowSize {
     /**
     * Indicates maximum ratio of width over height of window under free window status.
+    *
     */
     @!APILevel[
         22,
@@ -259,6 +285,7 @@ public class WindowSize {
     public let maxWindowRatio: Float64
     /**
     * Indicates minimum ratio of width over height of window under free window status.
+    *
     */
     @!APILevel[
         22,
@@ -267,6 +294,7 @@ public class WindowSize {
     public let minWindowRatio: Float64
     /**
     * Indicates maximum width of window under free window status.
+    *
     */
     @!APILevel[
         22,
@@ -275,6 +303,7 @@ public class WindowSize {
     public let maxWindowWidth: UInt32
     /**
     * Indicates minimum width of window under free window status.
+    *
     */
     @!APILevel[
         22,
@@ -283,6 +312,7 @@ public class WindowSize {
     public let minWindowWidth: UInt32
     /**
     * Indicates maximum height of window under free window status.
+    *
     */
     @!APILevel[
         22,
@@ -291,6 +321,7 @@ public class WindowSize {
     public let maxWindowHeight: UInt32
     /**
     * Indicates minimum height of window under free window status.
+    *
     */
     @!APILevel[
         22,
