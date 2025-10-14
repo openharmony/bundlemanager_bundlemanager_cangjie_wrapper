@@ -138,9 +138,6 @@ func getErrorMsg(code: Int32): String {
 }
 
 func checkCodeAndThrow(code: Int32): Unit {
-    if (code == ERR_PARAMETER_ERROR) {
-        throw IllegalArgumentException("Parameter is error, please check")
-    }
     if (code != 0) {
         throw BusinessException(code, getErrorMsg(code))
     }

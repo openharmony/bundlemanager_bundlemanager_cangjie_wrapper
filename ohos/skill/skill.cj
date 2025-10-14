@@ -22,6 +22,7 @@ import ohos.labels.*
 
 /**
 * Obtains configuration information about an skill
+*
 */
 @!APILevel[
     since: "22",
@@ -30,6 +31,7 @@ import ohos.labels.*
 public class Skill {
     /**
     * Indicates the actions of the skill
+    *
     */
     @!APILevel[
         since: "22",
@@ -38,6 +40,7 @@ public class Skill {
     public let actions: Array<String>
     /**
     * Indicates the entities of the skill
+    *
     */
     @!APILevel[
         since: "22",
@@ -46,6 +49,7 @@ public class Skill {
     public let entities: Array<String>
     /**
     * Indicates the uris of the skill
+    *
     */
     @!APILevel[
         since: "22",
@@ -54,6 +58,7 @@ public class Skill {
     public let uris: Array<SkillUri>
     /**
     * Indicates the domainVerify of the skill
+    *
     */
     @!APILevel[
         since: "22",
@@ -71,6 +76,7 @@ public class Skill {
 
 /**
 * Obtains configuration information about an skillUri
+*
 */
 @!APILevel[
     since: "22",
@@ -79,6 +85,7 @@ public class Skill {
 public class SkillUri {
     /**
     * Indicates the scheme of the skillUri
+    *
     */
     @!APILevel[
         since: "22",
@@ -87,6 +94,7 @@ public class SkillUri {
     public let scheme: String
     /**
     * Indicates the host of the skillUri
+    *
     */
     @!APILevel[
         since: "22",
@@ -95,6 +103,7 @@ public class SkillUri {
     public let host: String
     /**
     * Indicates the port of the skillUri
+    *
     */
     @!APILevel[
         since: "22",
@@ -103,6 +112,7 @@ public class SkillUri {
     public let port: Int32
     /**
     * Indicates the path of the skillUri
+    *
     */
     @!APILevel[
         since: "22",
@@ -111,6 +121,7 @@ public class SkillUri {
     public let path: String
     /**
     * Indicates the pathStartWith of the skillUri
+    *
     */
     @!APILevel[
         since: "22",
@@ -119,6 +130,7 @@ public class SkillUri {
     public let pathStartWith: String
     /**
     * Indicates the pathRegex of the skillUri
+    *
     */
     @!APILevel[
         since: "22",
@@ -127,6 +139,7 @@ public class SkillUri {
     public let pathRegex: String
     /**
     * Indicates the type of the skillUri
+    *
     */
     @!APILevel[
         since: "22",
@@ -135,6 +148,7 @@ public class SkillUri {
     public let uriType: String
     /**
     * Indicates the utd of the skillUri
+    *
     */
     @!APILevel[
         since: "22",
@@ -143,6 +157,7 @@ public class SkillUri {
     public let utd: String
     /**
     * Indicates the maxFileSupported of the skillUri
+    *
     */
     @!APILevel[
         since: "22",
@@ -151,6 +166,7 @@ public class SkillUri {
     public let maxFileSupported: Int32
     /**
     * Indicates the linkFeature of the skillUri
+    *
     */
     @!APILevel[
         since: "22",
