@@ -59,6 +59,7 @@ func checkToCache(uid: Int32, callingUid: Int32, query: BMQuery, bundleInfo: Bun
 
 /**
  * This module is used to obtain package information of various applications installed on the current device.
+ *
  */
 @!APILevel[
     22,
@@ -72,6 +73,7 @@ public class BundleManager {
      * @param { Int32 } bundleFlags - Indicates the flag used to specify information contained in the BundleInfo
      * objects that will be returned.
      * @returns { BundleInfo } The result of getting the bundle info.
+     *
      */
     @!APILevel[
         22,
