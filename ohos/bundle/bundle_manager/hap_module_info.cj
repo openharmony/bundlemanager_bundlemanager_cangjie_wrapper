@@ -22,6 +22,7 @@ import ohos.metadata.*
 
 /**
 * Obtains configuration information about a hap module.
+*
 */
 @!APILevel[
     since: "22",
@@ -30,6 +31,7 @@ import ohos.metadata.*
 public class HapModuleInfo {
     /**
     * Indicates the name of this hap module
+    *
     */
     @!APILevel[
         since: "22",
@@ -38,6 +40,7 @@ public class HapModuleInfo {
     public let name: String
     /**
     * Indicates the icon of this hap module
+    *
     */
     @!APILevel[
         since: "22",
@@ -46,6 +49,7 @@ public class HapModuleInfo {
     public let icon: String
     /**
     * Indicates the icon id of this hap module
+    *
     */
     @!APILevel[
         since: "22",
@@ -54,6 +58,7 @@ public class HapModuleInfo {
     public let iconId: Int32
     /**
     * Indicates the label of this hap module
+    *
     */
     @!APILevel[
         since: "22",
@@ -62,6 +67,7 @@ public class HapModuleInfo {
     public let label: String
     /**
     * Indicates the label id of this hap module
+    *
     */
     @!APILevel[
         since: "22",
@@ -70,6 +76,7 @@ public class HapModuleInfo {
     public let labelId: Int32
     /**
     * Describes the hap module
+    *
     */
     @!APILevel[
         since: "22",
@@ -78,6 +85,7 @@ public class HapModuleInfo {
     public let description: String
     /**
     * Indicates the description of this hap module
+    *
     */
     @!APILevel[
         since: "22",
@@ -86,6 +94,7 @@ public class HapModuleInfo {
     public let descriptionId: Int32
     /**
     * Indicates main elementName of the hap module
+    *
     */
     @!APILevel[
         since: "22",
@@ -94,6 +103,7 @@ public class HapModuleInfo {
     public let mainElementName: String
     /**
     * Obtains configuration information about abilities
+    *
     */
     @!APILevel[
         since: "22",
@@ -102,6 +112,7 @@ public class HapModuleInfo {
     public let abilitiesInfo: Array<AbilityInfo>
     /**
     * Obtains configuration information about extension abilities
+    *
     */
     @!APILevel[
         since: "22",
@@ -110,6 +121,7 @@ public class HapModuleInfo {
     public let extensionAbilitiesInfo: Array<ExtensionAbilityInfo>
     /**
     * Indicates the metadata of ability
+    *
     */
     @!APILevel[
         since: "22",
@@ -118,6 +130,7 @@ public class HapModuleInfo {
     public let metadata: Array<Metadata>
     /**
     * The device types that this hap module can run on
+    *
     */
     @!APILevel[
         since: "22",
@@ -126,6 +139,7 @@ public class HapModuleInfo {
     public let deviceTypes: Array<String>
     /**
     * Indicates whether free installation of the hap module is supported
+    *
     */
     @!APILevel[
         since: "22",
@@ -134,6 +148,7 @@ public class HapModuleInfo {
     public let installationFree: Bool
     /**
     * Indicates the hash value of the hap module
+    *
     */
     @!APILevel[
         since: "22",
@@ -142,6 +157,7 @@ public class HapModuleInfo {
     public let hashValue: String
     /**
     * Indicates the type of the module
+    *
     */
     @!APILevel[
         since: "22",
@@ -150,6 +166,7 @@ public class HapModuleInfo {
     public let moduleType: ModuleType
     /**
     * Indicates the preload module
+    *
     */
     @!APILevel[
         since: "22",
@@ -158,6 +175,7 @@ public class HapModuleInfo {
     public let preloads: Array<PreloadItem>
     /**
     * Indicates the dependency module that this module depends on
+    *
     */
     @!APILevel[
         since: "22",
@@ -166,6 +184,7 @@ public class HapModuleInfo {
     public let dependencies: Array<Dependency>
     /**
     * Indicates the menu configuration
+    *
     */
     @!APILevel[
         since: "22",
@@ -174,6 +193,7 @@ public class HapModuleInfo {
     public let fileContextMenuConfig: String
     /**
     * Indicates the router information of the module
+    *
     */
     @!APILevel[
         since: "22",
@@ -182,6 +202,7 @@ public class HapModuleInfo {
     public let routerMap: Array<RouterItem>
     /**
     * Indicates the code path
+    *
     */
     @!APILevel[
         since: "22",
@@ -190,6 +211,7 @@ public class HapModuleInfo {
     public let codePath: String
     /**
     * Indicates native library path.
+    *
     */
     @!APILevel[
         since: "22",
@@ -224,6 +246,7 @@ public class HapModuleInfo {
 
 /**
 * Indicates the data item defined in router item
+*
 */
 @!APILevel[
     since: "22",
@@ -232,6 +255,7 @@ public class HapModuleInfo {
 public class DataItem {
     /**
     * Indicates the key of the custom data item
+    *
     */
     @!APILevel[
         since: "22",
@@ -240,6 +264,7 @@ public class DataItem {
     public let key: String
     /**
     * Indicates the value of the custom data item
+    *
     */
     @!APILevel[
         since: "22",
@@ -255,6 +280,7 @@ public class DataItem {
 
 /**
 * Indicates the dependency
+*
 */
 @!APILevel[
     since: "22",
@@ -263,6 +289,7 @@ public class DataItem {
 public class Dependency {
     /**
     * Indicates the bundle name of the dependency
+    *
     */
     @!APILevel[
         since: "22",
@@ -271,6 +298,7 @@ public class Dependency {
     public let bundleName: String
     /**
     * Indicates the module name
+    *
     */
     @!APILevel[
         since: "22",
@@ -279,6 +307,7 @@ public class Dependency {
     public let moduleName: String
     /**
     * Indicates the version code of the dependency
+    *
     */
     @!APILevel[
         since: "22",
@@ -295,6 +324,7 @@ public class Dependency {
 
 /**
 * Indicates the preloadItem
+*
 */
 @!APILevel[
     since: "22",
@@ -303,6 +333,7 @@ public class Dependency {
 public class PreloadItem {
     /**
     * Indicates the module name need preload
+    *
     */
     @!APILevel[
         since: "22",
@@ -317,6 +348,7 @@ public class PreloadItem {
 
 /**
 * Indicates the router item
+*
 */
 @!APILevel[
     since: "22",
@@ -325,6 +357,7 @@ public class PreloadItem {
 public class RouterItem {
     /**
     * Indicates the name of the module to which the current page belongs
+    *
     */
     @!APILevel[
         since: "22",
@@ -333,6 +366,7 @@ public class RouterItem {
     public let name: String
     /**
     * Indicates the file path of the current page within the module
+    *
     */
     @!APILevel[
         since: "22",
@@ -341,6 +375,7 @@ public class RouterItem {
     public let pageSourceFile: String
     /**
     * Indicates the name of the function @Builder decorated
+    *
     */
     @!APILevel[
         since: "22",
@@ -349,6 +384,7 @@ public class RouterItem {
     public let buildFunction: String
     /**
     * Indicates the data
+    *
     */
     @!APILevel[
         since: "22",
@@ -357,6 +393,7 @@ public class RouterItem {
     public let data: Array<DataItem>
     /**
     * Indicates the json string of custom data
+    *
     */
     @!APILevel[
         since: "22",

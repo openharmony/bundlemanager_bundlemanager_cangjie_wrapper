@@ -18,9 +18,11 @@
 package ohos.bundle.bundle_manager
 
 import ohos.labels.*
+import ohos.business_exception.BusinessException
 
 /**
 * Indicates bundle type
+*
 */
 @!APILevel[
     since: "22",
@@ -29,6 +31,7 @@ import ohos.labels.*
 public enum BundleType {
     /**
      * Indicates app
+     *
      */
     @!APILevel[
         since: "22",
@@ -37,6 +40,7 @@ public enum BundleType {
     App
     /**
      * Indicates atomic service
+     *
      */
     | @!APILevel[
         since: "22",
@@ -49,13 +53,14 @@ public enum BundleType {
         match (val) {
             case 0 => App
             case 1 => AtomicService
-            case _ => throw IllegalArgumentException("Unknown value.")
+            case _ => throw BusinessException(17700101, "Parameter error.")
         }
     }
 }
 
 /**
 * PermissionGrantState
+*
 */
 @!APILevel[
     since: "22",
@@ -64,6 +69,7 @@ public enum BundleType {
 public enum PermissionGrantState {
     /**
      * PERMISSION_DENIED
+     *
      */
     @!APILevel[
         since: "22",
@@ -72,6 +78,7 @@ public enum PermissionGrantState {
     PermissionDenied
     /**
      * PERMISSION_GRANTED
+     *
      */
     | @!APILevel[
         since: "22",
@@ -84,13 +91,14 @@ public enum PermissionGrantState {
         match (val) {
             case -1 => PermissionDenied
             case 0 => PermissionGranted
-            case _ => throw IllegalArgumentException("Unknown value.")
+            case _ => throw BusinessException(17700101, "Parameter error.")
         }
     }
 }
 
 /**
 * Display orientation
+*
 */
 @!APILevel[
     since: "22",
@@ -99,6 +107,7 @@ public enum PermissionGrantState {
 public enum DisplayOrientation {
     /**
      * Indicates that the system automatically determines the display orientation
+     *
      */
     @!APILevel[
         since: "22",
@@ -107,6 +116,7 @@ public enum DisplayOrientation {
     Unspecified
     /**
      * Indicates the landscape orientation
+     *
      */
     | @!APILevel[
         since: "22",
@@ -115,6 +125,7 @@ public enum DisplayOrientation {
     Landscape
     /**
      * Indicates the portrait orientation
+     *
      */
     | @!APILevel[
         since: "22",
@@ -123,6 +134,7 @@ public enum DisplayOrientation {
     Portrait
     /**
      * Indicates the page ability orientation is the same as that of the nearest ability in the stack
+     *
      */
     | @!APILevel[
         since: "22",
@@ -131,6 +143,7 @@ public enum DisplayOrientation {
     FollowRecent
     /**
      * Indicates the inverted landscape orientation
+     *
      */
     | @!APILevel[
         since: "22",
@@ -139,6 +152,7 @@ public enum DisplayOrientation {
     LandscapeInverted
     /**
      * Indicates the inverted portrait orientation
+     *
      */
     | @!APILevel[
         since: "22",
@@ -147,6 +161,7 @@ public enum DisplayOrientation {
     PortraitInverted
     /**
      * Indicates the orientation can be auto-rotated
+     *
      */
     | @!APILevel[
         since: "22",
@@ -155,6 +170,7 @@ public enum DisplayOrientation {
     AutoRotation
     /**
      * Indicates the landscape orientation rotated with sensor
+     *
      */
     | @!APILevel[
         since: "22",
@@ -163,6 +179,7 @@ public enum DisplayOrientation {
     AutoRotationLandscape
     /**
      * Indicates the portrait orientation rotated with sensor
+     *
      */
     | @!APILevel[
         since: "22",
@@ -171,6 +188,7 @@ public enum DisplayOrientation {
     AutoRotationPortrait
     /**
      * Indicates the sensor restricted mode
+     *
      */
     | @!APILevel[
         since: "22",
@@ -179,6 +197,7 @@ public enum DisplayOrientation {
     AutoRotationRestricted
     /**
      * Indicates the sensor landscape restricted mode
+     *
      */
     | @!APILevel[
         since: "22",
@@ -187,6 +206,7 @@ public enum DisplayOrientation {
     AutoRotationLandscapeRestricted
     /**
      * Indicates the sensor portrait restricted mode
+     *
      */
     | @!APILevel[
         since: "22",
@@ -195,6 +215,7 @@ public enum DisplayOrientation {
     AutoRotationPortraitRestricted
     /**
      * Indicates the locked orientation mode
+     *
      */
     | @!APILevel[
         since: "22",
@@ -203,6 +224,7 @@ public enum DisplayOrientation {
     Locked
     /**
      * Indicates the system automatically determines the sensor restricted mode
+     *
      */
     | @!APILevel[
         since: "22",
@@ -211,6 +233,7 @@ public enum DisplayOrientation {
     AutoRotationUnspecified
     /**
      * Indicates the orientation follow the desktop rotate mode
+     *
      */
     | @!APILevel[
         since: "22",
@@ -236,13 +259,14 @@ public enum DisplayOrientation {
             case 12 => Locked
             case 13 => AutoRotationUnspecified
             case 14 => FollowDesktop
-            case _ => throw IllegalArgumentException("Unknown value.")
+            case _ => throw BusinessException(17700101, "Parameter error.")
         }
     }
 }
 
 /**
 * Support window mode
+*
 */
 @!APILevel[
     since: "22",
@@ -251,6 +275,7 @@ public enum DisplayOrientation {
 public enum SupportWindowMode {
     /**
      * Indicates supported window mode of full screen mode
+     *
      */
     @!APILevel[
         since: "22",
@@ -259,6 +284,7 @@ public enum SupportWindowMode {
     FullScreen
     /**
      * Indicates supported window mode of split mode
+     *
      */
     | @!APILevel[
         since: "22",
@@ -267,6 +293,7 @@ public enum SupportWindowMode {
     Split
     /**
      * Indicates supported window mode of floating mode
+     *
      */
     | @!APILevel[
         since: "22",
@@ -280,13 +307,14 @@ public enum SupportWindowMode {
             case 0 => FullScreen
             case 1 => Split
             case 2 => Floating
-            case _ => throw IllegalArgumentException("Unknown value.")
+            case _ => throw BusinessException(17700101, "Parameter error.")
         }
     }
 }
 
 /**
 * Launch type
+*
 */
 @!APILevel[
     since: "22",
@@ -295,6 +323,7 @@ public enum SupportWindowMode {
 public enum LaunchType {
     /**
      * Indicates that the ability has only one instance
+     *
      */
     @!APILevel[
         since: "22",
@@ -303,6 +332,7 @@ public enum LaunchType {
     Singleton
     /**
      * Indicates that the ability can have multiple instances
+     *
      */
     | @!APILevel[
         since: "22",
@@ -311,6 +341,7 @@ public enum LaunchType {
     Multiton
     /**
      * Indicates that the ability can have specified instances
+     *
      */
     | @!APILevel[
         since: "22",
@@ -324,13 +355,14 @@ public enum LaunchType {
             case 0 => Singleton
             case 1 => Multiton
             case 2 => Specified
-            case _ => throw IllegalArgumentException("Unknown value.")
+            case _ => throw BusinessException(17700101, "Parameter error.")
         }
     }
 }
 
 /**
 * This enumeration value is used to identify various types of extension ability
+*
 */
 @!APILevel[
     since: "22",
@@ -339,6 +371,7 @@ public enum LaunchType {
 public enum ExtensionAbilityType {
     /**
      * Indicates extension info with type of form
+     *
      */
     @!APILevel[
         since: "22",
@@ -347,6 +380,7 @@ public enum ExtensionAbilityType {
     Form
     /**
      * Indicates extension info with type of work schedule
+     *
      */
     | @!APILevel[
         since: "22",
@@ -355,6 +389,7 @@ public enum ExtensionAbilityType {
     WorkScheduler
     /**
      * Indicates extension info with type of input method
+     *
      */
     | @!APILevel[
         since: "22",
@@ -363,6 +398,7 @@ public enum ExtensionAbilityType {
     InputMethod
     /**
      * Indicates extension info with type of service
+     *
      */
     | @!APILevel[
         since: "22",
@@ -371,6 +407,7 @@ public enum ExtensionAbilityType {
     Service
     /**
      * Indicates extension info with type of accessibility
+     *
      */
     | @!APILevel[
         since: "22",
@@ -379,6 +416,7 @@ public enum ExtensionAbilityType {
     Accessibility
     /**
      * Indicates extension info with type of dataShare
+     *
      */
     | @!APILevel[
         since: "22",
@@ -387,6 +425,7 @@ public enum ExtensionAbilityType {
     DataShare
     /**
      * Indicates extension info with type of filesShare
+     *
      */
     | @!APILevel[
         since: "22",
@@ -395,6 +434,7 @@ public enum ExtensionAbilityType {
     FileShare
     /**
      * Indicates extension info with type of staticSubscriber
+     *
      */
     | @!APILevel[
         since: "22",
@@ -403,6 +443,7 @@ public enum ExtensionAbilityType {
     StaticSubscriber
     /**
      * Indicates extension info with type of wallpaper
+     *
      */
     | @!APILevel[
         since: "22",
@@ -411,6 +452,7 @@ public enum ExtensionAbilityType {
     Wallpaper
     /**
      * Indicates extension info with type of backup
+     *
      */
     | @!APILevel[
         since: "22",
@@ -419,6 +461,7 @@ public enum ExtensionAbilityType {
     Backup
     /**
      * Indicates extension info with type of window
+     *
      */
     | @!APILevel[
         since: "22",
@@ -427,6 +470,7 @@ public enum ExtensionAbilityType {
     Window
     /**
      * Indicates extension info with type of enterprise admin
+     *
      */
     | @!APILevel[
         since: "22",
@@ -435,6 +479,7 @@ public enum ExtensionAbilityType {
     EnterpriseAdmin
     /**
      * Indicates extension info with type of thumbnail
+     *
      */
     | @!APILevel[
         since: "22",
@@ -443,6 +488,7 @@ public enum ExtensionAbilityType {
     Thumbnail
     /**
      * Indicates extension info with type of preview
+     *
      */
     | @!APILevel[
         since: "22",
@@ -451,6 +497,7 @@ public enum ExtensionAbilityType {
     Preview
     /**
      * Indicates extension info with type of print
+     *
      */
     | @!APILevel[
         since: "22",
@@ -459,6 +506,7 @@ public enum ExtensionAbilityType {
     Print
     /**
      * Indicates extension info with type of share
+     *
      */
     | @!APILevel[
         since: "22",
@@ -467,6 +515,7 @@ public enum ExtensionAbilityType {
     Share
     /**
      * Indicates extension info with type of push
+     *
      */
     | @!APILevel[
         since: "22",
@@ -475,6 +524,7 @@ public enum ExtensionAbilityType {
     Push
     /**
      * Indicates extension info with type of driver
+     *
      */
     | @!APILevel[
         since: "22",
@@ -483,6 +533,7 @@ public enum ExtensionAbilityType {
     Driver
     /**
      * Indicates extension info with type of action
+     *
      */
     | @!APILevel[
         since: "22",
@@ -491,6 +542,7 @@ public enum ExtensionAbilityType {
     Action
     /**
      * Indicates extension info with type of ads service
+     *
      */
     | @!APILevel[
         since: "22",
@@ -499,6 +551,7 @@ public enum ExtensionAbilityType {
     AdsService
     /**
      * Indicates extension info with type of embedded UI
+     *
      */
     | @!APILevel[
         since: "22",
@@ -507,6 +560,7 @@ public enum ExtensionAbilityType {
     EmbeddedUi
     /**
      * Indicates extension info with type of insight intent UI
+     *
      */
     | @!APILevel[
         since: "22",
@@ -515,6 +569,7 @@ public enum ExtensionAbilityType {
     InsightIntentUi
     /**
      * Indicates extension info with type of unspecified
+     *
      */
     | @!APILevel[
         since: "22",
@@ -548,13 +603,14 @@ public enum ExtensionAbilityType {
             case 21 => EmbeddedUi
             case 22 => InsightIntentUi
             case 255 => Unspecified
-            case _ => throw IllegalArgumentException("Unknown value.")
+            case _ => throw BusinessException(17700101, "Parameter error.")
         }
     }
 }
 
 /**
 * Indicates module type
+*
 */
 @!APILevel[
     since: "22",
@@ -563,6 +619,7 @@ public enum ExtensionAbilityType {
 public enum ModuleType {
     /**
      * Indicates entry type
+     *
      */
     @!APILevel[
         since: "22",
@@ -571,6 +628,7 @@ public enum ModuleType {
     Entry
     /**
      * Indicates feature type
+     *
      */
     | @!APILevel[
         since: "22",
@@ -579,6 +637,7 @@ public enum ModuleType {
     Feature
     /**
      * Indicates shared type
+     *
      */
     | @!APILevel[
         since: "22",
@@ -592,13 +651,14 @@ public enum ModuleType {
             case 1 => Entry
             case 2 => Feature
             case 3 => Shared
-            case _ => throw IllegalArgumentException("Unknown value.")
+            case _ => throw BusinessException(17700101, "Parameter error.")
         }
     }
 }
 
 /**
 * This enumeration value is used to identify various types of extension ability
+*
 */
 @!APILevel[
     since: "22",
@@ -607,6 +667,7 @@ public enum ModuleType {
 public enum MultiAppModeType {
     /**
      * Indicates multi app mode with type of unspecified
+     *
      */
     @!APILevel[
         since: "22",
@@ -615,6 +676,7 @@ public enum MultiAppModeType {
     Unspecified
     /**
      * Indicates multi app mode with type of multiInstance
+     *
      */
     | @!APILevel[
         since: "22",
@@ -623,6 +685,7 @@ public enum MultiAppModeType {
     MultiInstance
     /**
      * Indicates multi app mode with type of appClone
+     *
      */
     | @!APILevel[
         since: "22",
@@ -636,7 +699,7 @@ public enum MultiAppModeType {
             case 0 => Unspecified
             case 1 => MultiInstance
             case 2 => AppClone
-            case _ => throw IllegalArgumentException("Unknown value.")
+            case _ => throw BusinessException(17700101, "Parameter error.")
         }
     }
 }

@@ -23,6 +23,7 @@ import ohos.business_exception.BusinessException
 
 /**
  * The constant for application type.
+ *
  */
 @!APILevel[
     since: "22",
@@ -31,6 +32,7 @@ import ohos.business_exception.BusinessException
 public enum ApplicationType {
     /**
      * Default browser identifier.
+     *
      */
     @!APILevel[
         since: "22",
@@ -39,6 +41,7 @@ public enum ApplicationType {
     Browser
     /**
      * Default image identifier.
+     *
      */
     | @!APILevel[
         since: "22",
@@ -51,6 +54,7 @@ public enum ApplicationType {
     ]
     /**
      * Default audio identifier.
+     *
      */
     Audio
     | @!APILevel[
@@ -59,10 +63,12 @@ public enum ApplicationType {
     ]
     /**
      * Default video identifier.
+     *
      */
     Video
     /**
      * Default PDF identifier.
+     *
      */
     | @!APILevel[
         since: "22",
@@ -71,6 +77,7 @@ public enum ApplicationType {
     Pdf
     /**
      * Default Default word identifier.
+     *
      */
     | @!APILevel[
         since: "22",
@@ -79,6 +86,7 @@ public enum ApplicationType {
     Word
     /**
      * Default excel identifier.
+     *
      */
     | @!APILevel[
         since: "22",
@@ -87,6 +95,7 @@ public enum ApplicationType {
     Excel
     /**
      * Default PPT identifier.
+     *
      */
     | @!APILevel[
         since: "22",
@@ -95,6 +104,7 @@ public enum ApplicationType {
     Ppt
     /**
      * Default email identifier.
+     *
      */
     | @!APILevel[
         since: "22",
@@ -104,8 +114,10 @@ public enum ApplicationType {
     | ...
 
     /**
-     * Application type value.
+     * Get the application type value.
      *
+     * @returns { String } Returns the string representation of the application type.
+     * @throws { BusinessException } 12100001 - Parameter error.
      */
     @!APILevel[
         since: "22",
@@ -122,7 +134,7 @@ public enum ApplicationType {
             case Excel => "Excel Viewer"
             case Ppt => "PPT Viewer"
             case Email => "Email"
-            case _ => throw IllegalArgumentException("The type is not supported.")
+            case _ => throw BusinessException(17700101, "Parameter error.")
         }
     }
 }
@@ -131,6 +143,7 @@ foreign func FfiBundleManagerIsDefaultApplication(appType: CString): RetDataBool
 
 /**
  * Default application manager.
+ *
  */
 @!APILevel[
     since: "22",
@@ -141,7 +154,10 @@ public class DefaultAppManager {
     /**
      * Query whether the caller is default application based on type.
      *
-     * @throws { BusinessException } 401 - Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types.
+     * @param { String } appType - Indicates the application type to query.
+     * @returns { Bool } Returns true if the caller is the default application for the specified type; false otherwise.
+     * @throws { BusinessException } 401 - Parameter error. Possible causes: 1. Mandatory parameters are left
+     * unspecified; 2. Incorrect parameter types.
      * @throws { BusinessException } 801 - Capability not supported.
      */
     @!APILevel[
