@@ -117,7 +117,7 @@ public enum ApplicationType {
      * Get the application type value.
      *
      * @returns { String } Returns the string representation of the application type.
-     * @throws { BusinessException } 12100001 - Parameter error.
+     * @throws { BusinessException } 17700101 - Bundle manager service exception.
      */
     @!APILevel[
         since: "22",
@@ -134,7 +134,7 @@ public enum ApplicationType {
             case Excel => "Excel Viewer"
             case Ppt => "PPT Viewer"
             case Email => "Email"
-            case _ => throw BusinessException(17700101, "Parameter error.")
+            case _ => throw BusinessException(17700101, "Bundle manager service exception.")
         }
     }
 }
