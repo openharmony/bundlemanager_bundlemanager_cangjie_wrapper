@@ -17,7 +17,7 @@
 
 package ohos.skill
 
-import ohos.ffi.*
+import ohos.ffi.CArrString
 import std.collection.ArrayList
 
 @C

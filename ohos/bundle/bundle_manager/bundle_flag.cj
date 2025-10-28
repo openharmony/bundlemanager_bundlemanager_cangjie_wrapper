@@ -17,7 +17,7 @@
 
 package ohos.bundle.bundle_manager
 
-import ohos.labels.*
+import ohos.labels.APILevel
 
 /**
 * Used to query the enumeration value of bundleInfo. Multiple values can be passed in the form.

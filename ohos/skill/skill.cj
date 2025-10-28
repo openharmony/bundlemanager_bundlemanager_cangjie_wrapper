@@ -18,7 +18,7 @@
 package ohos.skill
 
 import std.convert.Parsable
-import ohos.labels.*
+import ohos.labels.APILevel
 
 /**
 * Obtains configuration information about an skill

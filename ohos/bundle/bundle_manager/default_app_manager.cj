@@ -17,8 +17,8 @@
 
 package ohos.bundle.bundle_manager
 
-import ohos.labels.*
-import ohos.ffi.*
+import ohos.ffi.RetDataBool
+import ohos.labels.APILevel
 import ohos.business_exception.BusinessException
 
 /**

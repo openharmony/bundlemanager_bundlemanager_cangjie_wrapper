@@ -17,10 +17,10 @@
 
 package ohos.bundle.bundle_manager
 
-import ohos.resource.*
-import ohos.ffi.*
-import ohos.skill.*
-import ohos.metadata.*
+import ohos.resource.CResource
+import ohos.ffi.{CArrString, CArrI32, toArrayCString}
+import ohos.skill.{CArrSkill, freeCArrSkill}
+import ohos.metadata.{CArrMetadata, freeCArrMetadata}
 
 @C
 protected struct RetModuleMetadata {
