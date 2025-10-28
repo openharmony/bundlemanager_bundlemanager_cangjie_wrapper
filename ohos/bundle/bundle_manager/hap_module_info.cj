@@ -17,8 +17,8 @@
 
 package ohos.bundle.bundle_manager
 
-import ohos.labels.*
-import ohos.metadata.*
+import ohos.labels.APILevel
+import ohos.metadata.{Metadata, readArrMetadata}
 
 /**
 * Obtains configuration information about a hap module.

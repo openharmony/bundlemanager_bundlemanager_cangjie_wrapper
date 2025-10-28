@@ -17,8 +17,7 @@
 
 package ohos.metadata
 
-import ohos.labels.*
-import ohos.ffi.*
+import ohos.labels.APILevel
 import std.collection.ArrayList
 
 /**
