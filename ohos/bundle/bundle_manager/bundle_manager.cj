@@ -17,11 +17,11 @@
 
 package ohos.bundle.bundle_manager
 
-import ohos.ffi.*
+import ohos.ffi.{CArrString, RetDataCArrString, SUCCESS_CODE}
 import ohos.business_exception.BusinessException
-import std.sync.*
-import ohos.labels.*
-import std.collection.*
+import std.sync.Mutex
+import ohos.labels.APILevel
+import std.collection.HashMap
 
 foreign {
     func FfiOHOSGetCallingUid(): Int32

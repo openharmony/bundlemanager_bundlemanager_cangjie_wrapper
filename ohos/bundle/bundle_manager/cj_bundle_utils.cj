@@ -20,11 +20,8 @@ package ohos.bundle.bundle_manager
 public import ohos.skill.*
 public import ohos.metadata.*
 public import ohos.element_name.*
-import ohos.labels.*
-import ohos.ffi.*
-import ohos.resource.*
-import std.collection.*
-import ohos.metadata.*
+import ohos.ffi.{CArrString, CArrI32}
+import std.collection.ArrayList
 
 const BASE_USER_RANGE = 200000i32
 const UNSPECIFIED_USERID = -2i32

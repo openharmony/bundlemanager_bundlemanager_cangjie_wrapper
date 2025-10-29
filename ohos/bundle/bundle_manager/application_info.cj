@@ -17,9 +17,9 @@
 
 package ohos.bundle.bundle_manager
 
-import ohos.labels.*
-import ohos.resource.*
-import ohos.metadata.*
+import ohos.labels.APILevel
+import ohos.resource.AppResource
+import ohos.metadata.Metadata
 
 /**
 * Obtains configuration information about an application
