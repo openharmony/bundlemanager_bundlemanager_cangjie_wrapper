@@ -17,7 +17,7 @@
 
 package ohos.element_name
 
-import ohos.labels.*
+import ohos.labels.APILevel
 
 internal type ElementNameHandle = UIntNative
 

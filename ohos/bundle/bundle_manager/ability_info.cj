@@ -17,9 +17,9 @@
 
 package ohos.bundle.bundle_manager
 
-import ohos.labels.*
-import ohos.skill.*
-import ohos.metadata.*
+import ohos.labels.APILevel
+import ohos.skill.{Skill, readArrSkill}
+import ohos.metadata.{Metadata, readArrMetadata}
 
 /**
 * Obtains configuration information about an ability

@@ -17,7 +17,7 @@
 
 package ohos.bundle.bundle_manager
 
-import ohos.labels.*
+import ohos.labels.APILevel
 
 /**
 * Obtains configuration information about a bundle
