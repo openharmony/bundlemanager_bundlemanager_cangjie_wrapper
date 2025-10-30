@@ -26,7 +26,7 @@ import ohos.metadata.{Metadata, readArrMetadata}
 *
 */
 @!APILevel[
-    22,
+    since: "22",
     syscap: "SystemCapability.BundleManager.BundleFramework.Core"
 ]
 public class AbilityInfo {
@@ -35,7 +35,7 @@ public class AbilityInfo {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let bundleName: String
@@ -44,7 +44,7 @@ public class AbilityInfo {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let moduleName: String
@@ -53,7 +53,7 @@ public class AbilityInfo {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let name: String
@@ -62,7 +62,7 @@ public class AbilityInfo {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let label: String
@@ -71,7 +71,7 @@ public class AbilityInfo {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let labelId: Int32
@@ -80,7 +80,7 @@ public class AbilityInfo {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let description: String
@@ -89,7 +89,7 @@ public class AbilityInfo {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let descriptionId: Int32
@@ -98,7 +98,7 @@ public class AbilityInfo {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let icon: String
@@ -107,7 +107,7 @@ public class AbilityInfo {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let iconId: Int32
@@ -116,7 +116,7 @@ public class AbilityInfo {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let process: String
@@ -125,7 +125,7 @@ public class AbilityInfo {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let exported: Bool
@@ -134,7 +134,7 @@ public class AbilityInfo {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let orientation: DisplayOrientation
@@ -143,7 +143,7 @@ public class AbilityInfo {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let launchType: LaunchType
@@ -152,7 +152,7 @@ public class AbilityInfo {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let permissions: Array<String>
@@ -161,7 +161,7 @@ public class AbilityInfo {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let deviceTypes: Array<String>
@@ -170,7 +170,7 @@ public class AbilityInfo {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let applicationInfo: ApplicationInfo
@@ -179,7 +179,7 @@ public class AbilityInfo {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let metadata: Array<Metadata>
@@ -188,7 +188,7 @@ public class AbilityInfo {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let enabled: Bool
@@ -197,7 +197,7 @@ public class AbilityInfo {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let supportWindowModes: Array<SupportWindowMode>
@@ -206,7 +206,7 @@ public class AbilityInfo {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let windowSize: WindowSize
@@ -215,7 +215,7 @@ public class AbilityInfo {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let excludeFromDock: Bool
@@ -224,7 +224,7 @@ public class AbilityInfo {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let skills: Array<Skill>
@@ -233,7 +233,7 @@ public class AbilityInfo {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let appIndex: Int32
@@ -270,7 +270,7 @@ public class AbilityInfo {
 *
 */
 @!APILevel[
-    22,
+    since: "22",
     syscap: "SystemCapability.BundleManager.BundleFramework.Core"
 ]
 public class WindowSize {
@@ -279,7 +279,7 @@ public class WindowSize {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let maxWindowRatio: Float64
@@ -288,7 +288,7 @@ public class WindowSize {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let minWindowRatio: Float64
@@ -297,7 +297,7 @@ public class WindowSize {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let maxWindowWidth: UInt32
@@ -306,7 +306,7 @@ public class WindowSize {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let minWindowWidth: UInt32
@@ -315,7 +315,7 @@ public class WindowSize {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let maxWindowHeight: UInt32
@@ -324,7 +324,7 @@ public class WindowSize {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let minWindowHeight: UInt32

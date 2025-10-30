@@ -25,7 +25,7 @@ import ohos.labels.APILevel
 *
 */
 @!APILevel[
-    22,
+    since: "22",
     syscap: "SystemCapability.BundleManager.BundleFramework.Core"
 ]
 public class Skill {
@@ -34,7 +34,7 @@ public class Skill {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let actions: Array<String>
@@ -43,7 +43,7 @@ public class Skill {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let entities: Array<String>
@@ -52,7 +52,7 @@ public class Skill {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let uris: Array<SkillUri>
@@ -61,7 +61,7 @@ public class Skill {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let domainVerify: Bool
@@ -79,7 +79,7 @@ public class Skill {
 *
 */
 @!APILevel[
-    22,
+    since: "22",
     syscap: "SystemCapability.BundleManager.BundleFramework.Core"
 ]
 public class SkillUri {
@@ -88,7 +88,7 @@ public class SkillUri {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let scheme: String
@@ -97,7 +97,7 @@ public class SkillUri {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let host: String
@@ -106,7 +106,7 @@ public class SkillUri {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let port: Int32
@@ -115,7 +115,7 @@ public class SkillUri {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let path: String
@@ -124,7 +124,7 @@ public class SkillUri {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let pathStartWith: String
@@ -133,7 +133,7 @@ public class SkillUri {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let pathRegex: String
@@ -142,7 +142,7 @@ public class SkillUri {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let uriType: String
@@ -151,7 +151,7 @@ public class SkillUri {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let utd: String
@@ -160,7 +160,7 @@ public class SkillUri {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let maxFileSupported: Int32
@@ -169,7 +169,7 @@ public class SkillUri {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let linkFeature: String
