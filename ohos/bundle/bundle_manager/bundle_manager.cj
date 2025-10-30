@@ -62,7 +62,7 @@ func checkToCache(uid: Int32, callingUid: Int32, query: BMQuery, bundleInfo: Bun
  *
  */
 @!APILevel[
-    22,
+    since: "22",
     syscap: "SystemCapability.BundleManager.BundleFramework.Core"
 ]
 public class BundleManager {
@@ -76,7 +76,7 @@ public class BundleManager {
      *
      */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public static func getBundleInfoForSelf(bundleFlags: Int32): BundleInfo {
@@ -113,7 +113,7 @@ public class BundleManager {
      * @throws { BusinessException } 17700026 - The specified bundle is disabled.
      */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public static func getProfileByExtensionAbility(moduleName: String, extensionAbilityName: String,
@@ -152,7 +152,7 @@ public class BundleManager {
      * @throws { BusinessException } 17700029 - The specified ability is disabled.
      */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public static func getProfileByAbility(moduleName: String, abilityName: String, metadataName!: String = ""): Array<String> {
@@ -186,7 +186,7 @@ public class BundleManager {
      * @throws { BusinessException } 17700056 - The scheme of the specified link is not in the querySchemes.
      */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public static func canOpenLink(link: String): Bool {

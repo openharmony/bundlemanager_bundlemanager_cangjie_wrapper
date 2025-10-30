@@ -26,7 +26,7 @@ import ohos.metadata.Metadata
 *
 */
 @!APILevel[
-    22,
+    since: "22",
     syscap: "SystemCapability.BundleManager.BundleFramework.Core"
 ]
 public class ApplicationInfo {
@@ -35,7 +35,7 @@ public class ApplicationInfo {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let name: String
@@ -44,7 +44,7 @@ public class ApplicationInfo {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let description: String
@@ -53,7 +53,7 @@ public class ApplicationInfo {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let descriptionId: Int32
@@ -62,7 +62,7 @@ public class ApplicationInfo {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let enabled: Bool
@@ -71,7 +71,7 @@ public class ApplicationInfo {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let label: String
@@ -80,7 +80,7 @@ public class ApplicationInfo {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let labelId: Int32
@@ -89,7 +89,7 @@ public class ApplicationInfo {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let icon: String
@@ -98,7 +98,7 @@ public class ApplicationInfo {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let iconId: Int32
@@ -107,7 +107,7 @@ public class ApplicationInfo {
    *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let process: String
@@ -116,7 +116,7 @@ public class ApplicationInfo {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let permissions: Array<String>
@@ -125,7 +125,7 @@ public class ApplicationInfo {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let codePath: String
@@ -134,7 +134,7 @@ public class ApplicationInfo {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let metadataArray: Array<ModuleMetadata>
@@ -143,7 +143,7 @@ public class ApplicationInfo {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let removable: Bool
@@ -152,7 +152,7 @@ public class ApplicationInfo {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let accessTokenId: UInt32
@@ -161,7 +161,7 @@ public class ApplicationInfo {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let uid: Int32
@@ -170,7 +170,7 @@ public class ApplicationInfo {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let iconResource: AppResource
@@ -179,7 +179,7 @@ public class ApplicationInfo {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let labelResource: AppResource
@@ -188,7 +188,7 @@ public class ApplicationInfo {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let descriptionResource: AppResource
@@ -197,7 +197,7 @@ public class ApplicationInfo {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let appDistributionType: String
@@ -206,7 +206,7 @@ public class ApplicationInfo {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let appProvisionType: String
@@ -215,7 +215,7 @@ public class ApplicationInfo {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let systemApp: Bool
@@ -224,7 +224,7 @@ public class ApplicationInfo {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let bundleType: BundleType
@@ -233,7 +233,7 @@ public class ApplicationInfo {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let debug: Bool
@@ -242,7 +242,7 @@ public class ApplicationInfo {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let dataUnclearable: Bool
@@ -251,7 +251,7 @@ public class ApplicationInfo {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let cloudFileSyncEnabled: Bool
@@ -260,7 +260,7 @@ public class ApplicationInfo {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let nativeLibraryPath: String
@@ -269,7 +269,7 @@ public class ApplicationInfo {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let multiAppMode: MultiAppMode
@@ -278,7 +278,7 @@ public class ApplicationInfo {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let appIndex: Int32
@@ -287,7 +287,7 @@ public class ApplicationInfo {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let installSource: String
@@ -296,7 +296,7 @@ public class ApplicationInfo {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let releaseType: String
@@ -340,7 +340,7 @@ public class ApplicationInfo {
 *
 */
 @!APILevel[
-    22,
+    since: "22",
     syscap: "SystemCapability.BundleManager.BundleFramework.Core"
 ]
 public class ModuleMetadata {
@@ -349,7 +349,7 @@ public class ModuleMetadata {
      *
      */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let moduleName: String
@@ -358,7 +358,7 @@ public class ModuleMetadata {
      *
      */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let metadata: Array<Metadata>
@@ -380,7 +380,7 @@ public class ModuleMetadata {
 *
 */
 @!APILevel[
-    22,
+    since: "22",
     syscap: "SystemCapability.BundleManager.BundleFramework.Core"
 ]
 public class MultiAppMode {
@@ -389,7 +389,7 @@ public class MultiAppMode {
      *
      */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let multiAppModeType: MultiAppModeType
@@ -398,7 +398,7 @@ public class MultiAppMode {
      *
      */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let maxCount: Int32

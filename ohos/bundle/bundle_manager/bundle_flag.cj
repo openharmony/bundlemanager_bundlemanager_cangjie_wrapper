@@ -25,7 +25,7 @@ import ohos.labels.APILevel
 *
 */
 @!APILevel[
-    22,
+    since: "22",
     syscap: "SystemCapability.BundleManager.BundleFramework.Core"
 ]
 public class BundleFlag {
@@ -35,7 +35,7 @@ public class BundleFlag {
      *
      */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public static const GET_BUNDLE_INFO_DEFAULT: Int32 = 0x00000000
@@ -45,7 +45,7 @@ public class BundleFlag {
      *
      */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public static const GET_BUNDLE_INFO_WITH_APPLICATION: Int32 = 0x00000001
@@ -55,7 +55,7 @@ public class BundleFlag {
      *
      */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public static const GET_BUNDLE_INFO_WITH_HAP_MODULE: Int32 = 0x00000002
@@ -67,7 +67,7 @@ public class BundleFlag {
      *
      */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public static const GET_BUNDLE_INFO_WITH_ABILITY: Int32 = 0x00000004
@@ -79,7 +79,7 @@ public class BundleFlag {
      *
      */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public static const GET_BUNDLE_INFO_WITH_EXTENSION_ABILITY: Int32 = 0x00000008
@@ -89,7 +89,7 @@ public class BundleFlag {
      *
      */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public static const GET_BUNDLE_INFO_WITH_REQUESTED_PERMISSION: Int32 = 0x00000010
@@ -103,7 +103,7 @@ public class BundleFlag {
      *
      */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public static const GET_BUNDLE_INFO_WITH_METADATA: Int32 = 0x00000020
@@ -114,7 +114,7 @@ public class BundleFlag {
      *
      */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public static const GET_BUNDLE_INFO_WITH_DISABLE: Int32 = 0x00000040
@@ -124,7 +124,7 @@ public class BundleFlag {
      *
      */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public static const GET_BUNDLE_INFO_WITH_SIGNATURE_INFO: Int32 = 0x00000080
@@ -136,7 +136,7 @@ public class BundleFlag {
      *
      */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public static const GET_BUNDLE_INFO_WITH_MENU: Int32 = 0x00000100
@@ -148,7 +148,7 @@ public class BundleFlag {
      *
      */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public static const GET_BUNDLE_INFO_WITH_ROUTER_MAP: Int32 = 0x00000200
@@ -161,7 +161,7 @@ public class BundleFlag {
      *
      */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public static const GET_BUNDLE_INFO_WITH_SKILL: Int32 = 0x00000800

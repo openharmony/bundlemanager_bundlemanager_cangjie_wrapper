@@ -25,7 +25,7 @@ import ohos.metadata.{Metadata, readArrMetadata}
 *
 */
 @!APILevel[
-    22,
+    since: "22",
     syscap: "SystemCapability.BundleManager.BundleFramework.Core"
 ]
 public class HapModuleInfo {
@@ -34,7 +34,7 @@ public class HapModuleInfo {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let name: String
@@ -43,7 +43,7 @@ public class HapModuleInfo {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let icon: String
@@ -52,7 +52,7 @@ public class HapModuleInfo {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let iconId: Int32
@@ -61,7 +61,7 @@ public class HapModuleInfo {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let label: String
@@ -70,7 +70,7 @@ public class HapModuleInfo {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let labelId: Int32
@@ -79,7 +79,7 @@ public class HapModuleInfo {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let description: String
@@ -88,7 +88,7 @@ public class HapModuleInfo {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let descriptionId: Int32
@@ -97,7 +97,7 @@ public class HapModuleInfo {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let mainElementName: String
@@ -106,7 +106,7 @@ public class HapModuleInfo {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let abilitiesInfo: Array<AbilityInfo>
@@ -115,7 +115,7 @@ public class HapModuleInfo {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let extensionAbilitiesInfo: Array<ExtensionAbilityInfo>
@@ -124,7 +124,7 @@ public class HapModuleInfo {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let metadata: Array<Metadata>
@@ -133,7 +133,7 @@ public class HapModuleInfo {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let deviceTypes: Array<String>
@@ -142,7 +142,7 @@ public class HapModuleInfo {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let installationFree: Bool
@@ -151,7 +151,7 @@ public class HapModuleInfo {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let hashValue: String
@@ -160,7 +160,7 @@ public class HapModuleInfo {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let moduleType: ModuleType
@@ -169,7 +169,7 @@ public class HapModuleInfo {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let preloads: Array<PreloadItem>
@@ -178,7 +178,7 @@ public class HapModuleInfo {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let dependencies: Array<Dependency>
@@ -187,7 +187,7 @@ public class HapModuleInfo {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let fileContextMenuConfig: String
@@ -196,7 +196,7 @@ public class HapModuleInfo {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let routerMap: Array<RouterItem>
@@ -205,7 +205,7 @@ public class HapModuleInfo {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let codePath: String
@@ -214,7 +214,7 @@ public class HapModuleInfo {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let nativeLibraryPath: String
@@ -249,7 +249,7 @@ public class HapModuleInfo {
 *
 */
 @!APILevel[
-    22,
+    since: "22",
     syscap: "SystemCapability.BundleManager.BundleFramework.Core"
 ]
 public class DataItem {
@@ -258,7 +258,7 @@ public class DataItem {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let key: String
@@ -267,7 +267,7 @@ public class DataItem {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let value: String
@@ -283,7 +283,7 @@ public class DataItem {
 *
 */
 @!APILevel[
-    22,
+    since: "22",
     syscap: "SystemCapability.BundleManager.BundleFramework.Core"
 ]
 public class Dependency {
@@ -292,7 +292,7 @@ public class Dependency {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let bundleName: String
@@ -301,7 +301,7 @@ public class Dependency {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let moduleName: String
@@ -310,7 +310,7 @@ public class Dependency {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let versionCode: UInt32
@@ -327,7 +327,7 @@ public class Dependency {
 *
 */
 @!APILevel[
-    22,
+    since: "22",
     syscap: "SystemCapability.BundleManager.BundleFramework.Core"
 ]
 public class PreloadItem {
@@ -336,7 +336,7 @@ public class PreloadItem {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let moduleName: String
@@ -351,7 +351,7 @@ public class PreloadItem {
 *
 */
 @!APILevel[
-    22,
+    since: "22",
     syscap: "SystemCapability.BundleManager.BundleFramework.Core"
 ]
 public class RouterItem {
@@ -360,7 +360,7 @@ public class RouterItem {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let name: String
@@ -369,7 +369,7 @@ public class RouterItem {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let pageSourceFile: String
@@ -378,7 +378,7 @@ public class RouterItem {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let buildFunction: String
@@ -387,7 +387,7 @@ public class RouterItem {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let data: Array<DataItem>
@@ -396,7 +396,7 @@ public class RouterItem {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let customData: String

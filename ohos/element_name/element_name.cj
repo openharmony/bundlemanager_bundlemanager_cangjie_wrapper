@@ -52,7 +52,7 @@ foreign func FFICJElementNameParamsDelete(elementNameParams: CPointer<ElementNam
  *
  */
 @!APILevel[
-    22,
+    since: "22",
     syscap: "SystemCapability.BundleManager.BundleFramework.Core"
 ]
 public class ElementName {
@@ -61,7 +61,7 @@ public class ElementName {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public var deviceId: String
@@ -71,7 +71,7 @@ public class ElementName {
     * 
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public var bundleName: String
@@ -81,7 +81,7 @@ public class ElementName {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public var abilityName: String
@@ -91,7 +91,7 @@ public class ElementName {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public var moduleName: String
@@ -101,7 +101,7 @@ public class ElementName {
     * ElementName constructor.
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public init(bundleName: String, abilityName: String, deviceId!: String = "", moduleName!: String = "") {

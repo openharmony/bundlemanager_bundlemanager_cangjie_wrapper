@@ -25,7 +25,7 @@ import ohos.business_exception.BusinessException
 *
 */
 @!APILevel[
-    22,
+    since: "22",
     syscap: "SystemCapability.BundleManager.BundleFramework.Core"
 ]
 public enum BundleType {
@@ -34,7 +34,7 @@ public enum BundleType {
      *
      */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     App
@@ -43,7 +43,7 @@ public enum BundleType {
      *
      */
     | @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     AtomicService
@@ -63,7 +63,7 @@ public enum BundleType {
 *
 */
 @!APILevel[
-    22,
+    since: "22",
     syscap: "SystemCapability.BundleManager.BundleFramework.Core"
 ]
 public enum PermissionGrantState {
@@ -72,7 +72,7 @@ public enum PermissionGrantState {
      *
      */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     PermissionDenied
@@ -81,7 +81,7 @@ public enum PermissionGrantState {
      *
      */
     | @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     PermissionGranted
@@ -101,7 +101,7 @@ public enum PermissionGrantState {
 *
 */
 @!APILevel[
-    22,
+    since: "22",
     syscap: "SystemCapability.BundleManager.BundleFramework.Core"
 ]
 public enum DisplayOrientation {
@@ -110,7 +110,7 @@ public enum DisplayOrientation {
      *
      */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     Unspecified
@@ -119,7 +119,7 @@ public enum DisplayOrientation {
      *
      */
     | @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     Landscape
@@ -128,7 +128,7 @@ public enum DisplayOrientation {
      *
      */
     | @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     Portrait
@@ -137,7 +137,7 @@ public enum DisplayOrientation {
      *
      */
     | @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     FollowRecent
@@ -146,7 +146,7 @@ public enum DisplayOrientation {
      *
      */
     | @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     LandscapeInverted
@@ -155,7 +155,7 @@ public enum DisplayOrientation {
      *
      */
     | @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     PortraitInverted
@@ -164,7 +164,7 @@ public enum DisplayOrientation {
      *
      */
     | @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     AutoRotation
@@ -173,7 +173,7 @@ public enum DisplayOrientation {
      *
      */
     | @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     AutoRotationLandscape
@@ -182,7 +182,7 @@ public enum DisplayOrientation {
      *
      */
     | @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     AutoRotationPortrait
@@ -191,7 +191,7 @@ public enum DisplayOrientation {
      *
      */
     | @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     AutoRotationRestricted
@@ -200,7 +200,7 @@ public enum DisplayOrientation {
      *
      */
     | @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     AutoRotationLandscapeRestricted
@@ -209,7 +209,7 @@ public enum DisplayOrientation {
      *
      */
     | @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     AutoRotationPortraitRestricted
@@ -218,7 +218,7 @@ public enum DisplayOrientation {
      *
      */
     | @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     Locked
@@ -227,7 +227,7 @@ public enum DisplayOrientation {
      *
      */
     | @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     AutoRotationUnspecified
@@ -236,7 +236,7 @@ public enum DisplayOrientation {
      *
      */
     | @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     FollowDesktop
@@ -269,7 +269,7 @@ public enum DisplayOrientation {
 *
 */
 @!APILevel[
-    22,
+    since: "22",
     syscap: "SystemCapability.BundleManager.BundleFramework.Core"
 ]
 public enum SupportWindowMode {
@@ -278,7 +278,7 @@ public enum SupportWindowMode {
      *
      */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     FullScreen
@@ -287,7 +287,7 @@ public enum SupportWindowMode {
      *
      */
     | @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     Split
@@ -296,7 +296,7 @@ public enum SupportWindowMode {
      *
      */
     | @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     Floating
@@ -317,7 +317,7 @@ public enum SupportWindowMode {
 *
 */
 @!APILevel[
-    22,
+    since: "22",
     syscap: "SystemCapability.BundleManager.BundleFramework.Core"
 ]
 public enum LaunchType {
@@ -326,7 +326,7 @@ public enum LaunchType {
      *
      */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     Singleton
@@ -335,7 +335,7 @@ public enum LaunchType {
      *
      */
     | @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     Multiton
@@ -344,7 +344,7 @@ public enum LaunchType {
      *
      */
     | @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     Specified
@@ -365,7 +365,7 @@ public enum LaunchType {
 *
 */
 @!APILevel[
-    22,
+    since: "22",
     syscap: "SystemCapability.BundleManager.BundleFramework.Core"
 ]
 public enum ExtensionAbilityType {
@@ -374,7 +374,7 @@ public enum ExtensionAbilityType {
      *
      */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     Form
@@ -383,7 +383,7 @@ public enum ExtensionAbilityType {
      *
      */
     | @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     WorkScheduler
@@ -392,7 +392,7 @@ public enum ExtensionAbilityType {
      *
      */
     | @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     InputMethod
@@ -401,7 +401,7 @@ public enum ExtensionAbilityType {
      *
      */
     | @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     Service
@@ -410,7 +410,7 @@ public enum ExtensionAbilityType {
      *
      */
     | @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     Accessibility
@@ -419,7 +419,7 @@ public enum ExtensionAbilityType {
      *
      */
     | @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     DataShare
@@ -428,7 +428,7 @@ public enum ExtensionAbilityType {
      *
      */
     | @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     FileShare
@@ -437,7 +437,7 @@ public enum ExtensionAbilityType {
      *
      */
     | @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     StaticSubscriber
@@ -446,7 +446,7 @@ public enum ExtensionAbilityType {
      *
      */
     | @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     Wallpaper
@@ -455,7 +455,7 @@ public enum ExtensionAbilityType {
      *
      */
     | @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     Backup
@@ -464,7 +464,7 @@ public enum ExtensionAbilityType {
      *
      */
     | @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     Window
@@ -473,7 +473,7 @@ public enum ExtensionAbilityType {
      *
      */
     | @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     EnterpriseAdmin
@@ -482,7 +482,7 @@ public enum ExtensionAbilityType {
      *
      */
     | @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     Thumbnail
@@ -491,7 +491,7 @@ public enum ExtensionAbilityType {
      *
      */
     | @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     Preview
@@ -500,7 +500,7 @@ public enum ExtensionAbilityType {
      *
      */
     | @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     Print
@@ -509,7 +509,7 @@ public enum ExtensionAbilityType {
      *
      */
     | @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     Share
@@ -518,7 +518,7 @@ public enum ExtensionAbilityType {
      *
      */
     | @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     Push
@@ -527,7 +527,7 @@ public enum ExtensionAbilityType {
      *
      */
     | @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     Driver
@@ -536,7 +536,7 @@ public enum ExtensionAbilityType {
      *
      */
     | @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     Action
@@ -545,7 +545,7 @@ public enum ExtensionAbilityType {
      *
      */
     | @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     AdsService
@@ -554,7 +554,7 @@ public enum ExtensionAbilityType {
      *
      */
     | @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     EmbeddedUi
@@ -563,7 +563,7 @@ public enum ExtensionAbilityType {
      *
      */
     | @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     InsightIntentUi
@@ -572,7 +572,7 @@ public enum ExtensionAbilityType {
      *
      */
     | @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     Unspecified
@@ -613,7 +613,7 @@ public enum ExtensionAbilityType {
 *
 */
 @!APILevel[
-    22,
+    since: "22",
     syscap: "SystemCapability.BundleManager.BundleFramework.Core"
 ]
 public enum ModuleType {
@@ -622,7 +622,7 @@ public enum ModuleType {
      *
      */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     Entry
@@ -631,7 +631,7 @@ public enum ModuleType {
      *
      */
     | @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     Feature
@@ -640,7 +640,7 @@ public enum ModuleType {
      *
      */
     | @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     Shared
@@ -661,7 +661,7 @@ public enum ModuleType {
 *
 */
 @!APILevel[
-    22,
+    since: "22",
     syscap: "SystemCapability.BundleManager.BundleFramework.Core"
 ]
 public enum MultiAppModeType {
@@ -670,7 +670,7 @@ public enum MultiAppModeType {
      *
      */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     Unspecified
@@ -679,7 +679,7 @@ public enum MultiAppModeType {
      *
      */
     | @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     MultiInstance
@@ -688,7 +688,7 @@ public enum MultiAppModeType {
      *
      */
     | @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     AppClone

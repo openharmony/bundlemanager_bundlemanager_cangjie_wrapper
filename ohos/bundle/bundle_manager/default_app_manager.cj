@@ -26,7 +26,7 @@ import ohos.business_exception.BusinessException
  *
  */
 @!APILevel[
-    22,
+    since: "22",
     syscap: "SystemCapability.BundleManager.BundleFramework.DefaultApp"
 ]
 public enum ApplicationType {
@@ -35,7 +35,7 @@ public enum ApplicationType {
      *
      */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.DefaultApp"
     ]
     Browser
@@ -44,12 +44,12 @@ public enum ApplicationType {
      *
      */
     | @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.DefaultApp"
     ]
     Image
     | @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.DefaultApp"
     ]
     /**
@@ -58,7 +58,7 @@ public enum ApplicationType {
      */
     Audio
     | @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.DefaultApp"
     ]
     /**
@@ -71,7 +71,7 @@ public enum ApplicationType {
      *
      */
     | @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.DefaultApp"
     ]
     Pdf
@@ -80,7 +80,7 @@ public enum ApplicationType {
      *
      */
     | @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.DefaultApp"
     ]
     Word
@@ -89,7 +89,7 @@ public enum ApplicationType {
      *
      */
     | @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.DefaultApp"
     ]
     Excel
@@ -98,7 +98,7 @@ public enum ApplicationType {
      *
      */
     | @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.DefaultApp"
     ]
     Ppt
@@ -107,7 +107,7 @@ public enum ApplicationType {
      *
      */
     | @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.DefaultApp"
     ]
     Email
@@ -120,7 +120,7 @@ public enum ApplicationType {
      * @throws { BusinessException } 17700101 - Bundle manager service exception.
      */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.DefaultApp"
     ]
     public func getValue(): String {
@@ -146,7 +146,7 @@ foreign func FfiBundleManagerIsDefaultApplication(appType: CString): RetDataBool
  *
  */
 @!APILevel[
-    22,
+    since: "22",
     syscap: "SystemCapability.BundleManager.BundleFramework.DefaultApp"
 ]
 public class DefaultAppManager {
@@ -161,7 +161,7 @@ public class DefaultAppManager {
      * @throws { BusinessException } 801 - Capability not supported.
      */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.DefaultApp"
     ]
     public static func isDefaultApplication(appType: String): Bool {

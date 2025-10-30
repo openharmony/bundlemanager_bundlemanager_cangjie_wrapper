@@ -26,7 +26,7 @@ import ohos.metadata.{Metadata, readArrMetadata}
 *
 */
 @!APILevel[
-    22,
+    since: "22",
     syscap: "SystemCapability.BundleManager.BundleFramework.Core"
 ]
 public class ExtensionAbilityInfo {
@@ -35,7 +35,7 @@ public class ExtensionAbilityInfo {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let bundleName: String
@@ -44,7 +44,7 @@ public class ExtensionAbilityInfo {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let moduleName: String
@@ -53,7 +53,7 @@ public class ExtensionAbilityInfo {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let name: String
@@ -62,7 +62,7 @@ public class ExtensionAbilityInfo {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let labelId: Int32
@@ -71,7 +71,7 @@ public class ExtensionAbilityInfo {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let descriptionId: Int32
@@ -80,7 +80,7 @@ public class ExtensionAbilityInfo {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let iconId: Int32
@@ -89,7 +89,7 @@ public class ExtensionAbilityInfo {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let exported: Bool
@@ -98,7 +98,7 @@ public class ExtensionAbilityInfo {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let extensionAbilityType: ExtensionAbilityType
@@ -107,7 +107,7 @@ public class ExtensionAbilityInfo {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let permissions: Array<String>
@@ -116,7 +116,7 @@ public class ExtensionAbilityInfo {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let applicationInfo: ApplicationInfo
@@ -125,7 +125,7 @@ public class ExtensionAbilityInfo {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let metadata: Array<Metadata>
@@ -134,7 +134,7 @@ public class ExtensionAbilityInfo {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let enabled: Bool
@@ -143,7 +143,7 @@ public class ExtensionAbilityInfo {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let readPermission: String
@@ -152,7 +152,7 @@ public class ExtensionAbilityInfo {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let writePermission: String
@@ -161,7 +161,7 @@ public class ExtensionAbilityInfo {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let extensionAbilityTypeName: String
@@ -170,7 +170,7 @@ public class ExtensionAbilityInfo {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let skills: Array<Skill>
@@ -179,7 +179,7 @@ public class ExtensionAbilityInfo {
     *
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let appIndex: Int32
