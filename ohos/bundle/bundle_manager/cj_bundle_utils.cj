@@ -24,7 +24,6 @@ import ohos.ffi.{CArrString, CArrI32}
 import std.collection.ArrayList
 
 const BASE_USER_RANGE = 200000i32
-const UNSPECIFIED_USERID = -2i32
 const GET_BUNDLE_INFO = "GetBundleInfo"
 
 func readArrHapModuleInfo(cArr: CArrRetHapModuleInfoV2): Array<HapModuleInfo> {
@@ -148,6 +147,7 @@ func readArrRouterItem(cArr: CArrRetRouterItem): Array<RouterItem> {
 }
 
 struct BMQuery <: Equatable<BMQuery> & Hashable {
+    private static const UNSPECIFIED_USERID = -2i32
     var nBundleName: String
     var nInterfaceType: String
     var nFlags: Int32
