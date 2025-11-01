@@ -20,6 +20,7 @@ package ohos.bundle.bundle_manager
 import ohos.labels.APILevel
 import ohos.resource.AppResource
 import ohos.metadata.Metadata
+import ohos.business_exception.BusinessException
 
 /**
 * Obtains configuration information about an application
@@ -363,6 +364,9 @@ public class ModuleMetadata {
     ]
     public let metadata: Array<Metadata>
 
+    /**
+     * @throws { BusinessException } 17700101 - Out of Memory!
+     */
     init(ret: RetModuleMetadata) {
         this.moduleName = ret.moduleName.toString()
         let ptr = ret.metadata.head
@@ -370,7 +374,7 @@ public class ModuleMetadata {
         if (ptr.isNotNull()) {
             this.metadata = unsafe { Array<Metadata>(size, {i => Metadata(ptr.read(i))}) }
         } else {
-            throw IllegalMemoryException("Out of Memory!")
+            throw BusinessException(17700101, "Out of Memory!")
         }
     }
 }
