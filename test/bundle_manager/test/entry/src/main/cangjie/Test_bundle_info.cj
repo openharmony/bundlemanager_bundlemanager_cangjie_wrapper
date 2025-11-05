@@ -45,31 +45,6 @@ class Test_bundle_info {
 
     @TestCase
     @Tag[APILevel22, TestLevel0]
-    func test_bundle_ApplicationType(): Unit {
-        @Expect(ApplicationType.Browser.getValue(), "Web Browser")
-        @Expect(ApplicationType.Image.getValue(), "Image Gallery")
-        @Expect(ApplicationType.Audio.getValue(), "Audio Player")
-        @Expect(ApplicationType.Video.getValue(), "Video Player")
-        @Expect(ApplicationType.Pdf.getValue(), "PDF Viewer")
-        @Expect(ApplicationType.Word.getValue(), "Word Viewer")
-        @Expect(ApplicationType.Excel.getValue(), "Excel Viewer")
-        @Expect(ApplicationType.Ppt.getValue(), "PPT Viewer")
-        @Expect(ApplicationType.Email.getValue(), "Email")
-    }
-
-    @TestCase
-    @Tag[APILevel22, TestLevel0]
-    func test_isDefaultApplication(): Unit {
-        try {
-            DefaultAppManager.isDefaultApplication("Web Browser")
-            DefaultAppManager.isDefaultApplication("")
-        } catch (e: Exception) {
-            Hilog.info(0, "test_isDefaultApplication", "${e.message.toString()}")
-        }
-    }
-
-    @TestCase
-    @Tag[APILevel22, TestLevel0]
     func test_getProfileByExtensionAbility() {
         try {
             let moduleName = "entry"
@@ -113,8 +88,7 @@ class Test_bundle_info {
     func test_isDefaultApplication_BROWSER(): Unit {
         try {
             let tag = DefaultAppManager.isDefaultApplication(ApplicationType
-                .Browser
-                .getValue())
+                .Browser)
             @Expect(true)
             Hilog.info(0, "test_defaultapp_BROWSER", "BROWSER tag is ${tag}")
         } catch (e: Exception) {
@@ -127,8 +101,7 @@ class Test_bundle_info {
     func test_isDefaultApplication_IMAGE(): Unit {
         try {
             let tag = DefaultAppManager.isDefaultApplication(ApplicationType
-                .Image
-                .getValue())
+                .Image)
             @Expect(true)
             Hilog.info(0, "test_defaultapp_IMAGE", "IMAGE tag is ${tag}")
         } catch (e: Exception) {
@@ -141,8 +114,7 @@ class Test_bundle_info {
     func test_isDefaultApplication_AUDIO(): Unit {
         try {
             let tag = DefaultAppManager.isDefaultApplication(ApplicationType
-                .Audio
-                .getValue())
+                .Audio)
             @Expect(true)
             Hilog.info(0, "test_defaultapp_AUDIO", "AUDIO tag is ${tag}")
         } catch (e: Exception) {
@@ -155,8 +127,7 @@ class Test_bundle_info {
     func test_isDefaultApplication_VIDEO(): Unit {
         try {
             let tag = DefaultAppManager.isDefaultApplication(ApplicationType
-                .Video
-                .getValue())
+                .Video)
             @Expect(true)
             Hilog.info(0, "test_defaultapp_VIDEO", "VIDEO tag is ${tag}")
         } catch (e: Exception) {
@@ -169,8 +140,7 @@ class Test_bundle_info {
     func test_isDefaultApplication_PDF(): Unit {
         try {
             let tag = DefaultAppManager.isDefaultApplication(ApplicationType
-                .Pdf
-                .getValue())
+                .Pdf)
             @Expect(true)
             Hilog.info(0, "test_defaultapp_PDF", "PDF tag is ${tag}")
         } catch (e: Exception) {
@@ -183,8 +153,7 @@ class Test_bundle_info {
     func test_isDefaultApplication_WORD(): Unit {
         try {
             let tag = DefaultAppManager.isDefaultApplication(ApplicationType
-                .Word
-                .getValue())
+                .Word)
             @Expect(true)
             Hilog.info(0, "test_defaultapp_WORD", "WORD tag is ${tag}")
         } catch (e: Exception) {
@@ -197,8 +166,7 @@ class Test_bundle_info {
     func test_isDefaultApplication_EXCEL(): Unit {
         try {
             let tag = DefaultAppManager.isDefaultApplication(ApplicationType
-                .Excel
-                .getValue())
+                .Excel)
             @Expect(true)
             Hilog.info(0, "test_defaultapp_EXCEL", "EXCEL tag is ${tag}")
         } catch (e: Exception) {
@@ -211,8 +179,7 @@ class Test_bundle_info {
     func test_isDefaultApplication_PPT(): Unit {
         try {
             let tag = DefaultAppManager.isDefaultApplication(ApplicationType
-                .Ppt
-                .getValue())
+                .Ppt)
             @Expect(true)
             Hilog.info(0, "test_defaultapp_PPT", "PPT tag is ${tag}")
         } catch (e: Exception) {
@@ -225,8 +192,7 @@ class Test_bundle_info {
     func test_isDefaultApplication_EMAIL(): Unit {
         try {
             let tag = DefaultAppManager.isDefaultApplication(ApplicationType
-                .Email
-                .getValue())
+                .Email)
             @Expect(true)
             Hilog.info(0, "test_defaultapp_EMAIL", "EMAIL tag is ${tag}")
         } catch (e: Exception) {

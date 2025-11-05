@@ -23,7 +23,6 @@ import ohos.business_exception.BusinessException
 
 /**
  * The constant for application type.
- *
  */
 @!APILevel[
     since: "22",
@@ -32,81 +31,80 @@ import ohos.business_exception.BusinessException
 public enum ApplicationType {
     /**
      * Default browser identifier.
-     *
      */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.DefaultApp"
     ]
     Browser
+    | 
     /**
      * Default image identifier.
-     *
      */
-    | @!APILevel[
+    @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.DefaultApp"
     ]
     Image
-    | @!APILevel[
-        since: "22",
-        syscap: "SystemCapability.BundleManager.BundleFramework.DefaultApp"
-    ]
+    | 
     /**
      * Default audio identifier.
-     *
      */
-    Audio
-    | @!APILevel[
+    @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.DefaultApp"
     ]
+    Audio
+    | 
     /**
      * Default video identifier.
-     *
      */
+    @!APILevel[
+        since: "22",
+        syscap: "SystemCapability.BundleManager.BundleFramework.DefaultApp"
+    ]
     Video
+    | 
     /**
      * Default PDF identifier.
-     *
      */
-    | @!APILevel[
+    @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.DefaultApp"
     ]
     Pdf
+    | 
     /**
      * Default Default word identifier.
-     *
      */
-    | @!APILevel[
+    @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.DefaultApp"
     ]
     Word
+    | 
     /**
      * Default excel identifier.
-     *
      */
-    | @!APILevel[
+    @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.DefaultApp"
     ]
     Excel
+    | 
     /**
      * Default PPT identifier.
-     *
      */
-    | @!APILevel[
+    @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.DefaultApp"
     ]
     Ppt
+    | 
     /**
      * Default email identifier.
-     *
      */
-    | @!APILevel[
+    @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.DefaultApp"
     ]
@@ -117,13 +115,8 @@ public enum ApplicationType {
      * Get the application type value.
      *
      * @returns { String } Returns the string representation of the application type.
-     * @throws { BusinessException } 17700101 - Bundle manager service exception.
      */
-    @!APILevel[
-        since: "22",
-        syscap: "SystemCapability.BundleManager.BundleFramework.DefaultApp"
-    ]
-    public func getValue(): String {
+    func getValue(): String {
         match (this) {
             case Browser => "Web Browser"
             case Image => "Image Gallery"
@@ -154,7 +147,7 @@ public class DefaultAppManager {
     /**
      * Query whether the caller is default application based on type.
      *
-     * @param { String } appType - Indicates the application type to query.
+     * @param { ApplicationType } appType - Indicates the application type to query.
      * @returns { Bool } Returns true if the caller is the default application for the specified type; false otherwise.
      * @throws { BusinessException } 401 - Parameter error. Possible causes: 1. Mandatory parameters are left
      * unspecified; 2. Incorrect parameter types.
@@ -164,8 +157,8 @@ public class DefaultAppManager {
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.DefaultApp"
     ]
-    public static func isDefaultApplication(appType: String): Bool {
-        let cAppType = unsafe { LibC.mallocCString(appType) }
+    public static func isDefaultApplication(appType: ApplicationType): Bool {
+        let cAppType = unsafe { LibC.mallocCString(appType.getValue()) }
         let cValue = unsafe { FfiBundleManagerIsDefaultApplication(cAppType) }
         unsafe { LibC.free(cAppType) }
         if (cValue.code != 0) {
