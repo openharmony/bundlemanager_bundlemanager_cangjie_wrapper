@@ -17,7 +17,7 @@
 
 package ohos.bundle.bundle_manager
 
-import ohos.labels.APILevel
+import ohos.labels.{APILevel, Hide}
 
 /**
 * Obtains configuration information about a bundle
@@ -165,6 +165,11 @@ public class BundleInfo {
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let appIndex: Int32
+    /**
+    * Indicates the hap first install time
+    */
+    @!Hide
+    internal let firstInstallTime: Option<Int64> = Option.None
 
     init(ret: RetBundleInfoV2) {
         this.name = ret.name.toString()
@@ -335,6 +340,11 @@ public class SignatureInfo {
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let appIdentifier: String
+    /**
+     * Indicates the certificate
+     */
+    @!Hide
+    internal let certificate: Option<String> = Option.None
 
     init(ret: RetSignatureInfo) {
         this.appId = ret.appId.toString()
