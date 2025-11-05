@@ -17,7 +17,7 @@
 
 package ohos.metadata
 
-import ohos.labels.APILevel
+import ohos.labels.{APILevel, Hide}
 import std.collection.ArrayList
 
 /**
@@ -56,6 +56,11 @@ public class Metadata {
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public var resource: String
+    /**
+     * Indicates the value id of the metadata
+     */
+    @!Hide
+    internal let valueId: Option<Int64> = Option.None
 
     protected init(name: String, value: String, resource: String) {
         this.name = name
