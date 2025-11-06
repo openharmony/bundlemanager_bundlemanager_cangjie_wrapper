@@ -17,7 +17,7 @@
 
 package ohos.element_name
 
-import ohos.labels.APILevel
+import ohos.labels.{APILevel, Hide}
 
 internal type ElementNameHandle = UIntNative
 
@@ -95,6 +95,17 @@ public class ElementName {
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public var moduleName: String
+    /**
+    * Indicates uri
+    */
+    @!Hide
+    internal var uri: Option<String> = Option.None
+    /**
+    * Indicates short name
+    */
+    @!Hide
+    internal var shortName: Option<String> = Option.None
+
     private var shortName_: String
 
     /**

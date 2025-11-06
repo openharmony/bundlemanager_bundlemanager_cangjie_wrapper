@@ -17,7 +17,7 @@
 
 package ohos.bundle.bundle_manager
 
-import ohos.labels.APILevel
+import ohos.labels.{APILevel, Hide}
 import ohos.resource.AppResource
 import ohos.metadata.Metadata
 import ohos.business_exception.BusinessException
@@ -301,6 +301,16 @@ public class ApplicationInfo {
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let releaseType: String
+    /**
+    * Indicates whether the application enables cloud structured data sync.
+    */
+    @!Hide
+    internal let cloudStructuredDataSyncEnabled: Option<Bool> = Option.None
+    /**
+    * Indicates the flags of the application.
+    */
+    @!Hide
+    internal let flags: Option<Int32> = Option.None;
 
     protected init(ret: RetApplicationInfoV2) {
         this.name = ret.name.toString()
