@@ -17,7 +17,7 @@
 
 package ohos.bundle.bundle_manager
 
-import ohos.labels.APILevel
+import ohos.labels.{APILevel, Hide}
 import ohos.business_exception.BusinessException
 
 /**
@@ -591,6 +591,36 @@ public enum ExtensionAbilityType {
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     Unspecified
+    |
+    @!Hide
+    Fence
+    |
+    @!Hide
+    CallerInfoQuery
+    |
+    @!Hide
+    AssetAcceleration
+    |
+    @!Hide
+    FormEdit
+    |
+    @!Hide
+    Distributed
+    |
+    @!Hide
+    AppService
+    |
+    @!Hide
+    LiveForm
+    |
+    @!Hide
+    WebNativeMessaging
+    |
+    @!Hide
+    FaultLog
+    |
+    @!Hide
+    NotificationSubscriber
     | ...
 
     /**
@@ -726,4 +756,29 @@ public enum MultiAppModeType {
             case _ => throw BusinessException(17700101, "Parameter error.")
         }
     }
+}
+
+/**
+ * Indicates ability type
+ */
+@!Hide
+internal enum AbilityType {
+    /**
+     * Indicates that the ability has a UI
+     */
+    @!Hide
+    Page
+    |
+    /**
+     * Indicates that the ability does not have a UI
+     */
+    @!Hide
+    Service
+    |
+    /**
+     * Indicates that the ability is used to provide data access services
+     */
+    @!Hide
+    Data
+    | ...
 }

@@ -17,7 +17,7 @@
 
 package ohos.bundle.bundle_manager
 
-import ohos.labels.APILevel
+import ohos.labels.{APILevel, Hide}
 import ohos.skill.{Skill, readArrSkill}
 import ohos.metadata.{Metadata, readArrMetadata}
 
@@ -130,6 +130,11 @@ public class AbilityInfo {
     ]
     public let exported: Bool
     /**
+    * Enumerates types of templates that can be used by an ability
+    */
+    @!Hide
+    internal let abilityType: AbilityType = AbilityType.Page
+    /**
     * Enumerates ability display orientations
     *
     */
@@ -156,6 +161,21 @@ public class AbilityInfo {
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let permissions: Array<String>
+    /**
+    * Indicates the permission required for reading ability data
+    */
+    @!Hide
+    internal let readPermission: String = ""
+    /**
+    * Indicates the permission required for writing data to the ability
+    */
+    @!Hide
+    internal let writePermission: String = ""
+    /**
+    * Uri of ability
+    */
+    @!Hide
+    internal let uri: String = ""
     /**
     * The device types that this ability can run on
     *
@@ -237,6 +257,11 @@ public class AbilityInfo {
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let appIndex: Int32
+    /**
+    * Indicates the orientation id of the ability
+    */
+    @!Hide
+    internal let orientationId: Int64 = 0
 
     protected init(ret: RetAbilityInfoV2) {
         this.bundleName = ret.bundleName.toString()
