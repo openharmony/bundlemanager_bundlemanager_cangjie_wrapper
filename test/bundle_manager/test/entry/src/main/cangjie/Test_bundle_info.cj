@@ -45,23 +45,6 @@ class Test_bundle_info {
 
     @TestCase
     @Tag[APILevel22, TestLevel0]
-    func test_getProfileByExtensionAbility() {
-        try {
-            let moduleName = "entry"
-            let extensionAbilityName = ""
-            let metadataName = "myProfile"
-            let info = BundleManager.getProfileByExtensionAbility(moduleName, extensionAbilityName,
-                metadataName: metadataName)
-            for (i in 0..info.size) {
-                Hilog.info(0, "info ${i}", "${info[i]} \n")
-            }
-        } catch (e: Exception) {
-            Hilog.info(0, "test_getProfileByExtensionAbility", "${e.message.toString()}")
-        }
-    }
-
-    @TestCase
-    @Tag[APILevel22, TestLevel0]
     func test_getProfileByAbility() {
         try {
             let moduleName = "entry"
