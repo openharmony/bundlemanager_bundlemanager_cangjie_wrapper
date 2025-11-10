@@ -248,15 +248,6 @@ public class ApplicationInfo {
     ]
     public let dataUnclearable: Bool
     /**
-    * Indicates whether the application enables cloud file sync.
-    *
-    */
-    @!APILevel[
-        since: "22",
-        syscap: "SystemCapability.BundleManager.BundleFramework.Core"
-    ]
-    public let cloudFileSyncEnabled: Bool
-    /**
     * Indicates native library path.
     *
     */
@@ -301,6 +292,15 @@ public class ApplicationInfo {
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let releaseType: String
+    /**
+    * Indicates whether the application enables cloud file sync.
+    *
+    */
+    @!APILevel[
+        since: "22",
+        syscap: "SystemCapability.BundleManager.BundleFramework.Core"
+    ]
+    public let cloudFileSyncEnabled: Bool
     /**
     * Indicates whether the application enables cloud structured data sync.
     */
