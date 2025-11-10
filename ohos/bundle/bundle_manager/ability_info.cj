@@ -132,8 +132,6 @@ public class AbilityInfo {
     /**
     * Enumerates types of templates that can be used by an ability
     */
-    @!Hide
-    internal let abilityType: AbilityType = AbilityType.Page
     /**
     * Enumerates ability display orientations
     *
@@ -161,21 +159,6 @@ public class AbilityInfo {
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let permissions: Array<String>
-    /**
-    * Indicates the permission required for reading ability data
-    */
-    @!Hide
-    internal let readPermission: String = ""
-    /**
-    * Indicates the permission required for writing data to the ability
-    */
-    @!Hide
-    internal let writePermission: String = ""
-    /**
-    * Uri of ability
-    */
-    @!Hide
-    internal let uri: String = ""
     /**
     * The device types that this ability can run on
     *

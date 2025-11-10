@@ -77,6 +77,16 @@ public class ElementName {
     public var bundleName: String
 
     /**
+    * Indicates module name
+    *
+    */
+    @!APILevel[
+        since: "22",
+        syscap: "SystemCapability.BundleManager.BundleFramework.Core"
+    ]
+    public var moduleName: String
+
+    /**
     * Indicates ability name
     *
     */
@@ -86,15 +96,6 @@ public class ElementName {
     ]
     public var abilityName: String
 
-    /**
-    * Indicates module name
-    *
-    */
-    @!APILevel[
-        since: "22",
-        syscap: "SystemCapability.BundleManager.BundleFramework.Core"
-    ]
-    public var moduleName: String
     /**
     * Indicates uri
     */

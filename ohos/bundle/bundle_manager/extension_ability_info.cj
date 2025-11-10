@@ -103,6 +103,15 @@ public class ExtensionAbilityInfo {
     ]
     public let extensionAbilityType: ExtensionAbilityType
     /**
+    * Indicates type name of the extension ability.
+    *
+    */
+    @!APILevel[
+        since: "22",
+        syscap: "SystemCapability.BundleManager.BundleFramework.Core"
+    ]
+    public let extensionAbilityTypeName: String
+    /**
     * The permissions that others need to use this extension ability info
     *
     */
@@ -156,15 +165,6 @@ public class ExtensionAbilityInfo {
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let writePermission: String
-    /**
-    * Indicates type name of the extension ability.
-    *
-    */
-    @!APILevel[
-        since: "22",
-        syscap: "SystemCapability.BundleManager.BundleFramework.Core"
-    ]
-    public let extensionAbilityTypeName: String
     /**
     * Indicates skills of the extension ability
     *

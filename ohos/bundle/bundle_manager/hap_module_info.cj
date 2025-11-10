@@ -165,15 +165,6 @@ public class HapModuleInfo {
     ]
     public let moduleType: ModuleType
     /**
-    * Indicates the preload module
-    *
-    */
-    @!APILevel[
-        since: "22",
-        syscap: "SystemCapability.BundleManager.BundleFramework.Core"
-    ]
-    public let preloads: Array<PreloadItem>
-    /**
     * Indicates the dependency module that this module depends on
     *
     */
@@ -182,6 +173,15 @@ public class HapModuleInfo {
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let dependencies: Array<Dependency>
+    /**
+    * Indicates the preload module
+    *
+    */
+    @!APILevel[
+        since: "22",
+        syscap: "SystemCapability.BundleManager.BundleFramework.Core"
+    ]
+    public let preloads: Array<PreloadItem>
     /**
     * Indicates the menu configuration
     *
@@ -201,15 +201,6 @@ public class HapModuleInfo {
     ]
     public let routerMap: Array<RouterItem>
     /**
-    * Indicates the code path
-    *
-    */
-    @!APILevel[
-        since: "22",
-        syscap: "SystemCapability.BundleManager.BundleFramework.Core"
-    ]
-    public let codePath: String
-    /**
     * Indicates native library path.
     *
     */
@@ -218,6 +209,15 @@ public class HapModuleInfo {
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let nativeLibraryPath: String
+    /**
+    * Indicates the code path
+    *
+    */
+    @!APILevel[
+        since: "22",
+        syscap: "SystemCapability.BundleManager.BundleFramework.Core"
+    ]
+    public let codePath: String
 
     protected init(ret: RetHapModuleInfoV2) {
         this.name = ret.name.toString()
@@ -288,15 +288,6 @@ public class DataItem {
 ]
 public class Dependency {
     /**
-    * Indicates the bundle name of the dependency
-    *
-    */
-    @!APILevel[
-        since: "22",
-        syscap: "SystemCapability.BundleManager.BundleFramework.Core"
-    ]
-    public let bundleName: String
-    /**
     * Indicates the module name
     *
     */
@@ -305,6 +296,15 @@ public class Dependency {
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let moduleName: String
+    /**
+    * Indicates the bundle name of the dependency
+    *
+    */
+    @!APILevel[
+        since: "22",
+        syscap: "SystemCapability.BundleManager.BundleFramework.Core"
+    ]
+    public let bundleName: String
     /**
     * Indicates the version code of the dependency
     *
@@ -383,15 +383,6 @@ public class RouterItem {
     ]
     public let buildFunction: String
     /**
-    * Indicates the data
-    *
-    */
-    @!APILevel[
-        since: "22",
-        syscap: "SystemCapability.BundleManager.BundleFramework.Core"
-    ]
-    public let data: Array<DataItem>
-    /**
     * Indicates the json string of custom data
     *
     */
@@ -400,6 +391,15 @@ public class RouterItem {
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let customData: String
+    /**
+    * Indicates the data
+    *
+    */
+    @!APILevel[
+        since: "22",
+        syscap: "SystemCapability.BundleManager.BundleFramework.Core"
+    ]
+    public let data: Array<DataItem>
 
     init(ret: RetRouterItem) {
         this.name = ret.name.toString()
