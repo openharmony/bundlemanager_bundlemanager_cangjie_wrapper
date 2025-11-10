@@ -582,15 +582,6 @@ public enum ExtensionAbilityType {
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     InsightIntentUi
-    /**
-     * Indicates extension info with type of unspecified
-     *
-     */
-    | @!APILevel[
-        since: "22",
-        syscap: "SystemCapability.BundleManager.BundleFramework.Core"
-    ]
-    Unspecified
     |
     @!Hide
     Fence
@@ -621,6 +612,15 @@ public enum ExtensionAbilityType {
     |
     @!Hide
     NotificationSubscriber
+    /**
+     * Indicates extension info with type of unspecified
+     *
+     */
+    | @!APILevel[
+        since: "22",
+        syscap: "SystemCapability.BundleManager.BundleFramework.Core"
+    ]
+    Unspecified
     | ...
 
     /**
