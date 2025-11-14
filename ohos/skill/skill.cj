@@ -21,45 +21,40 @@ import std.convert.Parsable
 import ohos.labels.APILevel
 
 /**
-* Obtains configuration information about an skill
-*
-*/
+ * Obtains configuration information about an skill.
+ */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.BundleManager.BundleFramework.Core"
 ]
 public class Skill {
     /**
-    * Indicates the actions of the skill
-    *
-    */
+     * Indicates the actions of the skill.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let actions: Array<String>
     /**
-    * Indicates the entities of the skill
-    *
-    */
+     * Indicates the entities of the skill.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let entities: Array<String>
     /**
-    * Indicates the uris of the skill
-    *
-    */
+     * Indicates the uris of the skill.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let uris: Array<SkillUri>
     /**
-    * Indicates the domainVerify of the skill
-    *
-    */
+     * Indicates the domainVerify of the skill.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
@@ -75,99 +70,88 @@ public class Skill {
 }
 
 /**
-* Obtains configuration information about an skillUri
-*
-*/
+ * Obtains configuration information about an skillUri.
+ */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.BundleManager.BundleFramework.Core"
 ]
 public class SkillUri {
     /**
-    * Indicates the scheme of the skillUri
-    *
-    */
+     * Indicates the scheme of the skillUri.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let scheme: String
     /**
-    * Indicates the host of the skillUri
-    *
-    */
+     * Indicates the host of the skillUri.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let host: String
     /**
-    * Indicates the port of the skillUri
-    *
-    */
+     * Indicates the port of the skillUri.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let port: Int32
     /**
-    * Indicates the path of the skillUri
-    *
-    */
+     * Indicates the path of the skillUri.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let path: String
     /**
-    * Indicates the pathStartWith of the skillUri
-    *
-    */
+     * Indicates the pathStartWith of the skillUri.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let pathStartWith: String
     /**
-    * Indicates the pathRegex of the skillUri
-    *
-    */
+     * Indicates the pathRegex of the skillUri.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let pathRegex: String
     /**
-    * Indicates the type of the skillUri
-    *
-    */
+     * Indicates the type of the skillUri.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let uriType: String
     /**
-    * Indicates the utd of the skillUri
-    *
-    */
+     * Indicates the utd of the skillUri.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let utd: String
     /**
-    * Indicates the maxFileSupported of the skillUri
-    *
-    */
+     * Indicates the maxFileSupported of the skillUri.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
-    public let maxFileSupported: Int32
+    public let maxFilesSupported: Int32
     /**
-    * Indicates the linkFeature of the skillUri
-    *
-    */
+     * Indicates the linkFeature of the skillUri.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
@@ -183,7 +167,7 @@ public class SkillUri {
         this.pathRegex = ret.pathRegex.toString()
         this.uriType = ret.uriType.toString()
         this.utd = ret.utd.toString()
-        this.maxFileSupported = ret.maxFileSupported
+        this.maxFilesSupported = ret.maxFileSupported
         this.linkFeature = ret.linkFeature.toString()
     }
 }

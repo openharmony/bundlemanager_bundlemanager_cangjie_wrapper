@@ -22,279 +22,248 @@ import ohos.resource.AppResource
 import ohos.metadata.Metadata
 
 /**
-* Obtains configuration information about an application
-*
-*/
+ * Obtains configuration information about an application.
+ */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.BundleManager.BundleFramework.Core"
 ]
 public class ApplicationInfo {
     /**
-    * Indicates the application name, which is the same as bundleName
-    *
-    */
+     * Indicates the application name, which is the same as bundleName.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let name: String
     /**
-    * Description of application
-    *
-    */
+     * Description of application.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let description: String
     /**
-    * Indicates the description id of the application
-    *
-    */
+     * Indicates the description id of the application.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let descriptionId: Int32
     /**
-    * Indicates whether or not this application may be instantiated
-    *
-    */
+     * Indicates whether or not this application may be instantiated.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let enabled: Bool
     /**
-    * Indicates the label of the application
-    *
-    */
+     * Indicates the label of the application.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let label: String
     /**
-    * Indicates the label id of the application
-    *
-    */
+     * Indicates the label id of the application.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let labelId: Int32
     /**
-    * Indicates the icon of the application
-    *
-    */
+     * Indicates the icon of the application.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let icon: String
     /**
-    * Indicates the icon id of the application
-    *
-    */
+     * Indicates the icon id of the application.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let iconId: Int32
     /**
-    * Process of application, if user do not set it ,the value equal bundleName
-   *
-    */
+     * Process of application, if user do not set it, the value equal bundleName.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let process: String
     /**
-    * Indicates the permissions required for accessing the application.
-    *
-    */
+     * Indicates the permissions required for accessing the application.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let permissions: Array<String>
     /**
-    * Indicates the application source code path
-    *
-    */
+     * Indicates the application source code path.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let codePath: String
     /**
-    * Indicates the metadata of the application
-    *
-    */
+     * Indicates the metadata of the application.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let metadataArray: Array<ModuleMetadata>
     /**
-    * Indicates whether or not this application may be removable
-    *
-    */
+     * Indicates whether or not this application may be removable.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let removable: Bool
     /**
-    * Indicates the access token of the application
-    *
-    */
+     * Indicates the access token of the application.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let accessTokenId: UInt32
     /**
-    * Indicates the uid of the application
-    *
-    */
+     * Indicates the uid of the application.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let uid: Int32
     /**
-    * Indicates icon resource of the application
-    *
-    */
+     * Indicates icon resource of the application.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let iconResource: AppResource
     /**
-    * Indicates label resource of the application
-    *
-    */
+     * Indicates label resource of the application.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let labelResource: AppResource
     /**
-    * Indicates description resource of the application
-    *
-    */
+     * Indicates description resource of the application.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let descriptionResource: AppResource
     /**
-    * Indicates the appDistributionType of the application
-    *
-    */
+     * Indicates the appDistributionType of the application.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let appDistributionType: String
     /**
-    * Indicates the appProvisionType of the application
-    *
-    */
+     * Indicates the appProvisionType of the application.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let appProvisionType: String
     /**
-    * Indicates whether the application is a system application
-    *
-    */
+     * Indicates whether the application is a system application.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let systemApp: Bool
     /**
-    * Indicates the type of application is APP or atomicService.
-    *
-    */
+     * Indicates the type of application is APP.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let bundleType: BundleType
     /**
-    * Indicates whether the application is in debug mode.
-    *
-    */
+     * Indicates whether the application is in debug mode.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let debug: Bool
     /**
-    * Indicates whether the application data is unclearable, that is, whether the application data cannot be cleared.
-    *
-    */
+     * Indicates whether the application data is unclearable, that is, whether the application data cannot be cleared.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let dataUnclearable: Bool
     /**
-    * Indicates native library path.
-    *
-    */
+     * Indicates native library path.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let nativeLibraryPath: String
     /**
-    * Indicates the MultiAppMode object of the bundle
-    *
-    */
+     * Indicates the MultiAppMode object of the bundle.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let multiAppMode: MultiAppMode
     /**
-    * Indicates the index of the bundle
-    *
-    */
+     * Indicates the index of the bundle.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let appIndex: Int32
     /**
-    * Indicates sources to install the app
-    *
-    */
+     * Indicates sources to install the app.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let installSource: String
     /**
-    * Indicates the release type of the app
-    *
-    */
+     * Indicates the release type of the app.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let releaseType: String
     /**
-    * Indicates whether the application enables cloud file sync.
-    *
-    */
+     * Indicates whether the application enables cloud file sync.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
@@ -346,17 +315,15 @@ public class ApplicationInfo {
 }
 
 /**
-* Indicates the ModuleMetadata
-*
-*/
+ * Indicates the ModuleMetadata.
+ */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.BundleManager.BundleFramework.Core"
 ]
 public class ModuleMetadata {
     /**
-     * Indicates the name of this hap module
-     *
+     * Indicates the name of this hap module.
      */
     @!APILevel[
         since: "22",
@@ -364,8 +331,7 @@ public class ModuleMetadata {
     ]
     public let moduleName: String
     /**
-     * Indicates the metadata of this hap module
-     *
+     * Indicates the metadata of this hap module.
      */
     @!APILevel[
         since: "22",
@@ -386,17 +352,15 @@ public class ModuleMetadata {
 }
 
 /**
-* Indicates MultiAppMode
-*
-*/
+ * Indicates MultiAppMode.
+ */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.BundleManager.BundleFramework.Core"
 ]
 public class MultiAppMode {
     /**
-     * Indicates the multiAppModeType of the bundle
-     *
+     * Indicates the multiAppModeType of the bundle.
      */
     @!APILevel[
         since: "22",
@@ -404,8 +368,7 @@ public class MultiAppMode {
     ]
     public let multiAppModeType: MultiAppModeType
     /**
-     * Indicates the max count of the bundle
-     *
+     * Indicates the max count of the bundle.
      */
     @!APILevel[
         since: "22",
