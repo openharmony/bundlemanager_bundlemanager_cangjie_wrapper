@@ -21,6 +21,7 @@ import ohos.resource.CResource
 import ohos.ffi.{CArrString, CArrI32, toArrayCString}
 import ohos.skill.{CArrSkill, freeCArrSkill}
 import ohos.metadata.{CArrMetadata, freeCArrMetadata}
+import ohos.business_exception.BusinessException
 
 @C
 protected struct RetModuleMetadata {
@@ -50,6 +51,9 @@ struct RetUsedScene {
     var abilities: CArrString
     var when: CString
 
+    /**
+    * @throws { BusinessException } 17700101 - Bundle manager service exception.
+    */
     init(usedScene: UsedScene) {
         unsafe {
             this.when = LibC.mallocCString(usedScene.when)
@@ -57,7 +61,7 @@ struct RetUsedScene {
                 this.abilities = toArrayCString(usedScene.abilities)
             } catch (e: Exception) {
                 LibC.free(this.when)
-                throw e
+                throw BusinessException(ERROR_BUNDLE_SERVICE_EXCEPTION, getErrorMsg(ERROR_BUNDLE_SERVICE_EXCEPTION))
             }
         }
     }
