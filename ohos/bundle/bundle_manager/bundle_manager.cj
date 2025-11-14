@@ -98,45 +98,6 @@ public class BundleManager {
     }
 
     /**
-     * Obtains the profile designated by metadata name,
-     * extensionAbilityName and moduleName from the current application.
-     *
-     * @param { String } moduleName - Indicates the moduleName of the application.
-     * @param { String } extensionAbilityName - Indicates the extensionAbilityName of the application.
-     * @param { String } [metadataName] - Indicates the name of metadata in ability.
-     * @returns { Array<String> } Returns string in json-format of the corresponding config file.
-     * @throws { BusinessException } 17700002 - The specified moduleName is not existed.
-     * @throws { BusinessException } 17700003 - The specified extensionAbilityName not existed.
-     * @throws { BusinessException } 17700024 - Failed to get the profile because there is no profile in the HAP.
-     */
-    @!APILevel[
-        since: "22",
-        syscap: "SystemCapability.BundleManager.BundleFramework.Core",
-        throwexception: true,
-        workerthread: true
-    ]
-    public static func getProfileByExtensionAbility(moduleName: String, extensionAbilityName: String,
-        metadataName!: String = ""): Array<String> {
-        unsafe {
-            var res: Array<String> = []
-            try (
-                cModuleName = LibC.mallocCString(moduleName).asResource(),
-                cExtensionAbilityName = LibC.mallocCString(extensionAbilityName).asResource(),
-                cMetadataName = LibC.mallocCString(metadataName).asResource()
-            ) {
-                let cValue: RetDataCArrString = FfiGetProfileByExtensionAbility(cModuleName.value,
-                    cExtensionAbilityName.value, cMetadataName.value)
-                if (cValue.code != 0) {
-                    throw BusinessException(cValue.code, getErrorMsg(cValue.code))
-                }
-                res = readArrStr(cValue.data)
-                cValue.data.free()
-            }
-            return res
-        }
-    }
-
-    /**
      * Obtains the profile designated by metadata name, abilityName and moduleName from the current application.
      *
      * @param { String } moduleName - Indicates the moduleName of the application.
