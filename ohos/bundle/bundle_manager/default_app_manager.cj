@@ -75,7 +75,7 @@ public enum ApplicationType {
     Pdf
     |
     /**
-     * Default Default word identifier.
+     * Default word identifier.
      */
     @!APILevel[
         since: "22",
@@ -115,14 +115,8 @@ public enum ApplicationType {
      * Get the application type value.
      *
      * @returns { String } Returns the string representation of the application type.
-     * @throws { BusinessException } 17700101 - Bundle manager service exception.
      */
-    @!APILevel[
-        since: "22",
-        syscap: "SystemCapability.BundleManager.BundleFramework.DefaultApp",
-        throwexception: true
-    ]
-    public func getValue(): String {
+    func getValue(): String {
         match (this) {
             case Browser => "Web Browser"
             case Image => "Image Gallery"
@@ -152,8 +146,10 @@ public class DefaultAppManager {
     /**
      * Query whether the caller is default application based on type.
      *
-     * @param { String } appType - Application type or a file type that conforms to media type format.
-     * @returns { Bool } Return true if caller is default application; return false otherwise.
+     * @param { ApplicationType } appType - Indicates the application type to query.
+     * @returns { Bool } Returns true if the caller is the default application for the specified type; false otherwise.
+     * @throws { BusinessException } 401 - Parameter error. Possible causes: 1. Mandatory parameters are left
+     * unspecified; 2. Incorrect parameter types.
      * @throws { BusinessException } 801 - Capability not supported.
      */
     @!APILevel[
@@ -162,8 +158,8 @@ public class DefaultAppManager {
         throwexception: true,
         workerthread: true
     ]
-    public static func isDefaultApplication(appType: String): Bool {
-        let cAppType = unsafe { LibC.mallocCString(appType) }
+    public static func isDefaultApplication(appType: ApplicationType): Bool {
+        let cAppType = unsafe { LibC.mallocCString(appType.getValue()) }
         let cValue = unsafe { FfiBundleManagerIsDefaultApplication(cAppType) }
         unsafe { LibC.free(cAppType) }
         if (cValue.code != 0) {

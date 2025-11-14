@@ -47,6 +47,9 @@ public enum BundleType {
     AtomicService
     | ...
 
+    /**
+     * @throws { BusinessException } 17700101 - Parameter error.
+     */
     protected static func parse(val: Int32): BundleType {
         match (val) {
             case 0 => App
@@ -83,6 +86,9 @@ public enum PermissionGrantState {
     PermissionGranted
     | ...
 
+    /**
+     * @throws { BusinessException } 17700101 - Parameter error.
+     */
     static func parse(val: Int32): PermissionGrantState {
         match (val) {
             case -1 => PermissionDenied
@@ -236,6 +242,9 @@ public enum DisplayOrientation {
     FollowDesktop
     | ...
 
+    /**
+     * @throws { BusinessException } 17700101 - Parameter error.
+     */
     static func parse(val: Int32): DisplayOrientation {
         match (val) {
             case 0 => Unspecified
@@ -294,6 +303,9 @@ public enum SupportedWindowMode {
     Floating
     | ...
 
+    /**
+     * @throws { BusinessException } 17700101 - Parameter error.
+     */
     static func parse(val: Int32): SupportedWindowMode {
         match (val) {
             case 0 => FullScreen
@@ -340,6 +352,9 @@ public enum LaunchType {
     Specified
     | ...
 
+    /**
+     * @throws { BusinessException } 17700101 - Parameter error.
+     */
     static func parse(val: Int32): LaunchType {
         match (val) {
             case 0 => Singleton
@@ -596,6 +611,9 @@ public enum ExtensionAbilityType {
     Unspecified
     | ...
 
+    /**
+     * @throws { BusinessException } 17700101 - Parameter error.
+     */
     static func parse(val: Int32): ExtensionAbilityType {
         match (val) {
             case 0 => Form
@@ -662,6 +680,9 @@ public enum ModuleType {
     Shared
     | ...
 
+    /**
+     * @throws { BusinessException } 17700101 - Parameter error.
+     */
     static func parse(val: Int32): ModuleType {
         match (val) {
             case 1 => Entry
@@ -708,6 +729,9 @@ public enum MultiAppModeType {
     AppClone
     | ...
 
+    /**
+     * @throws { BusinessException } 17700101 - Parameter error.
+     */
     static func parse(val: UInt8): MultiAppModeType {
         match (val) {
             case 0 => Unspecified
