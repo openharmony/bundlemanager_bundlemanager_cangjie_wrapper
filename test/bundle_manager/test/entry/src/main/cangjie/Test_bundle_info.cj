@@ -358,8 +358,8 @@ class Test_bundle_info {
             ExtensionAbilityType.Driver,
             ExtensionAbilityType.Action,
             ExtensionAbilityType.AdsService,
-            ExtensionAbilityType.EmbeddedUi,
-            ExtensionAbilityType.InsightIntentUi,
+            ExtensionAbilityType.EmbeddedUI,
+            ExtensionAbilityType.InsightIntentUI,
             ExtensionAbilityType.Unspecified
         ]
         let enum_ModuleType: Array<ModuleType> = [

@@ -59,7 +59,6 @@ func checkToCache(uid: Int32, callingUid: Int32, query: BMQuery, bundleInfo: Bun
 
 /**
  * This module is used to obtain package information of various applications installed on the current device.
- *
  */
 @!APILevel[
     since: "22",
@@ -73,11 +72,11 @@ public class BundleManager {
      * @param { Int32 } bundleFlags - Indicates the flag used to specify information contained in the BundleInfo
      * objects that will be returned.
      * @returns { BundleInfo } The result of getting the bundle info.
-     *
      */
     @!APILevel[
         since: "22",
-        syscap: "SystemCapability.BundleManager.BundleFramework.Core"
+        syscap: "SystemCapability.BundleManager.BundleFramework.Core",
+        workerthread: true
     ]
     public static func getBundleInfoForSelf(bundleFlags: Int32): BundleInfo {
         let uid = unsafe { FfiOHOSGetCallingUid() }
@@ -104,17 +103,17 @@ public class BundleManager {
      *
      * @param { String } moduleName - Indicates the moduleName of the application.
      * @param { String } extensionAbilityName - Indicates the extensionAbilityName of the application.
-     * @param { String } metadataName - Indicates the name of metadata in ability.
+     * @param { String } [metadataName] - Indicates the name of metadata in ability.
      * @returns { Array<String> } Returns string in json-format of the corresponding config file.
-     * @throws { BusinessException } 401 - Input parameters check failed.
      * @throws { BusinessException } 17700002 - The specified moduleName is not existed.
      * @throws { BusinessException } 17700003 - The specified extensionAbilityName not existed.
      * @throws { BusinessException } 17700024 - Failed to get the profile because there is no profile in the HAP.
-     * @throws { BusinessException } 17700026 - The specified bundle is disabled.
      */
     @!APILevel[
         since: "22",
-        syscap: "SystemCapability.BundleManager.BundleFramework.Core"
+        syscap: "SystemCapability.BundleManager.BundleFramework.Core",
+        throwexception: true,
+        workerthread: true
     ]
     public static func getProfileByExtensionAbility(moduleName: String, extensionAbilityName: String,
         metadataName!: String = ""): Array<String> {
@@ -142,18 +141,18 @@ public class BundleManager {
      *
      * @param { String } moduleName - Indicates the moduleName of the application.
      * @param { String } abilityName - Indicates the abilityName of the application.
-     * @param { String } metadataName - Indicates the name of metadata in ability.
+     * @param { String } [metadataName] - Indicates the name of metadata in ability.
      * @returns { Array<String> } Returns string in json-format of the corresponding config file.
-     * @throws { BusinessException } 401 - Input parameters check failed.
      * @throws { BusinessException } 17700002 - The specified moduleName is not existed.
      * @throws { BusinessException } 17700003 - The specified abilityName is not existed.
      * @throws { BusinessException } 17700024 - Failed to get the profile because there is no profile in the HAP.
-     * @throws { BusinessException } 17700026 - The specified bundle is disabled.
      * @throws { BusinessException } 17700029 - The specified ability is disabled.
      */
     @!APILevel[
         since: "22",
-        syscap: "SystemCapability.BundleManager.BundleFramework.Core"
+        syscap: "SystemCapability.BundleManager.BundleFramework.Core",
+        throwexception: true,
+        workerthread: true
     ]
     public static func getProfileByAbility(moduleName: String, abilityName: String, metadataName!: String = ""): Array<String> {
         unsafe {
@@ -180,14 +179,13 @@ public class BundleManager {
      *
      * @param { String } link - Indicates the link to be opened.
      * @returns { Bool } Returns true if the link can be opened; returns false otherwise.
-     * @throws { BusinessException } 401 - Parameter error. Possible causes: 1. Mandatory parameters are left
-     * unspecified; 2. Incorrect parameter types.
      * @throws { BusinessException } 17700055 - The specified link is invalid.
      * @throws { BusinessException } 17700056 - The scheme of the specified link is not in the querySchemes.
      */
     @!APILevel[
         since: "22",
-        syscap: "SystemCapability.BundleManager.BundleFramework.Core"
+        syscap: "SystemCapability.BundleManager.BundleFramework.Core",
+        throwexception: true
     ]
     public static func canOpenLink(link: String): Bool {
         unsafe {

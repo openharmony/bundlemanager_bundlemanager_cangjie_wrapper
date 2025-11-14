@@ -49,7 +49,6 @@ foreign func FFICJElementNameParamsDelete(elementNameParams: CPointer<ElementNam
  * Contains basic Ability information, which uniquely identifies an ability.
  * You can use this class to obtain values of the fields set in an element,
  * such as the device ID, bundle name, and ability name.
- *
  */
 @!APILevel[
     since: "22",
@@ -57,9 +56,8 @@ foreign func FFICJElementNameParamsDelete(elementNameParams: CPointer<ElementNam
 ]
 public class ElementName {
     /**
-    * Indicates device id
-    *
-    */
+     * Indicates device id.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
@@ -67,9 +65,8 @@ public class ElementName {
     public var deviceId: String
 
     /**
-    * Indicates bundle name
-    * 
-    */
+     * Indicates bundle name.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
@@ -77,9 +74,8 @@ public class ElementName {
     public var bundleName: String
 
     /**
-    * Indicates module name
-    *
-    */
+     * Indicates module name.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
@@ -87,9 +83,8 @@ public class ElementName {
     public var moduleName: String
 
     /**
-    * Indicates ability name
-    *
-    */
+     * Indicates ability name.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
@@ -110,8 +105,13 @@ public class ElementName {
     private var shortName_: String
 
     /**
-    * ElementName constructor.
-    */
+     * ElementName constructor.
+     *
+     * @param { String } bundleName - Indicates bundle name.
+     * @param { String } abilityName - Indicates ability name.
+     * @param { String } [deviceId] - Indicates device id. The default value is "".
+     * @param { String } [moduleName] - Indicates module name. The default value is "".
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
