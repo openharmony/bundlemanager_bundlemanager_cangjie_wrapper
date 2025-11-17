@@ -21,198 +21,176 @@ import ohos.labels.APILevel
 import ohos.metadata.{Metadata, readArrMetadata}
 
 /**
-* Obtains configuration information about a hap module.
-*
-*/
+ * Obtains configuration information about a hap module.
+ */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.BundleManager.BundleFramework.Core"
 ]
 public class HapModuleInfo {
     /**
-    * Indicates the name of this hap module
-    *
-    */
+     * Indicates the name of this hap module.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let name: String
     /**
-    * Indicates the icon of this hap module
-    *
-    */
+     * Indicates the icon of this hap module.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let icon: String
     /**
-    * Indicates the icon id of this hap module
-    *
-    */
+     * Indicates the icon id of this hap module.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let iconId: Int32
     /**
-    * Indicates the label of this hap module
-    *
-    */
+     * Indicates the label of this hap module.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let label: String
     /**
-    * Indicates the label id of this hap module
-    *
-    */
+     * Indicates the label id of this hap module.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let labelId: Int32
     /**
-    * Describes the hap module
-    *
-    */
+     * Describes the hap module.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let description: String
     /**
-    * Indicates the description of this hap module
-    *
-    */
+     * Indicates the description of this hap module.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let descriptionId: Int32
     /**
-    * Indicates main elementName of the hap module
-    *
-    */
+     * Indicates main elementName of the hap module.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let mainElementName: String
     /**
-    * Obtains configuration information about abilities
-    *
-    */
+     * Obtains configuration information about abilities.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let abilitiesInfo: Array<AbilityInfo>
     /**
-    * Obtains configuration information about extension abilities
-    *
-    */
+     * Obtains configuration information about extension abilities.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let extensionAbilitiesInfo: Array<ExtensionAbilityInfo>
     /**
-    * Indicates the metadata of ability
-    *
-    */
+     * Indicates the metadata of ability.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let metadata: Array<Metadata>
     /**
-    * The device types that this hap module can run on
-    *
-    */
+     * The device types that this hap module can run on.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let deviceTypes: Array<String>
     /**
-    * Indicates whether free installation of the hap module is supported
-    *
-    */
+     * Indicates whether free installation of the hap module is supported.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let installationFree: Bool
     /**
-    * Indicates the hash value of the hap module
-    *
-    */
+     * Indicates the hash value of the hap module.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let hashValue: String
     /**
-    * Indicates the type of the module
-    *
-    */
+     * Indicates the type of the module.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let moduleType: ModuleType
     /**
-    * Indicates the dependency module that this module depends on
-    *
-    */
+     * Indicates the dependency module that this module depends on.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let dependencies: Array<Dependency>
     /**
-    * Indicates the preload module
-    *
-    */
+     * Indicates the preload module.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let preloads: Array<PreloadItem>
     /**
-    * Indicates the menu configuration
-    *
-    */
+     * Indicates the menu configuration.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let fileContextMenuConfig: String
     /**
-    * Indicates the router information of the module
-    *
-    */
+     * Indicates the router information of the module.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let routerMap: Array<RouterItem>
     /**
-    * Indicates native library path.
-    *
-    */
+     * Indicates native library path.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let nativeLibraryPath: String
     /**
-    * Indicates the code path
-    *
-    */
+     * Indicates the code path.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
@@ -245,27 +223,24 @@ public class HapModuleInfo {
 }
 
 /**
-* Indicates the data item defined in router item
-*
-*/
+ * Indicates the data item defined in router item.
+ */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.BundleManager.BundleFramework.Core"
 ]
 public class DataItem {
     /**
-    * Indicates the key of the custom data item
-    *
-    */
+     * Indicates the key of the custom data item.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let key: String
     /**
-    * Indicates the value of the custom data item
-    *
-    */
+     * Indicates the value of the custom data item.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
@@ -279,36 +254,32 @@ public class DataItem {
 }
 
 /**
-* Indicates the dependency
-*
-*/
+ * Indicates the dependency.
+ */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.BundleManager.BundleFramework.Core"
 ]
 public class Dependency {
     /**
-    * Indicates the module name
-    *
-    */
+     * Indicates the module name.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let moduleName: String
     /**
-    * Indicates the bundle name of the dependency
-    *
-    */
+     * Indicates the bundle name of the dependency.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let bundleName: String
     /**
-    * Indicates the version code of the dependency
-    *
-    */
+     * Indicates the version code of the dependency.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
@@ -323,18 +294,16 @@ public class Dependency {
 }
 
 /**
-* Indicates the preloadItem
-*
-*/
+ * Indicates the preloadItem.
+ */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.BundleManager.BundleFramework.Core"
 ]
 public class PreloadItem {
     /**
-    * Indicates the module name need preload
-    *
-    */
+     * Indicates the module name need preload.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
@@ -347,54 +316,48 @@ public class PreloadItem {
 }
 
 /**
-* Indicates the router item
-*
-*/
+ * Indicates the router item.
+ */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.BundleManager.BundleFramework.Core"
 ]
 public class RouterItem {
     /**
-    * Indicates the name of the module to which the current page belongs
-    *
-    */
+     * Indicates the name of the module to which the current page belongs.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let name: String
     /**
-    * Indicates the file path of the current page within the module
-    *
-    */
+     * Indicates the file path of the current page within the module.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let pageSourceFile: String
     /**
-    * Indicates the name of the function @Builder decorated
-    *
-    */
+     * Indicates the name of the function @Builder decorated
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let buildFunction: String
     /**
-    * Indicates the json string of custom data
-    *
-    */
+     * Indicates the json string of custom data.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let customData: String
     /**
-    * Indicates the data
-    *
-    */
+     * Indicates the data.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"

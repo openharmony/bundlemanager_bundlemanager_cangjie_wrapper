@@ -22,108 +22,96 @@ import ohos.skill.{Skill, readArrSkill}
 import ohos.metadata.{Metadata, readArrMetadata}
 
 /**
-* Obtains configuration information about an ability
-*
-*/
+ * Obtains configuration information about an ability.
+ */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.BundleManager.BundleFramework.Core"
 ]
 public class AbilityInfo {
     /**
-    * Indicates the name of the bundle containing the ability
-    *
-    */
+     * Indicates the name of the bundle containing the ability.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let bundleName: String
     /**
-    * Indicates the module name of the package to which the capability belongs
-    *
-    */
+     * Indicates the module name of the package to which the capability belongs.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let moduleName: String
     /**
-    * Ability simplified class name
-    *
-    */
+     * Ability simplified class name.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let name: String
     /**
-    * Indicates the label of the ability
-    *
-    */
+     * Indicates the label of the ability.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let label: String
     /**
-    * Indicates the label id of the ability
-    *
-    */
+     * Indicates the label id of the ability.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let labelId: Int32
     /**
-    * Indicates the ability
-    *
-    */
+     * Indicates the ability.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let description: String
     /**
-    * Indicates the description id of the ability
-    *
-    */
+     * Indicates the description id of the ability.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let descriptionId: Int32
     /**
-    * Indicates the icon of the ability
-    *
-    */
+     * Indicates the icon of the ability.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let icon: String
     /**
-    * Indicates the icon id of the ability
-    *
-    */
+     * Indicates the icon id of the ability.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let iconId: Int32
     /**
-    * Process of ability, if user do not set it, the value equal application process
-    *
-    */
+     * Process of ability, if user do not set it, the value equal application process.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let process: String
     /**
-    * Indicates whether this ability can be called by other abilities
-    *
-    */
+     * Indicates whether this ability can be called by other abilities.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
@@ -133,108 +121,96 @@ public class AbilityInfo {
     * Enumerates types of templates that can be used by an ability
     */
     /**
-    * Enumerates ability display orientations
-    *
-    */
+     * Enumerates ability display orientations.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let orientation: DisplayOrientation
     /**
-    * Enumerates ability launch type
-    *
-    */
+     * Enumerates ability launch type.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let launchType: LaunchType
     /**
-    * The permissions that others need to launch this ability
-    *
-    */
+     * The permissions that others need to launch this ability.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let permissions: Array<String>
     /**
-    * The device types that this ability can run on
-    *
-    */
+     * The device types that this ability can run on.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let deviceTypes: Array<String>
     /**
-    * Obtains configuration information about an application
-    *
-    */
+     * Obtains configuration information about an application.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let applicationInfo: ApplicationInfo
     /**
-    * Indicates the metadata of ability
-    *
-    */
+     * Indicates the metadata of ability.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let metadata: Array<Metadata>
     /**
-    * Indicates whether the ability is enabled
-    *
-    */
+     * Indicates whether the ability is enabled.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let enabled: Bool
     /**
-    * Indicates which window mode is supported
-    *
-    */
+     * Indicates which window mode is supported.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
-    public let supportWindowModes: Array<SupportWindowMode>
+    public let supportedWindowModes: Array<SupportedWindowMode>
     /**
-    * Indicates window size
-    *
-    */
+     * Indicates window size.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let windowSize: WindowSize
     /**
-    * Indicates whether to hide the application icon from the dock area
-    *
-    */
+     * Indicates whether to hide the application icon from the dock area.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let excludeFromDock: Bool
     /**
-    * Indicates skills of the ability
-    *
-    */
+     * Indicates skills of the ability.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let skills: Array<Skill>
     /**
-    * Indicates the appIndex of application, only work in clone app mode
-    *
-    */
+     * Indicates the appIndex of application, only work in clone app mode.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
@@ -265,7 +241,7 @@ public class AbilityInfo {
         this.applicationInfo = ApplicationInfo(ret.applicationInfo)
         this.metadata = readArrMetadata(ret.metadata)
         this.enabled = ret.enabled
-        this.supportWindowModes = readArrInt32(ret.supportWindowModes)
+        this.supportedWindowModes = readArrInt32(ret.supportWindowModes)
         this.windowSize = WindowSize(ret.windowSize)
         this.excludeFromDock = ret.excludeFromDock
         this.skills = readArrSkill(ret.skills)
@@ -274,63 +250,56 @@ public class AbilityInfo {
 }
 
 /**
-* Indicates the window size.
-*
-*/
+ * Indicates the window size.
+ */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.BundleManager.BundleFramework.Core"
 ]
 public class WindowSize {
     /**
-    * Indicates maximum ratio of width over height of window under free window status.
-    *
-    */
+     * Indicates maximum ratio of width over height of window under free window status.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let maxWindowRatio: Float64
     /**
-    * Indicates minimum ratio of width over height of window under free window status.
-    *
-    */
+     * Indicates minimum ratio of width over height of window under free window status.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let minWindowRatio: Float64
     /**
-    * Indicates maximum width of window under free window status.
-    *
-    */
+     * Indicates maximum width of window under free window status.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let maxWindowWidth: UInt32
     /**
-    * Indicates minimum width of window under free window status.
-    *
-    */
+     * Indicates minimum width of window under free window status.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let minWindowWidth: UInt32
     /**
-    * Indicates maximum height of window under free window status.
-    *
-    */
+     * Indicates maximum height of window under free window status.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let maxWindowHeight: UInt32
     /**
-    * Indicates minimum height of window under free window status.
-    *
-    */
+     * Indicates minimum height of window under free window status.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"

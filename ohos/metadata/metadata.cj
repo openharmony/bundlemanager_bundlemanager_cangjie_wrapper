@@ -21,17 +21,15 @@ import ohos.labels.{APILevel, Hide}
 import std.collection.ArrayList
 
 /**
-* Indicates the Metadata
-*
-*/
+ * Indicates the Metadata.
+ */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.BundleManager.BundleFramework.Core"
 ]
 public class Metadata {
     /**
-     * Indicates the metadata name
-     *
+     * Indicates the metadata name.
      */
     @!APILevel[
         since: "22",
@@ -39,8 +37,7 @@ public class Metadata {
     ]
     public var name: String
     /**
-     * Indicates the metadata value
-     *
+     * Indicates the metadata value.
      */
     @!APILevel[
         since: "22",
@@ -48,8 +45,7 @@ public class Metadata {
     ]
     public var value: String
     /**
-     * Indicates the metadata resource
-     *
+     * Indicates the metadata resource.
      */
     @!APILevel[
         since: "22",

@@ -37,7 +37,7 @@ public enum ApplicationType {
         syscap: "SystemCapability.BundleManager.BundleFramework.DefaultApp"
     ]
     Browser
-    | 
+    |
     /**
      * Default image identifier.
      */
@@ -46,7 +46,7 @@ public enum ApplicationType {
         syscap: "SystemCapability.BundleManager.BundleFramework.DefaultApp"
     ]
     Image
-    | 
+    |
     /**
      * Default audio identifier.
      */
@@ -55,7 +55,7 @@ public enum ApplicationType {
         syscap: "SystemCapability.BundleManager.BundleFramework.DefaultApp"
     ]
     Audio
-    | 
+    |
     /**
      * Default video identifier.
      */
@@ -64,7 +64,7 @@ public enum ApplicationType {
         syscap: "SystemCapability.BundleManager.BundleFramework.DefaultApp"
     ]
     Video
-    | 
+    |
     /**
      * Default PDF identifier.
      */
@@ -73,16 +73,16 @@ public enum ApplicationType {
         syscap: "SystemCapability.BundleManager.BundleFramework.DefaultApp"
     ]
     Pdf
-    | 
+    |
     /**
-     * Default Default word identifier.
+     * Default word identifier.
      */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.DefaultApp"
     ]
     Word
-    | 
+    |
     /**
      * Default excel identifier.
      */
@@ -91,7 +91,7 @@ public enum ApplicationType {
         syscap: "SystemCapability.BundleManager.BundleFramework.DefaultApp"
     ]
     Excel
-    | 
+    |
     /**
      * Default PPT identifier.
      */
@@ -100,7 +100,7 @@ public enum ApplicationType {
         syscap: "SystemCapability.BundleManager.BundleFramework.DefaultApp"
     ]
     Ppt
-    | 
+    |
     /**
      * Default email identifier.
      */
@@ -136,7 +136,6 @@ foreign func FfiBundleManagerIsDefaultApplication(appType: CString): RetDataBool
 
 /**
  * Default application manager.
- *
  */
 @!APILevel[
     since: "22",
@@ -155,7 +154,9 @@ public class DefaultAppManager {
      */
     @!APILevel[
         since: "22",
-        syscap: "SystemCapability.BundleManager.BundleFramework.DefaultApp"
+        syscap: "SystemCapability.BundleManager.BundleFramework.DefaultApp",
+        throwexception: true,
+        workerthread: true
     ]
     public static func isDefaultApplication(appType: ApplicationType): Bool {
         let cAppType = unsafe { LibC.mallocCString(appType.getValue()) }
