@@ -22,8 +22,7 @@ import ohos.skill.{Skill, readArrSkill}
 import ohos.metadata.{Metadata, readArrMetadata}
 
 /**
-* Extension information about a bundle
-*
+* Extension information about a bundle.
 */
 @!APILevel[
     since: "22",
@@ -31,153 +30,136 @@ import ohos.metadata.{Metadata, readArrMetadata}
 ]
 public class ExtensionAbilityInfo {
     /**
-    * Indicates the name of the bundle
-    *
-    */
+     * Indicates the name of the bundle.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let bundleName: String
     /**
-    * Indicates the name of the module
-    *
-    */
+     * Indicates the name of the module.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let moduleName: String
     /**
-    * Indicates the name of the extension ability info
-    *
-    */
+     * Indicates the name of the extension ability info.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let name: String
     /**
-    * Indicates the label id of the extension ability info
-    *
-    */
+     * Indicates the label id of the extension ability info.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let labelId: Int32
     /**
-    * Indicates the description id of the extension ability info
-    *
-    */
+     * Indicates the description id of the extension ability info.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let descriptionId: Int32
     /**
-    * Indicates the icon id of the extension ability info
-    *
-    */
+     * Indicates the icon id of the extension ability info.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let iconId: Int32
     /**
-    * Indicates whether this ability can be called by other abilities
-    *
-    */
+     * Indicates whether this ability can be called by other abilities.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let exported: Bool
     /**
-    * Enumerates types of the extension ability info
-    *
-    */
+     * Enumerates types of the extension ability info.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let extensionAbilityType: ExtensionAbilityType
     /**
-    * Indicates type name of the extension ability.
-    *
-    */
+     * Indicates type name of the extension ability.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let extensionAbilityTypeName: String
     /**
-    * The permissions that others need to use this extension ability info
-    *
-    */
+     * The permissions that others need to use this extension ability info.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let permissions: Array<String>
     /**
-    * Obtains configuration information about an application
-    *
-    */
+     * Obtains configuration information about an application.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let applicationInfo: ApplicationInfo
     /**
-    * Indicates the metadata of bundle
-    *
-    */
+     * Indicates the metadata of bundle.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let metadata: Array<Metadata>
     /**
-    * Indicates the src language to express extension ability info
-    *
-    */
+     * Indicates the src language to express extension ability info.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let enabled: Bool
     /**
-    * Indicates the read permission extension ability info
-    *
-    */
+     * Indicates the read permission extension ability info.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let readPermission: String
     /**
-    * Indicates the write permission of extension ability info
-    *
-    */
+     * Indicates the write permission of extension ability info.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let writePermission: String
     /**
-    * Indicates skills of the extension ability
-    *
-    */
+     * Indicates skills of the extension ability.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let skills: Array<Skill>
     /**
-    * Indicates the appIndex of extension ability, only work in clone app mode
-    *
-    */
+     * Indicates the appIndex of extension ability, only work in clone app mode.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"

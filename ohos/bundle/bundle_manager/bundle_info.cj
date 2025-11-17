@@ -20,9 +20,8 @@ package ohos.bundle.bundle_manager
 import ohos.labels.{APILevel, Hide}
 
 /**
-* Obtains configuration information about a bundle
-*
-*/
+ * Obtains configuration information about a bundle.
+ */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.BundleManager.BundleFramework.Core"
@@ -30,117 +29,104 @@ import ohos.labels.{APILevel, Hide}
 public class BundleInfo {
     let uid: Int32
     /**
-    * Indicates the name of this bundle
-    *
-    */
+     * Indicates the name of this bundle.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let name: String
     /**
-    * Indicates the bundle vendor
-    *
-    */
+     * Indicates the bundle vendor.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let vendor: String
     /**
-    * Indicates the version code of the bundle
-    *
-    */
+     * Indicates the version code of the bundle.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let versionCode: UInt32
     /**
-    * Indicates the version name of the bundle
-    *
-    */
+     * Indicates the version name of the bundle.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let versionName: String
     /**
-    * Indicates the **minimum ** version compatible with the bundle
-    *
-    */
+     * Indicates the **minimum ** version compatible with the bundle.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let minCompatibleVersionCode: UInt32
     /**
-    * Indicates the target version number of the bundle
-    *
-    */
+     * Indicates the target version number of the bundle.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let targetVersion: UInt32
     /**
-    * Obtains configuration information about an application
-    *
-    */
+     * Obtains configuration information about an application.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let appInfo: ApplicationInfo
     /**
-    * Obtains configuration information about a module
-    *
-    */
+     * Obtains configuration information about a module.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let hapModulesInfo: Array<HapModuleInfo>
     /**
-    * Indicates the required permissions details defined in the bundle
-    *
-    */
+     * Indicates the required permissions details defined in the bundle.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let reqPermissionDetails: Array<ReqPermissionDetail>
     /**
-    * Indicates the grant state of required permissions
-    *
-    */
+     * Indicates the grant state of required permissions.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let permissionGrantStates: Array<PermissionGrantState>
     /**
-    * Indicates the SignatureInfo of the bundle
-    *
-    */
+     * Indicates the SignatureInfo of the bundle.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let signatureInfo: SignatureInfo
     /**
-    * Indicates the hap install time
-    *
-    */
+     * Indicates the hap install time.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let installTime: Int64
     /**
-    * Indicates the hap update time
-    *
-    */
+     * Indicates the hap update time.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
@@ -148,18 +134,16 @@ public class BundleInfo {
     public let updateTime: Int64
 
     /**
-    * Indicates the router information of the application
-    *
-    */
+     * Indicates the router information of the application.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public let routerMap: Array<RouterItem>
     /**
-    * Indicates the appIndex of application, only work in appClone mode
-    *
-    */
+     * Indicates the appIndex of application, only work in appClone mode.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
@@ -192,17 +176,15 @@ public class BundleInfo {
 }
 
 /**
-* Indicates the required permissions details defined in configuration file
-*
-*/
+ * Indicates the required permissions details defined in configuration file.
+ */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.BundleManager.BundleFramework.Core"
 ]
 public class ReqPermissionDetail {
     /**
-     * Indicates the name of this required permissions
-     *
+     * Indicates the name of this required permissions.
      */
     @!APILevel[
         since: "22",
@@ -210,8 +192,7 @@ public class ReqPermissionDetail {
     ]
     public var name: String
     /**
-     * Indicates the module name which the request permission belongs
-     *
+     * Indicates the module name which the request permission belongs.
      */
     @!APILevel[
         since: "22",
@@ -219,8 +200,7 @@ public class ReqPermissionDetail {
     ]
     public var moduleName: String
     /**
-     * Indicates the reason of this required permissions
-     *
+     * Indicates the reason of this required permissions.
      */
     @!APILevel[
         since: "22",
@@ -228,8 +208,7 @@ public class ReqPermissionDetail {
     ]
     public var reason: String
     /**
-     * Indicates the reason id of this required permissions
-     *
+     * Indicates the reason id of this required permissions.
      */
     @!APILevel[
         since: "22",
@@ -237,8 +216,7 @@ public class ReqPermissionDetail {
     ]
     public var reasonId: Int32
     /**
-     * Indicates the used scene of this required permissions
-     *
+     * Indicates the used scene of this required permissions.
      */
     @!APILevel[
         since: "22",
@@ -264,27 +242,24 @@ public class ReqPermissionDetail {
 }
 
 /**
-* The scene which is used
-*
-*/
+ * The scene which is used.
+ */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.BundleManager.BundleFramework.Core"
 ]
 public class UsedScene {
     /**
-    * Indicates the abilities that need the permission
-    *
-    */
+     * Indicates the abilities that need the permission.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public var abilities: Array<String>
     /**
-    * Indicates the time when the permission is used
-    *
-    */
+     * Indicates the time when the permission is used.
+     */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
@@ -303,9 +278,8 @@ public class UsedScene {
 }
 
 /**
-* Indicates SignatureInfo
-*
-*/
+ * Indicates SignatureInfo.
+ */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.BundleManager.BundleFramework.Core"
@@ -313,8 +287,7 @@ public class UsedScene {
 public class SignatureInfo {
     /**
      * Indicates the ID of the application to which this bundle belongs
-     * The application ID uniquely identifies an application. It is determined by the bundle name and signature
-     *
+     * The application ID uniquely identifies an application. It is determined by the bundle name and signature.
      */
     @!APILevel[
         since: "22",
@@ -322,7 +295,7 @@ public class SignatureInfo {
     ]
     public let appId: String
     /**
-     * Indicates the fingerprint of the certificate
+     * Indicates the fingerprint of the certificate.
      */
     @!APILevel[
         since: "22",
@@ -333,7 +306,6 @@ public class SignatureInfo {
      * Globally unique identifier of an application, which is allocated by the cloud.
      * AppIdentifier does not change along the application lifecycle, including version updates, certificate changes,
      * public and private key changes, and application transfer.
-     *
      */
     @!APILevel[
         since: "22",

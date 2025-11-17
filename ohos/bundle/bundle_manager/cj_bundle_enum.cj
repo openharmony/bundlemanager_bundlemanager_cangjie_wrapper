@@ -21,28 +21,26 @@ import ohos.labels.{APILevel, Hide}
 import ohos.business_exception.BusinessException
 
 /**
-* Indicates bundle type
-*
-*/
+ * Indicates bundle type.
+ */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.BundleManager.BundleFramework.Core"
 ]
 public enum BundleType {
     /**
-     * Indicates app
-     *
+     * Indicates app.
      */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     App
+    |
     /**
      * Indicates atomic service
-     *
      */
-    | @!APILevel[
+    @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
@@ -62,9 +60,8 @@ public enum BundleType {
 }
 
 /**
-* PermissionGrantState
-*
-*/
+ * PermissionGrantState
+ */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.BundleManager.BundleFramework.Core"
@@ -72,18 +69,17 @@ public enum BundleType {
 public enum PermissionGrantState {
     /**
      * PERMISSION_DENIED
-     *
      */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     PermissionDenied
+    |
     /**
      * PERMISSION_GRANTED
-     *
      */
-    | @!APILevel[
+    @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
@@ -103,145 +99,143 @@ public enum PermissionGrantState {
 }
 
 /**
-* Display orientation
-*
-*/
+ * Display orientation.
+ */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.BundleManager.BundleFramework.Core"
 ]
 public enum DisplayOrientation {
     /**
-     * Indicates that the system automatically determines the display orientation
-     *
+     * Indicates that the system automatically determines the display orientation.
      */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     Unspecified
+    |
     /**
-     * Indicates the landscape orientation
-     *
+     * Indicates the landscape orientation.
      */
-    | @!APILevel[
+    @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     Landscape
+    |
     /**
-     * Indicates the portrait orientation
-     *
+     * Indicates the portrait orientation.
      */
-    | @!APILevel[
+    @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     Portrait
+    |
     /**
-     * Indicates the page ability orientation is the same as that of the nearest ability in the stack
-     *
+     * Indicates the page ability orientation is the same as that of the nearest ability in the stack.
      */
-    | @!APILevel[
+    @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     FollowRecent
+    |
     /**
-     * Indicates the inverted landscape orientation
-     *
+     * Indicates the inverted landscape orientation.
      */
-    | @!APILevel[
+    @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     LandscapeInverted
+    |
     /**
-     * Indicates the inverted portrait orientation
-     *
+     * Indicates the inverted portrait orientation.
      */
-    | @!APILevel[
+    @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     PortraitInverted
+    |
     /**
-     * Indicates the orientation can be auto-rotated
-     *
+     * Indicates the orientation can be auto-rotated.
      */
-    | @!APILevel[
+    @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     AutoRotation
+    |
     /**
-     * Indicates the landscape orientation rotated with sensor
-     *
+     * Indicates the landscape orientation rotated with sensor.
      */
-    | @!APILevel[
+    @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     AutoRotationLandscape
+    |
     /**
-     * Indicates the portrait orientation rotated with sensor
-     *
+     * Indicates the portrait orientation rotated with sensor.
      */
-    | @!APILevel[
+    @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     AutoRotationPortrait
+    |
     /**
-     * Indicates the sensor restricted mode
-     *
+     * Indicates the sensor restricted mode.
      */
-    | @!APILevel[
+    @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     AutoRotationRestricted
+    |
     /**
-     * Indicates the sensor landscape restricted mode
-     *
+     * Indicates the sensor landscape restricted mode.
      */
-    | @!APILevel[
+    @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     AutoRotationLandscapeRestricted
+    |
     /**
-     * Indicates the sensor portrait restricted mode
-     *
+     * Indicates the sensor portrait restricted mode.
      */
-    | @!APILevel[
+    @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     AutoRotationPortraitRestricted
+    |
     /**
-     * Indicates the locked orientation mode
-     *
+     * Indicates the locked orientation mode.
      */
-    | @!APILevel[
+    @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     Locked
+    |
     /**
-     * Indicates the system automatically determines the sensor restricted mode
-     *
+     * Indicates the system automatically determines the sensor restricted mode.
      */
-    | @!APILevel[
+    @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     AutoRotationUnspecified
+    |
     /**
-     * Indicates the orientation follow the desktop rotate mode
-     *
+     * Indicates the orientation follow the desktop rotate mode.
      */
-    | @!APILevel[
+    @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
@@ -274,37 +268,35 @@ public enum DisplayOrientation {
 }
 
 /**
-* Support window mode
-*
-*/
+ * Support window mode.
+ */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.BundleManager.BundleFramework.Core"
 ]
-public enum SupportWindowMode {
+public enum SupportedWindowMode {
     /**
-     * Indicates supported window mode of full screen mode
-     *
+     * Indicates supported window mode of full screen mode.
      */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     FullScreen
+    |
     /**
-     * Indicates supported window mode of split mode
-     *
+     * Indicates supported window mode of split mode.
      */
-    | @!APILevel[
+    @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     Split
+    |
     /**
-     * Indicates supported window mode of floating mode
-     *
+     * Indicates supported window mode of floating mode.
      */
-    | @!APILevel[
+    @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
@@ -314,7 +306,7 @@ public enum SupportWindowMode {
     /**
      * @throws { BusinessException } 17700101 - Parameter error.
      */
-    static func parse(val: Int32): SupportWindowMode {
+    static func parse(val: Int32): SupportedWindowMode {
         match (val) {
             case 0 => FullScreen
             case 1 => Split
@@ -325,37 +317,35 @@ public enum SupportWindowMode {
 }
 
 /**
-* Launch type
-*
-*/
+ * Launch type.
+ */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.BundleManager.BundleFramework.Core"
 ]
 public enum LaunchType {
     /**
-     * Indicates that the ability has only one instance
-     *
+     * Indicates that the ability has only one instance.
      */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     Singleton
+    |
     /**
-     * Indicates that the ability can have multiple instances
-     *
+     * Indicates that the ability can have multiple instances.
      */
-    | @!APILevel[
+    @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     Multiton
+    |
     /**
-     * Indicates that the ability can have specified instances
-     *
+     * Indicates that the ability can have specified instances.
      */
-    | @!APILevel[
+    @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
@@ -376,212 +366,210 @@ public enum LaunchType {
 }
 
 /**
-* This enumeration value is used to identify various types of extension ability
-*
-*/
+ * This enumeration value is used to identify various types of extension ability.
+ */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.BundleManager.BundleFramework.Core"
 ]
 public enum ExtensionAbilityType {
     /**
-     * Indicates extension info with type of form
-     *
+     * Indicates extension info with type of form.
      */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     Form
+    |
     /**
-     * Indicates extension info with type of work schedule
-     *
+     * Indicates extension info with type of work schedule.
      */
-    | @!APILevel[
+    @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     WorkScheduler
+    |
     /**
-     * Indicates extension info with type of input method
-     *
+     * Indicates extension info with type of input method.
      */
-    | @!APILevel[
+    @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     InputMethod
+    |
     /**
-     * Indicates extension info with type of service
-     *
+     * Indicates extension info with type of service.
      */
-    | @!APILevel[
+    @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     Service
+    |
     /**
-     * Indicates extension info with type of accessibility
-     *
+     * Indicates extension info with type of accessibility.
      */
-    | @!APILevel[
+    @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     Accessibility
+    |
     /**
-     * Indicates extension info with type of dataShare
-     *
+     * Indicates extension info with type of dataShare.
      */
-    | @!APILevel[
+    @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     DataShare
+    |
     /**
-     * Indicates extension info with type of filesShare
-     *
+     * Indicates extension info with type of filesShare.
      */
-    | @!APILevel[
+    @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     FileShare
+    |
     /**
-     * Indicates extension info with type of staticSubscriber
-     *
+     * Indicates extension info with type of staticSubscriber.
      */
-    | @!APILevel[
+    @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     StaticSubscriber
+    |
     /**
-     * Indicates extension info with type of wallpaper
-     *
+     * Indicates extension info with type of wallpaper.
      */
-    | @!APILevel[
+    @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     Wallpaper
+    |
     /**
-     * Indicates extension info with type of backup
-     *
+     * Indicates extension info with type of backup.
      */
-    | @!APILevel[
+    @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     Backup
+    |
     /**
-     * Indicates extension info with type of window
-     *
+     * Indicates extension info with type of window.
      */
-    | @!APILevel[
+    @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     Window
+    |
     /**
-     * Indicates extension info with type of enterprise admin
-     *
+     * Indicates extension info with type of enterprise admin.
      */
-    | @!APILevel[
+    @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     EnterpriseAdmin
+    |
     /**
-     * Indicates extension info with type of thumbnail
-     *
+     * Indicates extension info with type of thumbnail.
      */
-    | @!APILevel[
+    @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     Thumbnail
+    |
     /**
-     * Indicates extension info with type of preview
-     *
+     * Indicates extension info with type of preview.
      */
-    | @!APILevel[
+    @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     Preview
+    |
     /**
-     * Indicates extension info with type of print
-     *
+     * Indicates extension info with type of print.
      */
-    | @!APILevel[
+    @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     Print
+    |
     /**
-     * Indicates extension info with type of share
-     *
+     * Indicates extension info with type of share.
      */
-    | @!APILevel[
+    @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     Share
+    |
     /**
-     * Indicates extension info with type of push
-     *
+     * Indicates extension info with type of push.
      */
-    | @!APILevel[
+    @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     Push
+    |
     /**
-     * Indicates extension info with type of driver
-     *
+     * Indicates extension info with type of driver.
      */
-    | @!APILevel[
+    @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     Driver
+    |
     /**
-     * Indicates extension info with type of action
-     *
+     * Indicates extension info with type of action.
      */
-    | @!APILevel[
+    @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     Action
+    |
     /**
-     * Indicates extension info with type of ads service
-     *
+     * Indicates extension info with type of ads service.
      */
-    | @!APILevel[
+    @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     AdsService
+    |
     /**
-     * Indicates extension info with type of embedded UI
-     *
+     * Indicates extension info with type of embedded UI.
      */
-    | @!APILevel[
+    @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
-    EmbeddedUi
+    EmbeddedUI
+    |
     /**
-     * Indicates extension info with type of insight intent UI
-     *
+     * Indicates extension info with type of insight intent UI.
      */
-    | @!APILevel[
+    @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
-    InsightIntentUi
+    InsightIntentUI
     |
     @!Hide
     Fence
@@ -612,11 +600,11 @@ public enum ExtensionAbilityType {
     |
     @!Hide
     NotificationSubscriber
+    |
     /**
-     * Indicates extension info with type of unspecified
-     *
+     * Indicates extension info with type of unspecified.
      */
-    | @!APILevel[
+    @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
@@ -648,8 +636,8 @@ public enum ExtensionAbilityType {
             case 18 => Driver
             case 19 => Action
             case 20 => AdsService
-            case 21 => EmbeddedUi
-            case 22 => InsightIntentUi
+            case 21 => EmbeddedUI
+            case 22 => InsightIntentUI
             case 255 => Unspecified
             case _ => throw BusinessException(17700101, "Parameter error.")
         }
@@ -657,37 +645,35 @@ public enum ExtensionAbilityType {
 }
 
 /**
-* Indicates module type
-*
-*/
+ * Indicates module type.
+ */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.BundleManager.BundleFramework.Core"
 ]
 public enum ModuleType {
     /**
-     * Indicates entry type
-     *
+     * Indicates entry type.
      */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     Entry
+    |
     /**
-     * Indicates feature type
-     *
+     * Indicates feature type.
      */
-    | @!APILevel[
+    @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     Feature
+    |
     /**
-     * Indicates shared type
-     *
+     * Indicates shared type.
      */
-    | @!APILevel[
+    @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
@@ -708,37 +694,35 @@ public enum ModuleType {
 }
 
 /**
-* This enumeration value is used to identify various types of extension ability
-*
-*/
+ * This enumeration value is used to identify various types of extension ability.
+ */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.BundleManager.BundleFramework.Core"
 ]
 public enum MultiAppModeType {
     /**
-     * Indicates multi app mode with type of unspecified
-     *
+     * Indicates multi app mode with type of unspecified.
      */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     Unspecified
+    |
     /**
-     * Indicates multi app mode with type of multiInstance
-     *
+     * Indicates multi app mode with type of multiInstance.
      */
-    | @!APILevel[
+    @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     MultiInstance
+    |
     /**
-     * Indicates multi app mode with type of appClone
-     *
+     * Indicates multi app mode with type of appClone.
      */
-    | @!APILevel[
+    @!APILevel[
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]

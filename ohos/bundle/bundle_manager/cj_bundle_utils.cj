@@ -76,11 +76,11 @@ func readArrModuleMetadata(cArr: CArrModuleMetadata): Array<ModuleMetadata> {
     return result.toArray()
 }
 
-func readArrInt32(cArr: CArrI32): Array<SupportWindowMode> {
-    let result = ArrayList<SupportWindowMode>()
+func readArrInt32(cArr: CArrI32): Array<SupportedWindowMode> {
+    let result = ArrayList<SupportedWindowMode>()
     if (cArr.head.isNotNull()) {
         for (i in 0..cArr.size) {
-            unsafe { result.add(SupportWindowMode.parse(cArr.head.read(i))) }
+            unsafe { result.add(SupportedWindowMode.parse(cArr.head.read(i))) }
         }
     }
     return result.toArray()
