@@ -42,6 +42,9 @@
               },
               {
                 "name": "//foundation/bundlemanager/bundlemanager_cangjie_wrapper/ohos/element_name:ohos.element_name"
+              },
+              {
+                "name": "//foundation/bundlemanager/bundlemanager_cangjie_wrapper:copy_sdk_bundlemanager_cangjie_libs"
               }
             ],
             "test": []
