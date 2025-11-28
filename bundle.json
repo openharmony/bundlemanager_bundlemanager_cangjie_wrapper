@@ -9,10 +9,7 @@
     "component": {
         "name": "bundlemanager_cangjie_wrapper",
         "subsystem": "bundlemanager",
-        "syscap": [
-            "SystemCapability.BundleManager.BundleFramework.Core",
-            "SystemCapability.BundleManager.BundleFramework.DefaultApp"
-        ],
+        "syscap": [],
         "features": [],
         "hisysevent_config": [],
         "adapted_system_type": [
