@@ -40,10 +40,7 @@ public enum BundleType {
     /**
      * Indicates atomic service
      */
-    @!APILevel[
-        since: "22",
-        syscap: "SystemCapability.BundleManager.BundleFramework.Core"
-    ]
+    @!Hide
     AtomicService
     | ...
 
@@ -53,7 +50,6 @@ public enum BundleType {
     protected static func parse(val: Int32): BundleType {
         match (val) {
             case 0 => App
-            case 1 => AtomicService
             case _ => throw BusinessException(17700101, "Parameter error.")
         }
     }
@@ -376,10 +372,7 @@ public enum ExtensionAbilityType {
     /**
      * Indicates extension info with type of form.
      */
-    @!APILevel[
-        since: "22",
-        syscap: "SystemCapability.BundleManager.BundleFramework.Core"
-    ]
+    @!Hide
     Form
     |
     /**
@@ -616,7 +609,6 @@ public enum ExtensionAbilityType {
      */
     static func parse(val: Int32): ExtensionAbilityType {
         match (val) {
-            case 0 => Form
             case 1 => WorkScheduler
             case 2 => InputMethod
             case 3 => Service
