@@ -31,7 +31,8 @@
                 "//foundation/bundlemanager/bundlemanager_cangjie_wrapper/ohos/bundle/bundle_manager:ohos.bundle.bundle_manager",
                 "//foundation/bundlemanager/bundlemanager_cangjie_wrapper/ohos/element_name:ohos.element_name",
                 "//foundation/bundlemanager/bundlemanager_cangjie_wrapper/ohos/metadata:ohos.metadata",
-                "//foundation/bundlemanager/bundlemanager_cangjie_wrapper/ohos/skill:ohos.skill"
+                "//foundation/bundlemanager/bundlemanager_cangjie_wrapper/ohos/skill:ohos.skill",
+                "//foundation/bundlemanager/bundlemanager_cangjie_wrapper/ohos/zlib:ohos.zlib"
             ],
             "inner_kits": [
               {
