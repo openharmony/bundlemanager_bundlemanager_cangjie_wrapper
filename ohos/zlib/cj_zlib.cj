@@ -234,7 +234,7 @@ public func compressFile(inFile: String, outFile: String, options: Options): Uni
  *
  * @param { String } inFile - Indicates the path of the file to be decompressed.
  * @param { String } outFile - Indicates the path of the output decompressed file.
- * @param { Option<Options> } [ options ] - Indicates the options of decompressing file.
+ * @param { Options } [ options ] - Indicates the options of decompressing file.
  * @throws { BusinessException } 900001 - The input source file is invalid.
  * @throws { BusinessException } 900002 - The input destination file is invalid.
  * @throws { BusinessException } 900003 - The input source file is not in ZIP format or is damaged.
