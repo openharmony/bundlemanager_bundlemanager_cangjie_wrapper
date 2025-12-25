@@ -94,12 +94,12 @@ public class ElementName {
     /**
     * Indicates uri
     */
-    @!Hide
+    @!Hide[isChecked: true]
     internal var uri: Option<String> = Option.None
     /**
     * Indicates short name
     */
-    @!Hide
+    @!Hide[isChecked: true]
     internal var shortName: Option<String> = Option.None
 
     private var shortName_: String
