@@ -273,12 +273,12 @@ public class ApplicationInfo {
     /**
     * Indicates whether the application enables cloud structured data sync.
     */
-    @!Hide
+    @!Hide[isChecked: true]
     internal let cloudStructuredDataSyncEnabled: Option<Bool> = Option.None
     /**
     * Indicates the flags of the application.
     */
-    @!Hide
+    @!Hide[isChecked: true]
     internal let flags: Option<Int32> = Option.None;
 
     protected init(ret: RetApplicationInfoV2) {

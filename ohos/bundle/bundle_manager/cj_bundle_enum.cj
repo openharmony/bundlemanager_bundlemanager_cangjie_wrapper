@@ -40,7 +40,7 @@ public enum BundleType {
     /**
      * Indicates atomic service
      */
-    @!Hide
+    @!Hide[isChecked: true]
     AtomicService
     | ...
 
@@ -372,7 +372,7 @@ public enum ExtensionAbilityType {
     /**
      * Indicates extension info with type of form.
      */
-    @!Hide
+    @!Hide[isChecked: true]
     Form
     |
     /**
@@ -564,34 +564,34 @@ public enum ExtensionAbilityType {
     ]
     InsightIntentUI
     |
-    @!Hide
+    @!Hide[isChecked: true]
     Fence
     |
-    @!Hide
+    @!Hide[isChecked: true]
     CallerInfoQuery
     |
-    @!Hide
+    @!Hide[isChecked: true]
     AssetAcceleration
     |
-    @!Hide
+    @!Hide[isChecked: true]
     FormEdit
     |
-    @!Hide
+    @!Hide[isChecked: true]
     Distributed
     |
-    @!Hide
+    @!Hide[isChecked: true]
     AppService
     |
-    @!Hide
+    @!Hide[isChecked: true]
     LiveForm
     |
-    @!Hide
+    @!Hide[isChecked: true]
     WebNativeMessaging
     |
-    @!Hide
+    @!Hide[isChecked: true]
     FaultLog
     |
-    @!Hide
+    @!Hide[isChecked: true]
     NotificationSubscriber
     |
     /**
@@ -737,24 +737,24 @@ public enum MultiAppModeType {
 /**
  * Indicates ability type
  */
-@!Hide
+@!Hide[isChecked: true]
 internal enum AbilityType {
     /**
      * Indicates that the ability has a UI
      */
-    @!Hide
+    @!Hide[isChecked: true]
     Page
     |
     /**
      * Indicates that the ability does not have a UI
      */
-    @!Hide
+    @!Hide[isChecked: true]
     Service
     |
     /**
      * Indicates that the ability is used to provide data access services
      */
-    @!Hide
+    @!Hide[isChecked: true]
     Data
     | ...
 }
