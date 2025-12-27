@@ -55,7 +55,7 @@ public class Metadata {
     /**
      * Indicates the value id of the metadata
      */
-    @!Hide
+    @!Hide[isChecked: true]
     internal let valueId: Option<Int64> = Option.None
 
     protected init(name: String, value: String, resource: String) {
