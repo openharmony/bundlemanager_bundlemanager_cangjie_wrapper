@@ -18,7 +18,7 @@
 package ohos.bundle.bundle_manager
 
 import std.collection.HashMap
-import ohos.business_exception.{BusinessException, getUniversalErrorMsg, ERR_PARAMETER_ERROR}
+import ohos.business_exception.{BusinessException, getUniversalErrorMsg}
 
 const ERR_MSG_BUNDLE_NOT_EXIST: String = "The specified bundle is not found."
 const ERR_MSG_MODULE_NOT_EXIST: String = "The specified module is not found."
