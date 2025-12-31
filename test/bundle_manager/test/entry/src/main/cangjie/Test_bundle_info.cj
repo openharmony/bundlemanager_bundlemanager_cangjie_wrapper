@@ -256,8 +256,7 @@ class Test_bundle_info {
     func test_enums(): Unit {
 
         let enum_BundleType: Array<BundleType> = [
-            BundleType.App,
-            BundleType.AtomicService
+            BundleType.App
         ]
         let enum_PermissionGrantState: Array<PermissionGrantState> = [
             PermissionGrantState.PermissionDenied,
@@ -287,7 +286,6 @@ class Test_bundle_info {
             LaunchType.Specified
         ]
         let enum_ExtensionAbilityType: Array<ExtensionAbilityType> = [
-            ExtensionAbilityType.Form,
             ExtensionAbilityType.WorkScheduler,
             ExtensionAbilityType.InputMethod,
             ExtensionAbilityType.Service,
