@@ -17,15 +17,27 @@ package ohos.metadata
 
 import ohos.labels.*
 
-@!APILevel[since: "22", syscap: "SystemCapability.BundleManager.BundleFramework.Core"]
+@!APILevel[
+    since: "22",
+    syscap: "SystemCapability.BundleManager.BundleFramework.Core"
+]
 public class Metadata {
-    @!APILevel[since: "22", syscap: "SystemCapability.BundleManager.BundleFramework.Core"]
+    @!APILevel[
+        since: "22",
+        syscap: "SystemCapability.BundleManager.BundleFramework.Core"
+    ]
     public var name: String
 
-    @!APILevel[since: "22", syscap: "SystemCapability.BundleManager.BundleFramework.Core"]
+    @!APILevel[
+        since: "22",
+        syscap: "SystemCapability.BundleManager.BundleFramework.Core"
+    ]
     public var value: String
 
-    @!APILevel[since: "22", syscap: "SystemCapability.BundleManager.BundleFramework.Core"]
+    @!APILevel[
+        since: "22",
+        syscap: "SystemCapability.BundleManager.BundleFramework.Core"
+    ]
     public var resource: String
     
     public init() {

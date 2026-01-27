@@ -17,21 +17,39 @@ package ohos.element_name
 
 import ohos.labels.*
 
-@!APILevel[since: "22", syscap: "SystemCapability.BundleManager.BundleFramework.Core"]
+@!APILevel[
+    since: "22",
+    syscap: "SystemCapability.BundleManager.BundleFramework.Core"
+]
 public class ElementName {
-    @!APILevel[since: "22", syscap: "SystemCapability.BundleManager.BundleFramework.Core"]
+    @!APILevel[
+        since: "22",
+        syscap: "SystemCapability.BundleManager.BundleFramework.Core"
+    ]
     public var deviceId: String
 
-    @!APILevel[since: "22", syscap: "SystemCapability.BundleManager.BundleFramework.Core"]
+    @!APILevel[
+        since: "22",
+        syscap: "SystemCapability.BundleManager.BundleFramework.Core"
+    ]
     public var bundleName: String
 
-    @!APILevel[since: "22", syscap: "SystemCapability.BundleManager.BundleFramework.Core"]
+    @!APILevel[
+        since: "22",
+        syscap: "SystemCapability.BundleManager.BundleFramework.Core"
+    ]
     public var abilityName: String
 
-    @!APILevel[since: "22", syscap: "SystemCapability.BundleManager.BundleFramework.Core"]
+    @!APILevel[
+        since: "22",
+        syscap: "SystemCapability.BundleManager.BundleFramework.Core"
+    ]
     public var moduleName: String
 
-    @!APILevel[since: "22", syscap: "SystemCapability.BundleManager.BundleFramework.Core"]
+    @!APILevel[
+        since: "22",
+        syscap: "SystemCapability.BundleManager.BundleFramework.Core"
+    ]
     public init(bundleName: String, abilityName: String, deviceId!: String = "", moduleName!: String = "") {
         super()
         this.deviceId = String()

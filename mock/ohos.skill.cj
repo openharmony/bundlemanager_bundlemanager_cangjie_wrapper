@@ -17,18 +17,33 @@ package ohos.skill
 
 import ohos.labels.*
 
-@!APILevel[since: "22", syscap: "SystemCapability.BundleManager.BundleFramework.Core"]
+@!APILevel[
+    since: "22",
+    syscap: "SystemCapability.BundleManager.BundleFramework.Core"
+]
 public class Skill {
-    @!APILevel[since: "22", syscap: "SystemCapability.BundleManager.BundleFramework.Core"]
+    @!APILevel[
+        since: "22",
+        syscap: "SystemCapability.BundleManager.BundleFramework.Core"
+    ]
     public let actions: Array<String>
 
-    @!APILevel[since: "22", syscap: "SystemCapability.BundleManager.BundleFramework.Core"]
+    @!APILevel[
+        since: "22",
+        syscap: "SystemCapability.BundleManager.BundleFramework.Core"
+    ]
     public let entities: Array<String>
 
-    @!APILevel[since: "22", syscap: "SystemCapability.BundleManager.BundleFramework.Core"]
+    @!APILevel[
+        since: "22",
+        syscap: "SystemCapability.BundleManager.BundleFramework.Core"
+    ]
     public let uris: Array<SkillUri>
 
-    @!APILevel[since: "22", syscap: "SystemCapability.BundleManager.BundleFramework.Core"]
+    @!APILevel[
+        since: "22",
+        syscap: "SystemCapability.BundleManager.BundleFramework.Core"
+    ]
     public let domainVerify: Bool
     
     public init() {
@@ -40,36 +55,69 @@ public class Skill {
     }
 }
 
-@!APILevel[since: "22", syscap: "SystemCapability.BundleManager.BundleFramework.Core"]
+@!APILevel[
+    since: "22",
+    syscap: "SystemCapability.BundleManager.BundleFramework.Core"
+]
 public class SkillUri {
-    @!APILevel[since: "22", syscap: "SystemCapability.BundleManager.BundleFramework.Core"]
+    @!APILevel[
+        since: "22",
+        syscap: "SystemCapability.BundleManager.BundleFramework.Core"
+    ]
     public let scheme: String
 
-    @!APILevel[since: "22", syscap: "SystemCapability.BundleManager.BundleFramework.Core"]
+    @!APILevel[
+        since: "22",
+        syscap: "SystemCapability.BundleManager.BundleFramework.Core"
+    ]
     public let host: String
 
-    @!APILevel[since: "22", syscap: "SystemCapability.BundleManager.BundleFramework.Core"]
+    @!APILevel[
+        since: "22",
+        syscap: "SystemCapability.BundleManager.BundleFramework.Core"
+    ]
     public let port: Int32
 
-    @!APILevel[since: "22", syscap: "SystemCapability.BundleManager.BundleFramework.Core"]
+    @!APILevel[
+        since: "22",
+        syscap: "SystemCapability.BundleManager.BundleFramework.Core"
+    ]
     public let path: String
 
-    @!APILevel[since: "22", syscap: "SystemCapability.BundleManager.BundleFramework.Core"]
+    @!APILevel[
+        since: "22",
+        syscap: "SystemCapability.BundleManager.BundleFramework.Core"
+    ]
     public let pathStartWith: String
 
-    @!APILevel[since: "22", syscap: "SystemCapability.BundleManager.BundleFramework.Core"]
+    @!APILevel[
+        since: "22",
+        syscap: "SystemCapability.BundleManager.BundleFramework.Core"
+    ]
     public let pathRegex: String
 
-    @!APILevel[since: "22", syscap: "SystemCapability.BundleManager.BundleFramework.Core"]
+    @!APILevel[
+        since: "22",
+        syscap: "SystemCapability.BundleManager.BundleFramework.Core"
+    ]
     public let uriType: String
 
-    @!APILevel[since: "22", syscap: "SystemCapability.BundleManager.BundleFramework.Core"]
+    @!APILevel[
+        since: "22",
+        syscap: "SystemCapability.BundleManager.BundleFramework.Core"
+    ]
     public let utd: String
 
-    @!APILevel[since: "22", syscap: "SystemCapability.BundleManager.BundleFramework.Core"]
+    @!APILevel[
+        since: "22",
+        syscap: "SystemCapability.BundleManager.BundleFramework.Core"
+    ]
     public let maxFilesSupported: Int32
 
-    @!APILevel[since: "22", syscap: "SystemCapability.BundleManager.BundleFramework.Core"]
+    @!APILevel[
+        since: "22",
+        syscap: "SystemCapability.BundleManager.BundleFramework.Core"
+    ]
     public let linkFeature: String
     
     public init() {
