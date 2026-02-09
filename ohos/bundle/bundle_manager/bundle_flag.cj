@@ -28,6 +28,7 @@ import ohos.labels.APILevel
     syscap: "SystemCapability.BundleManager.BundleFramework.Core"
 ]
 public class BundleFlag {
+    init() {}
     /**
      * Used to obtain the default bundleInfo. The obtained bundleInfo does not contain information of
      * signatureInfo, applicationInfo, hapModuleInfo, ability, extensionAbility and permission.
