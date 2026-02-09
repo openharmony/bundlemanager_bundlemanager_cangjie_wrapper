@@ -610,7 +610,7 @@ public class BundleFlag {
     ]
     public static const GET_BUNDLE_INFO_WITH_SKILL: Int32 = 0x00000800
     
-    public init() {
+    init() {
         super()
     }
 }
