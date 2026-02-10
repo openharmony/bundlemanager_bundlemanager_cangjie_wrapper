@@ -186,7 +186,6 @@ class Test_bundle_info {
     @TestCase
     @Tag[APILevel22, TestLevel0]
     func test_bundle_skill(): Unit {
-        BundleFlag()
         let bundleFlags = BundleFlag.GET_BUNDLE_INFO_DEFAULT | BundleFlag.GET_BUNDLE_INFO_WITH_APPLICATION |
             BundleFlag.GET_BUNDLE_INFO_WITH_HAP_MODULE | BundleFlag.GET_BUNDLE_INFO_WITH_ABILITY |
             BundleFlag.GET_BUNDLE_INFO_WITH_EXTENSION_ABILITY | BundleFlag.GET_BUNDLE_INFO_WITH_REQUESTED_PERMISSION |
