@@ -40,10 +40,7 @@ public enum BundleType {
     /**
      * Indicates atomic service
      */
-    @!APILevel[
-        since: "22",
-        syscap: "SystemCapability.BundleManager.BundleFramework.Core"
-    ]
+    @!Hide[isChecked: true]
     AtomicService
     | ...
 
@@ -53,7 +50,6 @@ public enum BundleType {
     protected static func parse(val: Int32): BundleType {
         match (val) {
             case 0 => App
-            case 1 => AtomicService
             case _ => throw BusinessException(17700101, "Parameter error.")
         }
     }
@@ -376,10 +372,7 @@ public enum ExtensionAbilityType {
     /**
      * Indicates extension info with type of form.
      */
-    @!APILevel[
-        since: "22",
-        syscap: "SystemCapability.BundleManager.BundleFramework.Core"
-    ]
+    @!Hide[isChecked: true]
     Form
     |
     /**
@@ -571,34 +564,34 @@ public enum ExtensionAbilityType {
     ]
     InsightIntentUI
     |
-    @!Hide
+    @!Hide[isChecked: true]
     Fence
     |
-    @!Hide
+    @!Hide[isChecked: true]
     CallerInfoQuery
     |
-    @!Hide
+    @!Hide[isChecked: true]
     AssetAcceleration
     |
-    @!Hide
+    @!Hide[isChecked: true]
     FormEdit
     |
-    @!Hide
+    @!Hide[isChecked: true]
     Distributed
     |
-    @!Hide
+    @!Hide[isChecked: true]
     AppService
     |
-    @!Hide
+    @!Hide[isChecked: true]
     LiveForm
     |
-    @!Hide
+    @!Hide[isChecked: true]
     WebNativeMessaging
     |
-    @!Hide
+    @!Hide[isChecked: true]
     FaultLog
     |
-    @!Hide
+    @!Hide[isChecked: true]
     NotificationSubscriber
     |
     /**
@@ -616,7 +609,6 @@ public enum ExtensionAbilityType {
      */
     static func parse(val: Int32): ExtensionAbilityType {
         match (val) {
-            case 0 => Form
             case 1 => WorkScheduler
             case 2 => InputMethod
             case 3 => Service
@@ -745,24 +737,24 @@ public enum MultiAppModeType {
 /**
  * Indicates ability type
  */
-@!Hide
+@!Hide[isChecked: true]
 internal enum AbilityType {
     /**
      * Indicates that the ability has a UI
      */
-    @!Hide
+    @!Hide[isChecked: true]
     Page
     |
     /**
      * Indicates that the ability does not have a UI
      */
-    @!Hide
+    @!Hide[isChecked: true]
     Service
     |
     /**
      * Indicates that the ability is used to provide data access services
      */
-    @!Hide
+    @!Hide[isChecked: true]
     Data
     | ...
 }
