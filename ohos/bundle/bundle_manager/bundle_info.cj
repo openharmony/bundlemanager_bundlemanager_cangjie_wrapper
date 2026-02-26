@@ -152,7 +152,7 @@ public class BundleInfo {
     /**
     * Indicates the hap first install time
     */
-    @!Hide
+    @!Hide[isChecked: true]
     internal let firstInstallTime: Option<Int64> = Option.None
 
     init(ret: RetBundleInfoV2) {
@@ -315,7 +315,7 @@ public class SignatureInfo {
     /**
      * Indicates the certificate
      */
-    @!Hide
+    @!Hide[isChecked: true]
     internal let certificate: Option<String> = Option.None
 
     init(ret: RetSignatureInfo) {

@@ -17,9 +17,12 @@ import("//build/ohos.gni")
 import("//build/templates/cangjie/cjc.gni")
 
 ohos_cangjie_shared_library("ohos.bundle") {
-  sources = [
-    "bundle.cj",
-  ]
+  
+  if (is_mingw || is_mac){
+    sources = ["../../mock/ohos.bundle.cj"]
+  } else {
+    sources = ["bundle.cj"]
+  }
 
   subsystem_name = "bundlemanager"
   part_name = "bundlemanager_cangjie_wrapper"

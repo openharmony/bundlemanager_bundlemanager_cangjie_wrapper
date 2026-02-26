@@ -16,21 +16,26 @@
 import("//build/templates/cangjie/cjc.gni")
 
 ohos_cangjie_shared_library("ohos.bundle.bundle_manager") {
-  sources = [
-    "ability_info.cj",
-    "application_info.cj",
-    "bundle_flag.cj",
-    "bundle_info.cj",
-    "bundle_manager.cj",
-    "cj_bundle_enum.cj",
-    "cj_bundle_ffi.cj",
-    "cj_bundle_utils.cj",
-    "default_app_manager.cj",
-    "error_code.cj",
-    "error_message.cj",
-    "extension_ability_info.cj",
-    "hap_module_info.cj",
-  ]
+  
+  if (is_mingw || is_mac){
+    sources = ["../../../mock/ohos.bundle.bundle_manager.cj"]
+  } else {
+    sources = [
+      "ability_info.cj",
+      "application_info.cj",
+      "bundle_flag.cj",
+      "bundle_info.cj",
+      "bundle_manager.cj",
+      "cj_bundle_enum.cj",
+      "cj_bundle_ffi.cj",
+      "cj_bundle_utils.cj",
+      "default_app_manager.cj",
+      "error_code.cj",
+      "error_message.cj",
+      "extension_ability_info.cj",
+      "hap_module_info.cj",
+    ]
+  }
 
   cj_deps = [
     "../../element_name:ohos.element_name",
