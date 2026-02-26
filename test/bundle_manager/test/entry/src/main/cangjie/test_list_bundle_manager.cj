@@ -19,4 +19,7 @@ let _ = testsuite()
 
 func testsuite(): Unit {
     registerTestSuite("Test_bundle_info", {=> Test_bundle_info()})
+    registerTestSuite("TestSkillLlt", {=> TestSkillLlt()})
+    registerTestSuite("TestElementNameLlt", {=> TestElementNameLlt()})
+    registerTestSuite("TestMetadataLlt", {=> TestMetadataLlt()})
 }
