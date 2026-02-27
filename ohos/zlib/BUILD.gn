@@ -16,11 +16,15 @@
 import("//build/templates/cangjie/cjc.gni")
 
 ohos_cangjie_shared_library("ohos.zlib") {
-  sources = [
-    "cj_zlib.cj",
-    "zip_error.cj",
-    "zip_options.cj"
-  ]
+  if (is_mingw || is_mac){
+    sources = ["../../mock/ohos.zlib.cj"]
+  } else {
+    sources = [
+      "cj_zlib.cj",
+      "zip_error.cj",
+      "zip_options.cj"
+    ]
+  }
 
   cj_external_deps = [
     "cangjie_ark_interop:ohos.business_exception",
