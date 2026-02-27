@@ -219,7 +219,7 @@ public class AbilityInfo {
     /**
     * Indicates the orientation id of the ability
     */
-    @!Hide
+    @!Hide[isChecked: true]
     internal let orientationId: Int64 = 0
 
     protected init(ret: RetAbilityInfoV2) {
