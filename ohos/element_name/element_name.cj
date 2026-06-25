@@ -127,6 +127,14 @@ public class ElementName {
     // protected function: available only for this package.
     protected init(elementNameHandle: ElementNameHandle) {
         var paramsHandle = unsafe { FFICJElementNameGetElementNameInfo(elementNameHandle) }
+        if (paramsHandle.isNull()) {
+            this.deviceId = ""
+            this.bundleName = ""
+            this.abilityName = ""
+            this.moduleName = ""
+            this.shortName_ = ""
+            return
+        }
         let params = unsafe { paramsHandle.read() }
 
         this.deviceId = params.deviceId.toString()
