@@ -58,12 +58,6 @@ public class Metadata {
     @!Hide[isChecked: true]
     internal let valueId: Option<Int64> = Option.None
 
-    protected init(name: String, value: String, resource: String) {
-        this.name = name
-        this.value = value
-        this.resource = resource
-    }
-
     protected init(ret: RetMetadata) {
         this.name = ret.name.toString()
         this.value = ret.value.toString()

@@ -136,9 +136,3 @@ func getErrorMsg(code: Int32): String {
         return "Unknown error code ${code}"
     }
 }
-
-func checkCodeAndThrow(code: Int32): Unit {
-    if (code != 0) {
-        throw BusinessException(code, getErrorMsg(code))
-    }
-}
