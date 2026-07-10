@@ -224,14 +224,6 @@ public class ReqPermissionDetail {
     ]
     public var usedScene: UsedScene
 
-    protected init(name: String, moduleName: String, reason: String, reasonId: Int32, usedScene: UsedScene) {
-        this.name = name
-        this.moduleName = moduleName
-        this.reason = reason
-        this.reasonId = reasonId
-        this.usedScene = usedScene
-    }
-
     init(ret: RetReqPermissionDetail) {
         this.name = ret.name.toString()
         this.moduleName = ret.moduleName.toString()
@@ -265,11 +257,6 @@ public class UsedScene {
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
     public var when: String
-
-    protected init(abilities: Array<String>, when: String) {
-        this.abilities = abilities
-        this.when = when
-    }
 
     init(ret: RetUsedScene) {
         this.abilities = readArrStr(ret.abilities)
