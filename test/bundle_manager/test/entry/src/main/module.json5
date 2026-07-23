@@ -23,6 +23,15 @@
     "deliveryWithInstall": true,
     "installationFree": false,
     "srcEntry": "ohos_app_cangjie_entry.MyAbilityStage",
+    "querySchemes": [
+      "app1Scheme"
+    ],
+    "metadata": [
+      {
+        "name": "module_metadata",
+        "value": "module_meta_value"
+      }
+    ],
     "abilities": [
       {
         "name": "EntryAbility",
@@ -40,7 +49,20 @@
             ],
             "actions": [
               "action.system.home"
+            ],
+            "uris": [
+              {
+                "scheme": "app1Scheme",
+                "host": "test.example.com",
+                "path": "/home"
+              }
             ]
+          }
+        ],
+        "metadata": [
+          {
+            "name": "myProfile",
+            "resource": "$profile:main_pages"
           }
         ]
       }
