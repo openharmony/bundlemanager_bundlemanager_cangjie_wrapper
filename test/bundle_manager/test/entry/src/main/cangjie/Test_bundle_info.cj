@@ -248,7 +248,16 @@ class Test_bundle_info {
         }
     }
 
-
+    @TestCase
+    @Tag[APILevel22, TestLevel0]
+    func test_getProfileByAbility_notExistMetadata(): Unit {
+        try {
+            BundleManager.getProfileByAbility("entry", "EntryAbility", metadataName: "notExist")
+            @Expect(false)
+        } catch (e: Exception) {
+            @Expect(true)
+        }
+    }
 
     @TestCase
     @Tag[APILevel22, TestLevel0]
