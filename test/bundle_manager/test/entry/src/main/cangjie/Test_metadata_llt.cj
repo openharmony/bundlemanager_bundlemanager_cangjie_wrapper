@@ -65,7 +65,7 @@ class TestMetadataLlt {
         let opt = findFirstMetadata(bundleInfo)
         match (opt) {
             case None => @Expect(opt.isNone(), true)
-            case Some(meta) => @Expect(meta.name.size, 17)
+            case Some(meta) => @Expect(meta.name.size, 15)
         }
     }
 
@@ -81,7 +81,7 @@ class TestMetadataLlt {
         let opt = findFirstMetadata(bundleInfo)
         match (opt) {
             case None => @Expect(opt.isNone(), true)
-            case Some(meta) => @Expect(meta.name, "customMetadata")
+            case Some(meta) => @Expect(meta.name, "module_metadata")
         }
     }
 
@@ -172,7 +172,7 @@ class TestMetadataLlt {
         let opt = findFirstMetadata(bundleInfo)
         match (opt) {
             case None => @Expect(opt.isNone(), true)
-            case Some(meta) => @Expect(meta.value.size, 4)
+            case Some(meta) => @Expect(meta.value.size, 17)
         }
     }
 
@@ -188,7 +188,7 @@ class TestMetadataLlt {
         let opt = findFirstMetadata(bundleInfo)
         match (opt) {
             case None => @Expect(opt.isNone(), true)
-            case Some(meta) => @Expect(meta.value, "100")
+            case Some(meta) => @Expect(meta.value, "module_meta_value")
         }
     }
 
@@ -279,7 +279,7 @@ class TestMetadataLlt {
         let opt = findFirstMetadata(bundleInfo)
         match (opt) {
             case None => @Expect(opt.isNone(), true)
-            case Some(meta) => @Expect(meta.resource.size, 19)
+            case Some(meta) => @Expect(meta.resource.size, 0)
         }
     }
 
@@ -295,7 +295,7 @@ class TestMetadataLlt {
         let opt = findFirstMetadata(bundleInfo)
         match (opt) {
             case None => @Expect(opt.isNone(), true)
-            case Some(meta) => @Expect(meta.resource, "$profile:form_config")
+            case Some(meta) => @Expect(meta.resource, "")
         }
     }
 
